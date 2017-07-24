@@ -18,6 +18,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
@@ -133,11 +134,19 @@ public class RegisterForm extends JFrame {
 					check1="UG";
 					check2="PG";
 				}
-				String str="insert into utable values('"+u+"','"+gen+"','"+check1+"','"+check2+"','"+dept+"')";
+				//String str="insert into utable values('"+u+"','"+gen+"','"+check1+"','"+check2+"','"+dept+"')";
+				String str="insert into utable values(?,?,?,?,?)";
 				Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 				Connection conn=DriverManager.getConnection("jdbc:odbc:demo1");
-				Statement stm=conn.createStatement();
-				stm.executeUpdate(str);
+				//Statement stm=conn.createStatement();
+				PreparedStatement pt=conn.prepareStatement(str);
+				//stm.executeUpdate(str);
+				pt.setString(1,u);
+				pt.setString(2, gen);
+				pt.setString(3, check1);
+				pt.setString(4, check2);
+				pt.setString(5, dept);
+				pt.executeUpdate();
 				JOptionPane.showMessageDialog(btnRegister, "Inserted!!!");
 			}
 			

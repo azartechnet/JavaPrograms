@@ -1,0 +1,10 @@
+
+public class Demo {
+
+	public static void main(Integer ... args) 
+	{
+		System.out.println("welcome");
+
+	}
+
+}

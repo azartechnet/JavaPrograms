@@ -1,0 +1,20 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+ HashSet g1=new HashSet();	
+ void get1()
+ {
+	 g1.add("azar");
+	 g1.add("mohan");
+ }
+}
+class Demo1
+{
+	public static void main(String[]  args) 
+	{
+        		
+
+	}
+
+}
