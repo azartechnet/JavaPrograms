@@ -1,0 +1,16 @@
+
+public class FileProcess
+{
+	
+   void fileOutputStream()
+   {
+	   
+   }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

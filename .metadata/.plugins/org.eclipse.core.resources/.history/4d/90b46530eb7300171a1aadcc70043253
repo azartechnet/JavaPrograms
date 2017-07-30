@@ -1,0 +1,31 @@
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+public class FileProcess
+{
+	String name;
+	Scanner g=new Scanner(System.in);
+   void fileOutputStream()
+   {
+	  try
+	  {
+	  System.out.println("Enter the name is:\n");
+	  name=g.next();
+	  FileOutputStream fos=new FileOutputStream("F:\\abc.txt");
+	  byte s[]=name.getBytes();
+	  fos.write(s);
+	  System.out.println("File Inserted Sucess!!!");
+	  }
+	  catch(Exception g)
+	  {
+		  System.out.println(g);
+	  }
+   }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+	int productid;
+	String prdname;
+	void get1()
+	{
+	
+	}
+	void get2()
+	{
+		
+	}
+}
+class Demo1
+{
+	public static void main(String args[]) 
+	{
+		
+     Demo h=new Demo();
+     h.get1();
+     h.get2();
+	}
+
+}

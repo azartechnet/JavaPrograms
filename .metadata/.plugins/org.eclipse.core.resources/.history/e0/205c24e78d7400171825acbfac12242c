@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+	int a=100;
+	void get1()
+	{
+	 int b=300;
+	 System.out.println("welcome to fuction-1"+b);
+	}
+	void get2()
+	{
+		 System.out.println("welcome to fuction-2"+a);
+	}
+}
+class Demo1
+{
+	public static void main(String args[]) 
+	{
+		
+     Demo h=new Demo();
+     h.get1();
+     h.get2();
+	}
+
+}
