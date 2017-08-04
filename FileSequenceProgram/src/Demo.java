@@ -10,13 +10,13 @@ public class Demo
 	{
 		FileInputStream f1=new FileInputStream("F:\\abc.txt");
 		FileInputStream f2=new FileInputStream("F:\\abc1.txt");
-		FileOutputStream f3=new FileOutputStream("F:\\abb.txt");
+		//FileOutputStream f3=new FileOutputStream("F:\\abb.txt");
 		SequenceInputStream sq=new SequenceInputStream(f1, f2);
 		int i;
 		while((i=sq.read())!=-1)
 		{
-			//System.out.print((char)i);
-			f3.write((byte)i);
+			System.out.print((char)i);
+			//f3.write((byte)i);
 		}
 	}
 	catch(Exception t)

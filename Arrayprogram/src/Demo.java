@@ -2,20 +2,23 @@ import java.util.Scanner;
 
 public class Demo 
 {
-	int product[]=new int[10];
+	int product[][]=new int[2][2];
 	int i,j,n,m;
 	Scanner g=new Scanner(System.in);
 	 void get1()
 	 {
 		 System.out.println("Enter the n value is:\n");
 		 n=g.nextInt();
+		 m=g.nextInt();
 		 
 		 for(i=0;i<n;i++)
 		 {
+			 for(j=0;j<m;j++)
+			 {
 			
 			 System.out.println("Enter the array value is:\n");
-			 product[i]=g.nextInt();
-			 
+			 product[i][j]=g.nextInt();
+			 }
 			
 			 
 		 }
@@ -24,9 +27,10 @@ public class Demo
 	 {
 		 for(i=0;i<n;i++)
 		 {
-			 
-			 System.out.println("Value is:\n"+product[i]);
-			 
+			 for(j=0;j<m;j++)
+			 {
+			 System.out.println("Value is:\n"+product[i][j]);
+			 }
 		 }
 	 }
 }

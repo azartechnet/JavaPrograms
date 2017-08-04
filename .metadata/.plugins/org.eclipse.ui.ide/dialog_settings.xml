@@ -5,6 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="F:\JavaProgram\JavaPrograms\InterfaceProgram"/>
+			<item value="F:\JavaProgram\JavaPrograms\SingleInh"/>
+			<item value="F:\JavaProgram\JavaPrograms\Arrayprogram"/>
 			<item value="F:\JavaProgram\JavaPrograms\MapProgram"/>
 			<item value="F:\JavaProgram\JavaPrograms\AppGUI"/>
 		</list>
