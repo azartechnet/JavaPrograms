@@ -1,0 +1,54 @@
+  
+        if(evt.getSource()==jButton1)
+        {
+            try
+            {
+                String uname=jTextField1.getText();
+                String course=(String) jComboBox1.getSelectedItem();
+                String str="select pass from reg where uname='"+uname+"' OR course='"+course+"'";
+                Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+                Connection conn=DriverManager.getConnection("jdbc:odbc:reg1");
+                Statement st=conn.createStatement();
+                ResultSet rs=st.executeQuery(str);
+                rs.next();
+                jTextField2.setText(rs.getString(1).trim());
+                JOptionPane.showMessageDialog(rootPane,"Search Sucess!!!");
+                
+                
+                
+                
+                
+                
+                
+            }
+            catch(Exception r)
+            {
+                System.out.println(r);
+            }
+        }
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        
+        if(evt.getSource()==jButton2)
+        {
+            try
+            {
+                 String uname=jTextField1.getText();
+                 String course=(String) jComboBox1.getSelectedItem();
+                 String str="update reg set uname='"+uname+"' where course='"+course+"'";
+                 Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+                Connection conn=DriverManager.getConnection("jdbc:odbc:reg1");
+                Statement st=conn.createStatement();
+                st.executeUpdate(str);
+                JOptionPane.showMessageDialog(rootPane,"Updated Sucess");
+                
+            }
+            catch(Exception t)
+            {
+                System.out.println(t);
+            }
+        }
+        
+        
+    }                                        
