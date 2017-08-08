@@ -1,5 +1,104 @@
-  
-        if(evt.getSource()==jButton1)
+https://github.com/azartechnet/JavaPrograms
+------------------------------------
+LoginValidatedActionCoding
+--------------------------------
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+     if(evt.getSource()==jButton1)
+        {
+         try
+         {
+          String u=jTextField1.getText();
+          String p=jTextField1.getText();
+          String str="select * from login";
+          Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+          Connection conn=DriverManager.getConnection("jdbc:odbc:sample1");
+          Statement stmt=conn.createStatement();
+          ResultSet rs=stmt.executeQuery(str);
+          rs.next();
+          String uname=rs.getString(1);
+          String pass=rs.getString(2);
+          if(u.equals(uname)&& p.equals(pass))
+          {
+              JOptionPane.showMessageDialog(rootPane, "login success");
+              new RegisterForm().setVisible(true);
+              close();
+          }
+          else
+          {
+           JOptionPane.showMessageDialog(rootPane, "login failed");   
+          }
+         }catch(Exception e)
+         {
+             System.out.println(e);
+         }
+        }
+    }                              
+-----------------------
+
+RegisterFormActionCoding...
+------------------------------
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        try
+        {
+        String uname=jTextField1.getText();
+        String pass=jTextField2.getText();
+        String gen="";
+        String mca="";
+        String be="";
+        String course= (String) jComboBox1.getSelectedItem();
+        
+        if(jRadioButton1.isSelected())
+        {
+            gen="MALE";
+        }
+        else
+        {
+            gen="FEMALE";
+        }
+         if(jCheckBox1.isSelected()&&jCheckBox2.isSelected())
+         {
+             mca="MCA";
+             be="BE";
+         }
+         else if(jCheckBox1.isSelected())
+         {
+              mca="MCA";
+               be="NULL";
+              
+         }
+         else 
+         {
+              mca="NULL";
+               be="BE";
+         }
+          
+        String str="insert into reg values(?,?,?,?,?,?)";
+         Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+          Connection conn=DriverManager.getConnection("jdbc:odbc:reg1");  
+            PreparedStatement pt=conn.prepareStatement(str);
+            pt.setString(1,uname);
+              pt.setString(2,pass);
+                pt.setString(3,gen);
+                  pt.setString(4,mca);
+                    pt.setString(5,be);
+                      pt.setString(6,course);
+            pt.executeUpdate();
+            JOptionPane.showMessageDialog(rootPane,"RegisterSucess");
+            
+        
+        }
+        catch(Exception t)
+        {
+            
+        }
+    }                     
+
+ 
+-----------------------------------------     
+Searching Data Coding
+-------------------------
+   if(evt.getSource()==jButton1)
         {
             try
             {
@@ -26,8 +125,10 @@
                 System.out.println(r);
             }
         }
-    }                                        
-
+    }             
+------------------------                           
+UpdateDataCoding..
+----------------------
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
         if(evt.getSource()==jButton2)
