@@ -4,13 +4,18 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
-import java.awt.Color;
-import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultComboBoxModel;
 
 public class RegisterPage extends JFrame {
 
 	private JPanel contentPane;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -39,22 +44,46 @@ public class RegisterPage extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
-		panel.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panel.setBounds(30, 11, 350, 239);
-		contentPane.add(panel);
-		panel.setLayout(null);
+		JLabel lblUname = new JLabel("uname");
+		lblUname.setBounds(34, 33, 46, 14);
+		contentPane.add(lblUname);
 		
-		JButton btnLogin = new JButton("LOGIN");
-		btnLogin.setBounds(112, 35, 89, 23);
-		panel.add(btnLogin);
+		textField = new JTextField();
+		textField.setBounds(135, 30, 86, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
 		
-		JButton btnRegister = new JButton("REGISTER");
-		btnRegister.setBounds(112, 102, 89, 23);
-		panel.add(btnRegister);
+		JLabel lblGender = new JLabel("gender");
+		lblGender.setBounds(34, 86, 46, 14);
+		contentPane.add(lblGender);
 		
-		JButton btnSearch = new JButton("SEARCH");
-		btnSearch.setBounds(112, 179, 89, 23);
-		panel.add(btnSearch);
+		JRadioButton rdbtnMale = new JRadioButton("male");
+		rdbtnMale.setBounds(112, 82, 109, 23);
+		contentPane.add(rdbtnMale);
+		
+		JRadioButton rdbtnFemale = new JRadioButton("female");
+		rdbtnFemale.setBounds(245, 82, 109, 23);
+		contentPane.add(rdbtnFemale);
+		
+		ButtonGroup bg=new ButtonGroup();
+		bg.add(rdbtnMale);
+		bg.add(rdbtnFemale);
+		
+		JLabel lblCheckbox = new JLabel("checkbox");
+		lblCheckbox.setBounds(34, 150, 46, 14);
+		contentPane.add(lblCheckbox);
+		
+		JCheckBox chckbxUg = new JCheckBox("ug");
+		chckbxUg.setBounds(113, 146, 97, 23);
+		contentPane.add(chckbxUg);
+		
+		JCheckBox chckbxPg = new JCheckBox("pg");
+		chckbxPg.setBounds(212, 146, 97, 23);
+		contentPane.add(chckbxPg);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"mca", "be", "mba"}));
+		comboBox.setBounds(135, 192, 86, 20);
+		contentPane.add(comboBox);
 	}
 }

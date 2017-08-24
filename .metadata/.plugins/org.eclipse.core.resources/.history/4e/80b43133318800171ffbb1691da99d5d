@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Foo
+{
+  int n,i;
+  Scanner g1=new Scanner(System.in);
+  void f1()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

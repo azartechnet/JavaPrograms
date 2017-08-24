@@ -1,0 +1,18 @@
+
+public class Foo
+{
+  int n,i;
+  
+  void f1()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
