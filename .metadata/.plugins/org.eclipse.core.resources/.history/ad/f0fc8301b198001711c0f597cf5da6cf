@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Demo extends Thread
+{
+  int sal;
+  Scanner s=new Scanner(System.in);
+  public void run()
+  {
+	  try
+	  {
+      System.out.println("Inside run method");		  
+	  Thread.sleep(5000);
+	  System.out.println("Enter the value is:\n");
+	  sal=s.nextInt();
+	  }
+	  catch(InterruptedException t)
+	  {
+		  
+	  }
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		Demo t1=new Demo();
+		/*Demo t2=new Demo();*/
+		t1.start();
+		/*t2.start();*/
+	}
+}

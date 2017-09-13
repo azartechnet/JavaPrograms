@@ -1,0 +1,21 @@
+
+public class Demo
+{
+	void get()
+	{
+		static int a=10;
+		a++;
+		System.out.println("Value is:"+a);
+	}
+}
+class Sample
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		new Demo();
+		new Demo();
+
+	}
+
+}

@@ -7,6 +7,8 @@ public class Demo
 	Scanner g=new Scanner(System.in);
 	 void get1()
 	 {
+		 try
+		 {
 		 System.out.println("Enter the n value is:\n");
 		 n=g.nextInt();
 		 m=g.nextInt();
@@ -21,6 +23,11 @@ public class Demo
 			 }
 			
 			 
+		 }
+		 }
+		 catch(ArrayIndexOutOfBoundsException t)
+		 {
+			 System.out.println("Array is big");
 		 }
 	 }
 	 void disp()

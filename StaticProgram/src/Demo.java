@@ -1,25 +1,18 @@
 
 public class Demo
 {
-	int a1,b;
 	static int a=10;
-	Demo()
-	{
-		a++;
-		System.out.println("value is:\n"+a);
-	}
-	
-	void get(int a1,int b)
+	int a1,b1;
+	Demo(int a1,int b1)
 	{
 		this.a1=a1;
-		this.b=b;
-		System.out.println("Display in normal Method"+a1+""+b);
+		this.b1=b1;
+		a++;
+		System.out.println("Value is:"+a+"a1 value is"+a1+""+b1);
 	}
-	
-	
-	void dis()
+	void get1()
 	{
-		System.out.println("display another method:\n"+a1+""+b);
+		System.out.println("copy value is"+a1+""+b1);
 	}
 }
 class Sample
@@ -27,12 +20,9 @@ class Sample
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		new Demo();
-		new Demo();
-		new Demo();
-		Demo g1=new Demo();
-		g1.get(10,20);
-		g1.dis();
+		//new Demo();
+		Demo f=new Demo(10,20);
+		f.get1();
 
 	}
 

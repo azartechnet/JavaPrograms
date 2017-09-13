@@ -1,0 +1,15 @@
+
+public class Demo extends Thread
+{
+  public void run()
+  {
+	  
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

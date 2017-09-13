@@ -1,0 +1,35 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+public class Demo 
+{
+  int a,b,d;
+  Scanner g=new Scanner(System.in);
+  void g1()
+  {
+	  try(FileOutputStream g=new FileOutputStream("F:\\a1.txt"))
+	  {
+	
+	  }
+	  catch(FileNotFoundException t)
+	  {
+		  System.out.println("Check Your value is"+t);
+	  }
+	 
+  }
+  
+	
+  
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Demo s=new Demo();
+		s.g1();
+
+	}
+
+}

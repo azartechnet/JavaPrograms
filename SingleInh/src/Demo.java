@@ -2,7 +2,7 @@
 public class Demo
 {
 
-	int i=100;
+   int i=100;
 	void get1()
 	{
 		
@@ -12,8 +12,9 @@ public class Demo
 class D extends Demo
 {
 	void get2()
-	{
-		System.out.println("Dervied class"+i);
+	{ 
+		int i=200;
+		System.out.println("Dervied class"+super.i);
 	}
 }
 class Demo1

@@ -11,6 +11,13 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -57,7 +64,7 @@ public class RegisterPage extends JFrame {
 		lblGender.setBounds(34, 86, 46, 14);
 		contentPane.add(lblGender);
 		
-		JRadioButton rdbtnMale = new JRadioButton("male");
+		final JRadioButton rdbtnMale = new JRadioButton("male");
 		rdbtnMale.setBounds(112, 82, 109, 23);
 		contentPane.add(rdbtnMale);
 		
@@ -73,17 +80,72 @@ public class RegisterPage extends JFrame {
 		lblCheckbox.setBounds(34, 150, 46, 14);
 		contentPane.add(lblCheckbox);
 		
-		JCheckBox chckbxUg = new JCheckBox("ug");
+		final JCheckBox chckbxUg = new JCheckBox("ug");
 		chckbxUg.setBounds(113, 146, 97, 23);
 		contentPane.add(chckbxUg);
 		
-		JCheckBox chckbxPg = new JCheckBox("pg");
+		final JCheckBox chckbxPg = new JCheckBox("pg");
 		chckbxPg.setBounds(212, 146, 97, 23);
 		contentPane.add(chckbxPg);
 		
-		JComboBox comboBox = new JComboBox();
+		final JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"mca", "be", "mba"}));
 		comboBox.setBounds(135, 192, 86, 20);
 		contentPane.add(comboBox);
+		
+		final JButton btnInsert = new JButton("Insert");
+		btnInsert.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) 
+			{
+				if(evt.getSource()==btnInsert)
+				{
+					try
+					{
+						String u=textField.getText();
+						String gen="";
+						String check1="";
+						String check2="";
+						String dept=(String) comboBox.getSelectedItem();
+						
+						if(rdbtnMale.isSelected())
+						{
+							gen="Male";
+						}
+						else
+						{
+							gen="female";
+						}
+						if(chckbxUg.isSelected())
+						{
+							check1="UG";
+							check2="null";
+						}
+						else if(chckbxPg.isSelected())
+						{
+							check1="null";
+							check2="PG";
+						}
+						else
+						{
+							check1="UG";
+							check2="PG";
+						}
+						String str="insert into utable values('"+u+"','"+gen+"','"+check1+"','"+check2+"','"+dept+"')";
+						//String str="insert into utable values(?,?,?,?,?)";
+						Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+						Connection conn=DriverManager.getConnection("jdbc:odbc:demo1");
+						Statement stm=conn.createStatement();
+						//PreparedStatement pt=conn.prepareStatement(str);
+						stm.executeUpdate(str);
+					}
+					catch(Exception g)
+					{
+						System.out.println(g);
+					}
+				}
+			}
+		});
+		btnInsert.setBounds(112, 223, 89, 23);
+		contentPane.add(btnInsert);
 	}
 }

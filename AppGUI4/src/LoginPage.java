@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -7,8 +8,16 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class LoginPage extends JFrame {
 
@@ -31,12 +40,16 @@ public class LoginPage extends JFrame {
 			}
 		});
 	}
+	public void close()
+    {
+        WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
+        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
+    }
 
 	/**
 	 * Create the frame.
 	 */
 	public LoginPage() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -71,7 +84,43 @@ public class LoginPage extends JFrame {
 		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
-		JButton btnLogin = new JButton("LOGIN");
+		final JButton btnLogin = new JButton("LOGIN");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt)
+			{
+				try
+				{
+					if(evt.getSource()==btnLogin)
+					{
+						String u=textField.getText();
+						String p=textField_1.getText();
+						String str="select * from ulogin";
+						Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+						Connection conn=DriverManager.getConnection("jdbc:odbc:sample");
+						Statement stm=conn.createStatement();
+						ResultSet rs=stm.executeQuery(str);
+						rs.next();
+						String uname=rs.getString(1);
+						String pass=rs.getString(2);
+						if(uname.equals(u)&&pass.equals(p))
+						{
+							JOptionPane.showMessageDialog(btnLogin, "LoginSucess!!");
+							close();
+							new RegisterPage().setVisible(true);
+						}
+						else
+						{
+							JOptionPane.showMessageDialog(btnLogin, "loginFail!!");	
+						}
+						
+					}
+				}
+				catch(Exception r)
+				{
+					System.out.println(r);
+				}
+			}
+		});
 		btnLogin.setBounds(63, 175, 89, 23);
 		panel.add(btnLogin);
 		
