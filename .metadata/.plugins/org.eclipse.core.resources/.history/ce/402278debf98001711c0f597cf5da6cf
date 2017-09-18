@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Foo 
+{
+  int sal;
+  String name;
+  float avg;
+  Scanner f1=new Scanner(System.in);
+  void input()
+  {
+	  System.out.println("Enter the value is:\n");
+	  sal=f1.nextInt();
+	  name=f1.next();
+	  avg=f1.nextFloat();
+  }
+  void dis()
+  {
+	  System.out.println("Your Details is:\n"+sal+""+name+""+avg);
+  }
+}
+class Demo3
+{
+	public static void main(String sa[])
+	{
+		
+	}
+}

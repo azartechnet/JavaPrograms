@@ -1,0 +1,19 @@
+
+public class Foo 
+{
+  int sal;
+  String name;
+  float avg;
+  Scanner f1=new Scanner(System.in);
+  void input()
+  {
+	  
+  }
+}
+class Demo3
+{
+	public static void main(String sa[])
+	{
+		
+	}
+}

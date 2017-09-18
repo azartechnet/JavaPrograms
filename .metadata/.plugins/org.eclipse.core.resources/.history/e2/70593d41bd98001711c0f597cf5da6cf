@@ -1,0 +1,21 @@
+
+public class Demo
+{
+  void g1()
+  {
+	  System.out.println("welcome to method-1");
+  }
+  void g2()
+  {
+	  System.out.println("welcome to method-2");
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		Demo g1=new Demo();
+		g1.g1();
+		g1.g2();
+	}
+}

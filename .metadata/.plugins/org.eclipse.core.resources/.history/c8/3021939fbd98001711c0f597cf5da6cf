@@ -1,0 +1,20 @@
+
+public class Demo1 
+{
+  void p1(int s1)
+  {
+	  
+  }
+  void p2(String name,float f1)
+  {
+	  
+  }
+}
+class Demo2
+{
+	public static void main(String as[])
+	{
+		Demo1 g=new Demo1();
+		
+	}
+}

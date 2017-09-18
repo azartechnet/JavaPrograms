@@ -1,0 +1,19 @@
+
+public class Demo
+{
+  void g1()
+  {
+	  
+  }
+  void g2()
+  {
+	  
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

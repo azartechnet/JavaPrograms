@@ -46,7 +46,16 @@ public class LoginPage extends JFrame {
 		lblNewLabel.setBounds(10, 11, 234, 157);
 		contentPane.add(lblNewLabel);
 		
-		JButton btnLoginPage = new JButton("LOGIN PAGE");
+		final JButton btnLoginPage = new JButton("LOGIN PAGE");
+		btnLoginPage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) 
+			{
+				if(evt.getSource()==btnLoginPage)
+				{
+					new HomePage().setVisible(true);
+				}
+			}
+		});
 		btnLoginPage.setBounds(279, 34, 110, 23);
 		contentPane.add(btnLoginPage);
 		
