@@ -16,6 +16,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
@@ -138,11 +139,20 @@ public class RegisterPage extends JFrame {
 						ug="NULL";
 						pg="PG";
 					}
-					String str="insert into reg values('"+u+"','"+gen+"','"+course+"','"+ug+"','"+pg+"')";
+					String str="insert into reg values(?,?,?,?,?)";
+					//String str="insert into reg values('"+u+"','"+gen+"','"+course+"','"+ug+"','"+pg+"')";
 					Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 					Connection con=DriverManager.getConnection("jdbc:odbc:reg1");
-					Statement stm=con.createStatement();
+					/*Statement stm=con.createStatement();
 					stm.executeUpdate(str);
+					
+*/					PreparedStatement pt=con.prepareStatement(str);
+                    pt.setString(1,u);
+                    pt.setString(2,gen);
+                    pt.setString(3, course);
+                    pt.setString(4, ug);
+                    pt.setString(5, pg);
+                    pt.executeUpdate();
 					JOptionPane.showMessageDialog(btnRegister,"Inserted!!!");
 					
 				}
