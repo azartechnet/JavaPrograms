@@ -1,0 +1,18 @@
+
+public class Demo 
+{
+  int pid=100;
+  String name="aaa";
+  void g1()
+  {
+	  System.out.println("Result is:\n"+pid+name);
+  }
+}
+class Foo
+{
+  public static void main(String as[])
+  {
+	 Demo h=new Demo();
+	 h.g1();
+  }
+}

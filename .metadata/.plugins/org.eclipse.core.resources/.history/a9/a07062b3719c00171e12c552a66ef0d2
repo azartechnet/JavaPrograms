@@ -1,0 +1,14 @@
+
+public class Demo 
+{
+  int pid;
+  String name;
+  void g1()
+  {
+	  
+  }
+  public static void main(String as[])
+  {
+	 
+  }
+}

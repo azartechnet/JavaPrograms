@@ -1,0 +1,18 @@
+
+public class Demo 
+{
+  int pid;
+  String name;
+  void g1()
+  {
+	  System.out.println(pid);
+  }
+}
+class Foo
+{
+  public static void main(String as[])
+  {
+	 Demo h=new Demo();
+	 h.g1();
+  }
+}

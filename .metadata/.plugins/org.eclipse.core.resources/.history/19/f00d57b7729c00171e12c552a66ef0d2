@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+  int pid;
+  String name;
+  Scanner g=new Scanner(System.in);
+  void g1()
+  {
+	  System.out.println("Enter the value is:\n");
+	  pid=g.nextInt();
+	  name=g.next();
+  }
+}
+class Foo
+{
+  public static void main(String as[])
+  {
+	 Demo h=new Demo();
+	 h.g1();
+  }
+}
