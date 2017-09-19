@@ -8,8 +8,11 @@ import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Toolkit;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
 
 public class HomePage extends JFrame {
@@ -31,6 +34,11 @@ public class HomePage extends JFrame {
 			}
 		});
 	}
+	public void close()
+    {
+        WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
+        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
+    }
 
 	/**
 	 * Create the frame.
@@ -44,17 +52,18 @@ public class HomePage extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
 		panel.setBounds(26, 11, 398, 239);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblHrsystem = new JLabel("HRSYSTEM");
+		JLabel lblHrsystem = new JLabel("BILLING SYSTEM");
 		lblHrsystem.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblHrsystem.setBounds(155, 21, 90, 19);
+		lblHrsystem.setBounds(121, 21, 124, 19);
 		panel.add(lblHrsystem);
 		
-		final JButton btnLogin = new JButton("LOGIN");
+		final JButton btnLogin = new JButton("ADMINLOGIN");
+		btnLogin.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) 
 			{
@@ -65,15 +74,21 @@ public class HomePage extends JFrame {
 				
 			}
 		});
-		btnLogin.setBounds(138, 67, 89, 23);
+		btnLogin.setBounds(121, 93, 124, 23);
 		panel.add(btnLogin);
 		
-		JButton btnRegister = new JButton("REGISTER");
-		btnRegister.setBounds(138, 121, 89, 23);
+		final JButton btnRegister = new JButton("REGISTER");
+		btnRegister.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt)
+			{
+				if(evt.getSource()==btnRegister)
+				{
+					new RegisterPage().setVisible(true);
+				}
+			}
+		});
+		btnRegister.setBounds(121, 162, 124, 23);
 		panel.add(btnRegister);
-		
-		JButton btnSearch = new JButton("SEARCH");
-		btnSearch.setBounds(138, 188, 89, 23);
-		panel.add(btnSearch);
 	}
 }

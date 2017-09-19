@@ -19,6 +19,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
 
 public class RegisterPage extends JFrame {
 
@@ -46,36 +49,41 @@ public class RegisterPage extends JFrame {
 	 */
 	public RegisterPage() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 344);
+		setBounds(100, 100, 450, 484);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 414, 283);
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+		panel.setBounds(10, 11, 414, 423);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
 		JLabel lblUname = new JLabel("Uname");
-		lblUname.setBounds(10, 21, 46, 14);
+		lblUname.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblUname.setBounds(10, 50, 46, 14);
 		panel.add(lblUname);
 		
 		textField = new JTextField();
-		textField.setBounds(66, 18, 136, 20);
+		textField.setBounds(78, 47, 136, 20);
 		panel.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblGender = new JLabel("Gender");
-		lblGender.setBounds(10, 76, 46, 14);
+		lblGender.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblGender.setBounds(10, 111, 46, 14);
 		panel.add(lblGender);
 		
 		final JRadioButton rdbtnMale = new JRadioButton("Male");
-		rdbtnMale.setBounds(77, 72, 109, 23);
+		rdbtnMale.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		rdbtnMale.setBounds(77, 107, 109, 23);
 		panel.add(rdbtnMale);
 		
-		JRadioButton rdbtnFemale = new JRadioButton("female");
-		rdbtnFemale.setBounds(228, 72, 109, 23);
+		JRadioButton rdbtnFemale = new JRadioButton("Female");
+		rdbtnFemale.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		rdbtnFemale.setBounds(226, 102, 109, 23);
 		panel.add(rdbtnFemale);
 		
 		ButtonGroup bg=new ButtonGroup();
@@ -83,28 +91,34 @@ public class RegisterPage extends JFrame {
 		bg.add(rdbtnFemale);
 		
 		
-		JLabel lblCourse = new JLabel("Course");
-		lblCourse.setBounds(10, 129, 46, 14);
+		JLabel lblCourse = new JLabel("Product");
+		lblCourse.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblCourse.setBounds(10, 190, 46, 14);
 		panel.add(lblCourse);
 		
 		final JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"MCA", "MBA"}));
-		comboBox.setBounds(77, 126, 103, 20);
+		comboBox.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"SOAP", "BISCUT", "DRINKS"}));
+		comboBox.setBounds(83, 187, 103, 20);
 		panel.add(comboBox);
 		
-		JLabel lblDepart = new JLabel("Depart");
-		lblDepart.setBounds(10, 182, 46, 14);
+		JLabel lblDepart = new JLabel("Paid");
+		lblDepart.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		lblDepart.setBounds(10, 274, 46, 14);
 		panel.add(lblDepart);
 		
-		final JCheckBox chckbxUg = new JCheckBox("UG");
-		chckbxUg.setBounds(66, 178, 51, 23);
+		final JCheckBox chckbxUg = new JCheckBox("CARD");
+		chckbxUg.setFont(new Font("Times New Roman", Font.BOLD, 11));
+		chckbxUg.setBounds(77, 270, 78, 23);
 		panel.add(chckbxUg);
 		
-		final JCheckBox chckbxPg = new JCheckBox("PG");
-		chckbxPg.setBounds(155, 178, 97, 23);
+		final JCheckBox chckbxPg = new JCheckBox("CASH");
+		chckbxPg.setFont(new Font("Times New Roman", Font.BOLD, 11));
+		chckbxPg.setBounds(207, 270, 97, 23);
 		panel.add(chckbxPg);
 		
 		final JButton btnRegister = new JButton("Register");
+		btnRegister.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) 
 			{
@@ -162,7 +176,26 @@ public class RegisterPage extends JFrame {
 				}
 			}
 		});
-		btnRegister.setBounds(93, 238, 89, 23);
+		btnRegister.setBounds(63, 343, 123, 23);
 		panel.add(btnRegister);
+		
+		JLabel lblCustomerdetails = new JLabel("CUSTOMERDETAILS");
+		lblCustomerdetails.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblCustomerdetails.setBounds(112, 11, 137, 25);
+		panel.add(lblCustomerdetails);
+		
+		final JButton btnNewButton = new JButton("Add Products");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getSource()==btnNewButton)
+				{
+					new ViewDetailsPage().setVisible(true);;
+				}
+			}
+		});
+		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 12));
+		btnNewButton.setBounds(207, 343, 116, 23);
+		panel.add(btnNewButton);
 	}
 }

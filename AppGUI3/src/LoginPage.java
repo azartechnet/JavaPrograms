@@ -15,6 +15,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
 
 public class LoginPage extends JFrame {
 
@@ -50,20 +53,18 @@ public class LoginPage extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
 		panel.setBounds(41, 26, 412, 280);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Asar\\Desktop\\img.png"));
-		lblNewLabel.setBounds(80, 11, 266, 56);
-		panel.add(lblNewLabel);
-		
-		JLabel lblUname = new JLabel("uname");
+		JLabel lblUname = new JLabel("ADMIN");
+		lblUname.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		lblUname.setBounds(25, 104, 46, 14);
 		panel.add(lblUname);
 		
-		JLabel lblPass = new JLabel("pass");
+		JLabel lblPass = new JLabel("PASS");
+		lblPass.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		lblPass.setBounds(25, 173, 46, 14);
 		panel.add(lblPass);
 		
@@ -78,6 +79,7 @@ public class LoginPage extends JFrame {
 		textField_1.setColumns(10);
 		
 		final JButton btnLogin = new JButton("LOGIN");
+		btnLogin.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) 
 			{
@@ -117,7 +119,13 @@ public class LoginPage extends JFrame {
 		panel.add(btnLogin);
 		
 		JButton btnReset = new JButton("RESET");
+		btnReset.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnReset.setBounds(215, 225, 89, 23);
 		panel.add(btnReset);
+		
+		JLabel lblAdminlogin = new JLabel("ADMINLOGIN");
+		lblAdminlogin.setFont(new Font("Times New Roman", Font.BOLD, 14));
+		lblAdminlogin.setBounds(135, 25, 121, 30);
+		panel.add(lblAdminlogin);
 	}
 }
