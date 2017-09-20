@@ -1,0 +1,26 @@
+
+public class Demo
+{
+	String custname,addr,category,products;
+	int prdprice,tot,dis;
+	void addCustomer()
+	{
+		
+	}
+	void addProducts()
+	{
+		
+	}
+	void display()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class Foo 
+{
+
+	
+	void g1(String name)
+	{
+		
+	}
+	void g2(int a1,float f1)
+	{
+		
+	}
+
+	public static void main(String[] args) 
+	{
+		Foo g=new Foo();
+		g.g1("niit");
+		g.g2(100,4.5f);
+
+	}
+
+}

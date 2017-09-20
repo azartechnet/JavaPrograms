@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+	int age,sal,dis;
+	Scanner g=new Scanner(System.in);
+	void p1()
+	{
+		
+	}
+	void p2()
+	{
+		
+	}
+}
+class Vio
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

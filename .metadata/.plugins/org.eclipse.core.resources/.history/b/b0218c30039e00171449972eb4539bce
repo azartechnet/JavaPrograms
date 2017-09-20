@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+	int age,sal,dis;
+	Scanner g=new Scanner(System.in);
+	void p1()
+	{
+		System.out.println("Enter the value is:\n");
+		age=g.nextInt();
+	}
+	void p2()
+	{
+		if()
+		{
+			if()
+			{
+				
+			}
+			else
+			{
+				
+			}
+		}
+		else
+		{		
+			
+		}
+	}
+}
+class Vio
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

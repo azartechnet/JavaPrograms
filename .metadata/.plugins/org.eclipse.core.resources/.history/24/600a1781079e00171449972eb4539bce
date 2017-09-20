@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+public class Demo
+{
+	String custname,addr,category,p1,p2,p3;
+	int prdprice,tot,dis,pr1,pr2,pr3;
+	int ch;
+	Scanner g=new Scanner(System.in);
+    void addCustomer()
+	{
+		System.out.println("Enter the Customer Details:\n");
+		custname=g.nextLine();
+		addr=g.nextLine();
+		category=g.nextLine();
+		p1=g.nextLine();
+		p2=g.nextLine();
+		p3=g.nextLine();
+		
+		
+		
+	}
+	void addProducts()
+	{
+		System.out.println("Enter the ProductDetails:\n");
+		pr1=g.nextInt();
+		pr2=g.nextInt();
+		pr3=g.nextInt();
+		
+		tot=pr1+pr2+pr3;
+		if(tot>1000)
+		{
+			System.out.println("Enter the discount Amount is:\n");
+			dis=g.nextInt();
+			if(dis==200)
+			{
+				tot=dis;
+			}
+			else
+			{
+				
+			}
+		}
+		else
+		{
+			
+		}
+	}
+	void display()
+	{
+		
+	}
+	void choice()
+	{
+		System.out.println("Enter the choices:\n");
+		System.out.println("1.AddCustomerDetails");
+		System.out.println("2.AddProductsDetails");
+		System.out.println("3.DisplayDetails");
+		System.out.println("4.Exit");
+		ch=g.nextInt();
+		switch(ch)
+		{
+		case 1:
+			addCustomer();
+			break;
+		case 2:
+			addProducts();
+			break;
+		case 3:
+			display();
+			break;
+		default:
+			System.out.println("Enter the correct choice...");
+			break;
+			
+		}
+
+	}
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		
+	}
+
+	
+	
+
+}

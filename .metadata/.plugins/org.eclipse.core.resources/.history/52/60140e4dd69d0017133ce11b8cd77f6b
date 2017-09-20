@@ -1,0 +1,21 @@
+
+public class Foo 
+{
+
+	
+	void g1(String name)
+	{
+		
+	}
+	void g2(int a1,float f1)
+	{
+		
+	}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
