@@ -1,0 +1,21 @@
+package ifelsestatement;
+
+import java.util.Scanner;
+
+public class Demo 
+{
+	int sal;
+	Scanner h=new Scanner(System.in);
+	void h1()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

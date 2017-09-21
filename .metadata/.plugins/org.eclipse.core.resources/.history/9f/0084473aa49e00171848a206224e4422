@@ -47,8 +47,8 @@ public class Demo
 			}
 			else
 			{
-				//ts=dis;
-				System.out.println("You have No Discout of the Products is:\n"+tot);
+				ts=dis;
+				System.out.println("You have No Discout of the Products is:\n"+ts);
 			}
 		}
 		else
