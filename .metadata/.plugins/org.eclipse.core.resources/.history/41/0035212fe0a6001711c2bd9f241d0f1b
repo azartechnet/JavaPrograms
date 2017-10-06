@@ -1,0 +1,24 @@
+
+public class Demo 
+{
+	 int a;
+	 Scanner g=new Scanner(System.in);
+	 void p1()
+	 {
+		 
+	 }
+	 void p2()
+	 {
+		 
+	 }
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+
+		
+
+	}
+
+}

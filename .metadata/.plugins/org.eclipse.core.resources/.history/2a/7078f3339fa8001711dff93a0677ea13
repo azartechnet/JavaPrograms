@@ -1,0 +1,5 @@
+
+public class Box 
+{
+  private width,height,depth;
+}

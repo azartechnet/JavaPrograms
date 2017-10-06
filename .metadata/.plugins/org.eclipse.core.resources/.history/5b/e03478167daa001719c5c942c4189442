@@ -1,0 +1,13 @@
+
+
+  
+	 
+public class Demo 
+{
+	enum employee{v(101),f(30)};
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

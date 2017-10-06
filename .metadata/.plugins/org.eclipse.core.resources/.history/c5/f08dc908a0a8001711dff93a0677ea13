@@ -1,0 +1,12 @@
+package Foo;
+import Foo.Box;
+public class DemoMain {
+
+	public static void main(String[] args)
+	{
+		DemoMain h=new DemoMain();
+		
+
+	}
+
+}

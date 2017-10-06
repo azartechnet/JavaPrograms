@@ -1,0 +1,20 @@
+
+public class DemoProgram 
+{
+	int prid[]=new int[3];
+	Scanner g=new Scanner(System.in);
+	void g1()
+	{
+		System.out.println("Enter the value is:\n");
+		
+	}
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

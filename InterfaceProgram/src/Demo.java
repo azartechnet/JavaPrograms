@@ -6,12 +6,12 @@ interface b1
 {
 	void get1();
 }
-interface b2 
+interface b2 extends b1
 {
 	void get2();
 	
 }
-public class Demo implements b2,b1 
+public class Demo implements b2 
 {
   public void get1()
   {

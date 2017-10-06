@@ -1,0 +1,12 @@
+package Salary;
+
+public class FunMain {
+
+	public static void main(String[] args) 
+	{
+	  CalSalary c=new CalSalary();
+	  c.setEmpname("azar");
+
+	}
+
+}

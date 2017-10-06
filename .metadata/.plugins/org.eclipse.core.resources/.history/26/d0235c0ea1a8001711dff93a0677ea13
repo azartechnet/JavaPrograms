@@ -1,0 +1,6 @@
+package Salary;
+
+public class CalSalary
+{
+  private int  empid,empname,basic,hra,da;
+}

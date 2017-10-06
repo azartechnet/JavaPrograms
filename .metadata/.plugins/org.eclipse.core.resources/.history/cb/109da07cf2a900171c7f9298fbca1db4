@@ -1,0 +1,16 @@
+
+public class Demo 
+{
+  enum ss{a,b,c;
+	
+	  
+  }	  
+  }
+}
+class Demo1
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

@@ -1,0 +1,7 @@
+
+public class Demo1 
+{
+  private String empname;
+  private int empid,h1,b1;
+  
+}

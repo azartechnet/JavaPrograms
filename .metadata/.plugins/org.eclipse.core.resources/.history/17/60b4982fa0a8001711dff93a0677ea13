@@ -1,0 +1,12 @@
+package Foo;
+
+public class DemoMain {
+
+	public static void main(String[] args)
+	{
+		Box h=new Box();
+		h.setWidth();
+
+	}
+
+}

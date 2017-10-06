@@ -10,7 +10,7 @@ public class Demo
 	  System.out.println("Your product id is:\n"+productid+"\nYour product name is:\n"+pname);
 	  
   }
-  void get()
+ void get()
   {
 	  System.out.println("Normal function!!!");
   }
@@ -23,7 +23,7 @@ class Sample
 		// TODO Auto-generated method stub
 		Demo g=new Demo();
 		new Demo(101,"xyz");
-        g.get();
+         g.get();
 	}
 
 }

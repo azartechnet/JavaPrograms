@@ -1,19 +1,15 @@
 
 public class Demo
 {
-	static int a=10;
-	int a1,b1;
-	Demo(int a1,int b1)
+	  static int a=10;
+	
+	Demo()
 	{
-		this.a1=a1;
-		this.b1=b1;
+		
 		a++;
-		System.out.println("Value is:"+a+"a1 value is"+a1+""+b1);
+		System.out.println("Value is:"+a);
 	}
-	void get1()
-	{
-		System.out.println("copy value is"+a1+""+b1);
-	}
+	
 }
 class Sample
 {
@@ -21,8 +17,9 @@ class Sample
 	{
 		// TODO Auto-generated method stub
 		//new Demo();
-		Demo f=new Demo(10,20);
-		f.get1();
+		new Demo();
+		new Demo();
+		
 
 	}
 

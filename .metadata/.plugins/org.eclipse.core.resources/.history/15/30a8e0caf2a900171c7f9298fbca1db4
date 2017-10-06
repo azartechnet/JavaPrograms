@@ -1,0 +1,21 @@
+
+public class Demo 
+{
+  enum ss{a,b,c;
+	private int f;
+	void get()
+	{
+		System.out.println("");
+	}
+	  
+  }	  
+ }
+
+class Demo1
+{
+	public static void main(String as[])
+	{
+		ss h=new ss();
+		
+	}
+}

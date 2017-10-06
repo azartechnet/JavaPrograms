@@ -1,0 +1,24 @@
+
+
+  
+	 
+public class Demo 
+{
+	enum employee{a(3),b(4);
+		public int g;
+		employee(int p1)
+		{
+			g=p1;
+		}
+		int get()
+		{
+			return g;
+		}
+	}
+	public static void main(String[] args)
+	{
+	  employee p1=employee.a;
+      
+	}
+
+}

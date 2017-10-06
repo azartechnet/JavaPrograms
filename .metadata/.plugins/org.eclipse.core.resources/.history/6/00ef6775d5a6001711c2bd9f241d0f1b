@@ -1,0 +1,27 @@
+import java.io.DataInputStream;
+
+public class Demo 
+{
+	int a;
+	float f1;
+	String name;
+	char j;
+	DataInputStream h=new DataInputStream(System.setIn(in);)
+	void g1()
+	{
+		
+	}
+	void g2()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String kk[]) 
+	{
+		
+
+	}
+
+}

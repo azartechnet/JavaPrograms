@@ -1,0 +1,14 @@
+package a;
+
+public class DemoMain
+{
+
+	public static void main(String[] args)
+	{
+	
+      FirstClass j=new FirstClass();
+      j.g1();
+      j.g2();
+	}
+
+}
