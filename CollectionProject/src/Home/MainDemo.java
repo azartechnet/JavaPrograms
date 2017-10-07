@@ -12,12 +12,13 @@ public class MainDemo
 	{
 		Customer md=new Customer();
 				
-		md.addCustomer();
+		//md.addCustomer();
 		
 		Products pd=new Products();
 		pd.addProduct();
+		pd.stock();
 		Billing bl=new Billing();
-		bl.billing();
+		//bl.billing();
 
 	}
 
