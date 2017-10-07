@@ -7,7 +7,6 @@
 <fullyQualifiedTypeName name="java.io.SequenceInputStream"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
-<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
@@ -43,4 +42,9 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="SingleDimArray"/>
 <fullyQualifiedTypeName name="Demo.ss"/>
+<fullyQualifiedTypeName name="Demo.employee"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.lang.Byte"/>
+<fullyQualifiedTypeName name="javax.swing.DefaultBoundedRangeModel"/>
+<fullyQualifiedTypeName name="DemoFirst"/>
 </qualifiedTypeNameHistroy>

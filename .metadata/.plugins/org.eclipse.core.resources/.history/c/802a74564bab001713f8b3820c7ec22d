@@ -1,0 +1,11 @@
+package Customer;
+
+public class Customer 
+{
+   public String cusName;
+   public int CusId,age,mobile;
+   public void addCustomer()
+   {
+	   
+   }
+}

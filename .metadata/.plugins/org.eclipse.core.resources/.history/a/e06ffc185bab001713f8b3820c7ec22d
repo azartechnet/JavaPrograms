@@ -1,0 +1,12 @@
+package Products;
+
+public class Products
+{
+  String pname;
+  String pid;
+  int prices;
+  public void addProduct()
+  {
+	  
+  }
+}

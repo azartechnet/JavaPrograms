@@ -1,0 +1,42 @@
+package Customer;
+
+import java.util.*;
+
+
+public class Customer 
+{
+   public String cusName;
+   public int cusId,age;
+  
+   Scanner h=new Scanner(System.in);
+   HashSet<String> hs=new HashSet<>();
+   ArrayList<Integer> as=new ArrayList<>();
+   public void addCustomer()
+   {
+	   System.out.println("Enter the Customer Details:\n");
+	   for(int i=0;i<1;i++)
+	   {
+		   System.out.println("Enter the Customer:");
+	   cusName=h.next();
+	   System.out.println("Enter the CusId:");
+	   cusId=h.nextInt();
+	   System.out.println("Enter the Age:");
+	   age=h.nextInt();
+	  
+	   hs.add(cusName);
+	   as.add(cusId);
+	   as.add(age);
+	   }
+	   System.out.println(hs);
+	   System.out.println(as);
+	   
+	  
+	   
+	   
+	     
+	     
+	    
+	  
+   }
+   
+}

@@ -1,0 +1,30 @@
+package a;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Demo
+{
+	
+	ArrayList<String>g=new ArrayList<>();
+	void get1()
+	{
+	  g.add("p1");
+	  g.add("p2");
+	  Iterator h=g.iterator();
+	  while(h.hasNext())
+	  {
+		  System.out.println("Your data is:\n"+h.next());
+	  }
+	}
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		
+		
+
+	}
+
+}

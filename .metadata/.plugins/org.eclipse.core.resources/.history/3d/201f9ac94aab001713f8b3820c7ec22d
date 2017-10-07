@@ -1,0 +1,9 @@
+package Customer;
+
+public class Customer 
+{
+   void addCustomer()
+   {
+	   
+   }
+}

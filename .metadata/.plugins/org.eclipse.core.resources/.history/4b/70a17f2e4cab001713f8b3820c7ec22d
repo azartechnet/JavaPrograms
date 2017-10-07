@@ -1,0 +1,26 @@
+package Home;
+
+import Customer.Customer;
+
+public class MainDemo extends Customer
+{
+	int choice;
+public void choices()
+{
+	
+	switch(choice)
+	{
+	case 1:
+		addCustomer();
+		break;
+	}
+}
+
+	public static void main(String[] args) 
+	{
+		MainDemo md=new MainDemo();
+		md.addCustomer();
+
+	}
+
+}

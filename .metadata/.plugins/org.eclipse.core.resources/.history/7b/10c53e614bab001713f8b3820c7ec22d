@@ -1,0 +1,12 @@
+package Customer;
+
+public class Customer 
+{
+   public String cusName;
+   public int CusId,age,mobile;
+   Scanner h=new Scanner()
+   public void addCustomer()
+   {
+	   
+   }
+}

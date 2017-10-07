@@ -1,0 +1,6 @@
+
+public class DemoFirst 
+{
+  private String empname;
+  private int empid,sal;
+}

@@ -1,0 +1,18 @@
+package Home;
+
+import java.util.Scanner;
+
+import Customer.Customer;
+import Products.Products;
+
+public class MainDemo extends Products
+{
+	public static void main(String[] args) 
+	{
+		Customer md=new Customer();
+				
+		md.addCustomer();
+
+	}
+
+}

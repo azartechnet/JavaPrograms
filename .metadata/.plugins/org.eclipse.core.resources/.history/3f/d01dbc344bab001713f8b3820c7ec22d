@@ -1,0 +1,24 @@
+package Home;
+
+
+public class MainDemo 
+{
+	int choice;
+public void choices()
+{
+	
+	switch(choice)
+	{
+	case 1:
+		addCustomer();
+		break;
+	}
+}
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

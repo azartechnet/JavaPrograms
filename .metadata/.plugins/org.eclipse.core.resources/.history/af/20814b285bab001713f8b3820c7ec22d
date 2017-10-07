@@ -1,0 +1,12 @@
+package Products;
+
+public class Products
+{
+  public String pname;
+  public String pid;
+  public int prices;
+  public void addProduct()
+  {
+	  System.out.println("");
+  }
+}

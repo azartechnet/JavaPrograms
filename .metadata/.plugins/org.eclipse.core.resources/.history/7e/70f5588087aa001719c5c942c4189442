@@ -1,0 +1,22 @@
+
+public class Sample 
+{
+  
+ void get1()
+ {
+ try()
+ {
+	 
+ }
+ catch(Exception t)
+ {
+	 
+ }
+ }
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

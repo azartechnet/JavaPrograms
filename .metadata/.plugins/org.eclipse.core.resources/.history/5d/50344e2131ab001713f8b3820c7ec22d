@@ -1,0 +1,21 @@
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Demo 
+{
+ void get1()
+ {
+ 
+ }
+}
+class Demo1
+{
+	public static void main(String[]  args) 
+	{
+        		Demo j=new Demo();
+        		j.get1();
+
+	}
+
+}

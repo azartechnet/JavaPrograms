@@ -1,0 +1,29 @@
+package Products;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Products
+{
+  public String pname;
+  public int pid;
+  public int prices;
+  Scanner h=new Scanner(System.in);
+  HashSet<String> hs=new HashSet<>();
+  ArrayList<Integer> as=new ArrayList<>();
+  public void addProduct()
+  {
+	  for(int i=0;i<2;i++)
+	  {
+	  System.out.println("Enter the ProductName:");
+	  pname=h.next();
+	  pid=h.nextInt();
+	  prices=h.nextInt();
+	  
+	   hs.add(pname);
+	   as.add(pid);
+	   as.add(prices);
+	  }
+  }
+}

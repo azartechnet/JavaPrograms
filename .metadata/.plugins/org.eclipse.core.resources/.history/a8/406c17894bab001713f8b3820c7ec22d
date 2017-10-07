@@ -1,0 +1,15 @@
+package Customer;
+
+import java.util.Scanner;
+
+public class Customer 
+{
+   public String cusName;
+   public int CusId,age,mobile;
+   Scanner h=new Scanner(System.in);
+   Hash
+   public void addCustomer()
+   {
+	   System.out.println("Enter the Customer Details:\n");
+   }
+}

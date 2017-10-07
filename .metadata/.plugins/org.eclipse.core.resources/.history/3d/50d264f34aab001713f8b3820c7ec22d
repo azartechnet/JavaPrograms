@@ -1,0 +1,9 @@
+package Customer;
+import Home.*;
+public class Customer 
+{
+   public void addCustomer()
+   {
+	   
+   }
+}
