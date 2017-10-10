@@ -1,9 +1,0 @@
-package Customer;
-import Home.MainDemo;
-public class Customer 
-{
-   public void addCustomer()
-   {
-	   
-   }
-}

@@ -1,0 +1,13 @@
+
+public class Student 
+{
+  Student(String sname,int sid)
+  {
+	  sname=sname;
+   	  sid=sid;
+  }
+  void display()
+  {
+	  System.out.println("Result is:\n"+sname+""+sid);
+  }
+}

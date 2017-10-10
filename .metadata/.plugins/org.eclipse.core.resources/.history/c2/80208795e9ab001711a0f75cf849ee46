@@ -1,0 +1,20 @@
+package a;
+
+public class Demo 
+{
+	Scanner g=new Scanner(System.in);
+   void g1()
+   {
+	   
+   }
+   void g2()
+   {
+	   
+   }
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

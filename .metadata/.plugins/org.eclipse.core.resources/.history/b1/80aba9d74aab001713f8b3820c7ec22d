@@ -1,9 +1,0 @@
-package Customer;
-
-public class Customer 
-{
-   public void addCustomer()
-   {
-	   
-   }
-}

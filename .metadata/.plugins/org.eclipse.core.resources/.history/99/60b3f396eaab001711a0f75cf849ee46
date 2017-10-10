@@ -1,0 +1,27 @@
+package a;
+
+import java.util.Scanner;
+
+public class Demo 
+{
+	int i,n;
+	Scanner g=new Scanner(System.in);
+   void g1()
+   {
+	   System.out.println("Enter the value is:\n");
+	   n=g.nextInt();
+   }
+   void g2()
+   {
+	   for(i=0;i<=n;i++)
+	   {
+		   System.out.println("I value is:\n"+i);
+	   }
+   }
+	public static void main(String[] args) 
+	{
+		Demo g=new Demo();
+
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Student 
+{
+  Student(String sname,int sid)
+  {
+	  
+  }
+}
