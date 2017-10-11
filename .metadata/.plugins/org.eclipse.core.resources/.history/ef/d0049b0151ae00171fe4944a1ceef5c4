@@ -1,0 +1,30 @@
+
+
+public class Demo
+{
+	int a;
+	float f1;
+	String name;
+	char g1;
+	DataInputStream dis=new DataInputStream(System.in);
+	void g1() throws  IOException
+	{
+		System.out.println("Enter the value is:\n");
+		a=Integer.parseInt(dis.readLine());
+		
+		
+	}
+	void g2()
+	{
+		
+	}
+}
+
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

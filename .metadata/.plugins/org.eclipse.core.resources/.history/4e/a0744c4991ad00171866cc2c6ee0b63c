@@ -1,0 +1,18 @@
+
+public class ScannerExample 
+{
+  String uname;
+  int pid;
+  float f1;
+  void input()
+  {
+	  
+  }
+}
+class Demo3
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

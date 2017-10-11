@@ -12,10 +12,10 @@ public class ListExample
 		f.add(101);
 		f.add(102);
 		
-		Object obj=f.get(1);
-		//String str=obj.toString();
+		Object obj=f.get(2);
+		String str=obj.toString();
 		//String str=(String) obj;
-		//System.out.println(str);
+		System.out.println(str);
 		
 
 	}
