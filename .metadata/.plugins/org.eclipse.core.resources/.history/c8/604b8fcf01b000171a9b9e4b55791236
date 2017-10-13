@@ -1,0 +1,36 @@
+package a;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileWriterandFileReader
+{
+	
+	void FileWriter1()
+	{
+		
+	}
+	void FileReader1() throws IOException
+	{
+		try
+		{
+		FileReader fr=new FileReader("D:\\sample.txt");
+		char s[]=new char[50];
+		fr.read(s);
+		for(char d:s)
+		{
+			System.out.print(d);
+		}
+		}
+		catch(FileNotFoundException t)
+		{
+			
+		}
+	}
+  public static void main(String as[]) throws IOException
+  {
+	  FileWriterandFileReader h=new FileWriterandFileReader();
+	  h.FileReader1();
+  }
+}

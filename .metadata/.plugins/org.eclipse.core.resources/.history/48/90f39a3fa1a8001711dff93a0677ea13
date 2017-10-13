@@ -1,9 +1,0 @@
-package Salary;
-
-public class CalSalary
-{
-	private String empname;
-  private int  empid,basic,hra,da;
-
-
-}

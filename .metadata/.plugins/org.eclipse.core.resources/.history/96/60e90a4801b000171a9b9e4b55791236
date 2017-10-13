@@ -1,0 +1,28 @@
+package a;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class FileWriterandFileReader
+{
+	
+	void FileWriter1()
+	{
+		try
+		{
+		FileReader fr=new FileReader("D:\\sample.txt");
+		}
+		catch(FileNotFoundException t)
+		{
+			
+		}
+	}
+	void FileReader1()
+	{
+		
+	}
+  public static void main(String as[])
+  {
+	  
+  }
+}

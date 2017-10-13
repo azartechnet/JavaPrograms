@@ -1,0 +1,10 @@
+package a;
+
+public class FileWriterandFileReader
+{
+	
+  public static void main(String as[])
+  {
+	  
+  }
+}

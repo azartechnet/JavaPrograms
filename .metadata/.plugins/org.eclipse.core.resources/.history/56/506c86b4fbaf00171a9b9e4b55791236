@@ -1,0 +1,19 @@
+package a;
+
+import java.io.FileInputStream;
+
+public class DemoFileRead
+{
+	
+   void display()
+   {
+	FileInputStream fis=new FileInputStream("D:\\sample.txt");   
+   }
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

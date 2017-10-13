@@ -1,0 +1,32 @@
+package a;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class DemoFileRead
+{
+	
+   void display()
+   {
+	   try
+	   {
+	    FileInputStream fis=new FileInputStream("D:\\sample.txt");
+	    int u;
+	    while((u.read())!=-1)
+	    {
+	    	
+	    }
+	   }
+	   catch(FileNotFoundException t)
+	   {
+		   System.out.print(t);
+	   }
+   }
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

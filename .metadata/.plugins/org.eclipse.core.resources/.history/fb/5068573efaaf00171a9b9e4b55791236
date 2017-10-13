@@ -1,0 +1,23 @@
+package a;
+
+import java.util.Scanner;
+
+public class DemoFileWrite 
+{
+  String uname;
+  Scanner g=new Scanner(System.in);
+  void input()
+  {
+	  System.out.println("Enter the String value is:\n");
+	  uname=g.nextLine();
+  }
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

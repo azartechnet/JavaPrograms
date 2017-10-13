@@ -1,0 +1,30 @@
+package a;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.SequenceInputStream;
+
+public class SequenceRead
+{
+   void display()
+   {
+	   try
+	   {
+		   FileInputStream fis1=new FileInputStream("D:\\sample.txt");
+		   FileInputStream fis2=new FileInputStream("D:\\sample1.txt");
+		   
+		   SequenceInputStream sis=new SequenceInputStream(fis1, fis1);
+		   
+	   }
+	   catch(FileNotFoundException t)
+	   {
+		   
+	   }
+   }
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package a;
+
+import java.util.Scanner;
+
+public class DemoFileWrite 
+{
+  String uname;
+  Scanner g=new Scanner(System.in);
+  void input()
+  {
+	  
+  }
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

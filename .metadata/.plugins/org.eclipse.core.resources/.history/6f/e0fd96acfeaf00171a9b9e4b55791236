@@ -1,0 +1,24 @@
+package a;
+
+import java.io.FileNotFoundException;
+
+public class SequenceRead
+{
+   void display()
+   {
+	   try
+	   {
+		   
+	   }
+	   catch(FileNotFoundException t)
+	   {
+		   
+	   }
+   }
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
