@@ -1,9 +1,0 @@
-
-public class DemoMain 
-{
-  public static void main(String as[])
-  {
-	  DemoFirst g=new DemoFirst();
-	  System.out.println("Value is:\n"+g.getEmpname("Azar"));
-  }
-}

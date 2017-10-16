@@ -1,0 +1,16 @@
+
+public class StaticExample 
+{
+	int a=100;
+    void g1()
+    {
+    	a++;
+    	System.out.println("Value is:"+a);
+    }
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

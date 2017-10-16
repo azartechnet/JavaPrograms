@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+  int prd[][]=new int[2][2];	
+  Scanner g=new Scanner(System.in);	
+  void get1()
+  {
+	  
+  }
+}
+class Demo2
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

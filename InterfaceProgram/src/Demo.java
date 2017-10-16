@@ -1,36 +1,37 @@
-
-
-
-
-interface b1
+abstract class Foo
 {
-	void get1();
+  abstract void get1();	
+
+   public Foo()
+  {
+	  System.out.println("welcome to Cons...");
+  }
 }
-interface b2 extends b1
+class Sample extends Foo
 {
-	void get2();
+
+	@Override
+	void get1() 
+	{
+		System.out.println("Welcome NormalMethod");
+		
+	}
 	
 }
-public class Demo implements b2 
+
+public class Demo 
 {
-  public void get1()
-  {
-	  System.out.println("interface-1");
-  }
-  public void get2()
-  {
-	  System.out.println("interface-2");
-  }
-}
-class Demo1
-{
+
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
-		Demo g=new Demo();
-		g.get1();
-		g.get2();
-
+		
+     //Foo g=new Foo();
+      //Foo g1=new Sample();
+		Sample g1=new Sample();
+        g1.get1();
+       Foo g=new Sample();
+      
+      
 	}
 
 }
