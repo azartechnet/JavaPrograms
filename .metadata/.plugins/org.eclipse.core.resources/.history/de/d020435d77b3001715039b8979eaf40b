@@ -1,0 +1,23 @@
+package a2;
+
+import a1.Demo;
+
+public class Demo1 extends Demo
+{
+
+	public Demo1()
+	{
+		  p1=30;
+		 System.out.println("Protected Method"+p1);
+	}
+
+}
+
+class DemoMain
+{
+public static void main(String[] args)
+{
+  new Demo1();
+  
+}
+}

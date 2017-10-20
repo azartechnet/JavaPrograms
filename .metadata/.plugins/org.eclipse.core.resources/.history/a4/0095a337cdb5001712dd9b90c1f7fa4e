@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class CollectionExample 
+{
+  void g1()
+  {
+	  ArrayList g=new ArrayList();
+	  g.add("a1");
+	  g.add("a2");
+	  g.add("mohan");
+	  System.out.println("Display Data"+g);
+  }
+}
+class DemoMain
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		CollectionExample h=new CollectionExample();
+		h.g1();
+
+	}
+
+}

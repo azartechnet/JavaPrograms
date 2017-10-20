@@ -1,0 +1,11 @@
+
+public class DbConnection 
+{
+
+	public static void main(String[] args) 
+	{
+		Class.forName("org.h2.Driver");
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package a1;
+
+
+public class Demo 
+{
+    public z;
+    
+	protected void get()
+  {
+	  System.out.println("Normal function!!!");
+  }
+}
+

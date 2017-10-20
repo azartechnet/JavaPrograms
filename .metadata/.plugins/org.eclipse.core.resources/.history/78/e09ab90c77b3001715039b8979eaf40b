@@ -1,0 +1,21 @@
+package a2;
+
+import a1.Demo;
+
+public class Demo1 extends Demo
+{
+
+	public Demo1()
+	{
+		 int p1;
+	}
+
+}
+
+class DemoMain
+{
+public static void main(String[] args)
+{
+
+}
+}

@@ -1,0 +1,26 @@
+
+public class Demo 
+{
+
+	 String uname;//class scope variable
+	 void get(String uname)//methodscope variable
+	 {
+		 this.uname=uname;
+		 System.out.println("Result is:\n"+uname);
+	 }
+	 void disp()
+	 {
+		 System.out.println("Result is:\n"+uname);
+	 }
+}
+class MainDemo
+{
+	public static void main(String[] args) 
+	{
+		Demo h=new Demo();
+		h.get("niit");
+		h.disp();
+
+	}
+
+}

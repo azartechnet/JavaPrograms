@@ -1,0 +1,11 @@
+package a1;
+
+
+public class Demo 
+{
+    public int z;
+    private int z1;
+    protected int p1;
+	
+}
+

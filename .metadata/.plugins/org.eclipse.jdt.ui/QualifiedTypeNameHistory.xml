@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Float"/>
-<fullyQualifiedTypeName name="DemoProgram"/>
-<fullyQualifiedTypeName name="DemoMain"/>
-<fullyQualifiedTypeName name="Foo.Box"/>
-<fullyQualifiedTypeName name="Foo.DemoMain"/>
 <fullyQualifiedTypeName name="Salary.CalSalary"/>
 <fullyQualifiedTypeName name="a.FirstClass"/>
 <fullyQualifiedTypeName name="SingleDimArray"/>
@@ -25,23 +20,18 @@
 <fullyQualifiedTypeName name="VaribleExample"/>
 <fullyQualifiedTypeName name="PassingArguments"/>
 <fullyQualifiedTypeName name="ScannerExample"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.parser.Entity"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="ThreadExample"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="a.Example1"/>
 <fullyQualifiedTypeName name="a.SwitchCaseExample1"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="a.DemoFileWrite"/>
 <fullyQualifiedTypeName name="a.DemoFileRead"/>
@@ -57,7 +47,17 @@
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="Foo"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="Demo"/>
 <fullyQualifiedTypeName name="StaticExample"/>
+<fullyQualifiedTypeName name="a1.Demo"/>
+<fullyQualifiedTypeName name="a2.Demo1"/>
+<fullyQualifiedTypeName name="CollectionExample"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
 </qualifiedTypeNameHistroy>

@@ -30,6 +30,7 @@ public class Demo
 		Sample g1=new Sample();
         g1.get1();
        Foo g=new Sample();
+        //new Foo();
       
       
 	}

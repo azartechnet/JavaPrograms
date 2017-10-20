@@ -1,0 +1,20 @@
+package a1;
+
+import a2.Demo1;
+public class Demo 
+{
+  public Demo()
+  {
+	  System.out.println("Default cons....");
+  }
+ public  Demo(int productid,String pname)
+  {
+	  System.out.println("Your product id is:\n"+productid+"\nYour product name is:\n"+pname);
+	  
+  }
+protected void get()
+  {
+	  System.out.println("Normal function!!!");
+  }
+}
+

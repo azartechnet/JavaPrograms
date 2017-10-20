@@ -1,0 +1,25 @@
+package a2;
+
+import a1.Demo;
+
+public class Demo1 extends Demo
+{
+
+	
+
+}
+class Foo extends Demo1 
+{
+	a1.Demo g=new a1.Demo();
+}
+class DemoMain
+{
+public static void main(String[] args)
+{
+			
+		Demo g=new Demo();
+	
+         g.get();
+
+}
+}

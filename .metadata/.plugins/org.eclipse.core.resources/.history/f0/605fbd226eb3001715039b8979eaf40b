@@ -1,0 +1,18 @@
+
+public class Demo 
+{
+	 String uname;//class scope variable
+	 void get(String uname)//methodscope variable
+	 {
+		 System.out.println("Result is:\n"+uname);
+	 }
+}
+class MainDemo
+{
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

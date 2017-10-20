@@ -1,0 +1,18 @@
+
+public class DbConnection 
+{
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+		Class.forName("org.h2.Driver");
+		}
+		catch(Exception t)
+		{
+			System.out.println(t);
+		}
+
+	}
+
+}

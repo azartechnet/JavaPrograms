@@ -1,0 +1,32 @@
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class DbConnection 
+{
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+		Connection conn=DriverManager.getConnection("jdbc:odbc:demo");
+		Statement stm=conn.createStatement();
+		ResultSet rs=stm.executeQuery("select * from emp");
+		rs.next();
+		System.out.println(""+rs.getString(1));
+		System.out.println(""+rs.getString(2));
+		//stm.close();
+		//rs.close();
+		
+		}
+		catch(Exception t)
+		{
+			System.out.println(t);
+		}
+
+	}
+
+}
