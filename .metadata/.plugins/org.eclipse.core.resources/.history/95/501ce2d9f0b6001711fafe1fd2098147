@@ -1,0 +1,12 @@
+package com.niit.product;
+
+import com.niit.category.Category;
+
+public class Product 
+{
+  public String cname	
+  public Product()
+  {
+	  System.out.println("ProductPackage"+cname);
+  }
+}

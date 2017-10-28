@@ -1,0 +1,19 @@
+
+public class Demo 
+{
+
+	public static void main(String[] args)
+	{
+		try
+		{
+			
+		}
+		catch(ArithmeticException y)
+		{
+			System.out.println(y);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.niit.category;
+
+public class Category
+{
+  String cname="lux";
+  void display()
+  {
+	  System.out.println("CategoryPackage"+cname);
+  }
+}

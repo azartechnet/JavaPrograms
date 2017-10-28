@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 import javax.swing.JComboBox;
@@ -12,6 +13,11 @@ import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -58,7 +64,7 @@ public class RegisterPage extends JFrame {
 		lblGender.setBounds(35, 115, 46, 14);
 		contentPane.add(lblGender);
 		
-		JRadioButton rdbtnMale = new JRadioButton("MALE");
+		final JRadioButton rdbtnMale = new JRadioButton("MALE");
 		rdbtnMale.setBounds(120, 111, 64, 23);
 		contentPane.add(rdbtnMale);
 		
@@ -74,7 +80,7 @@ public class RegisterPage extends JFrame {
 		lblCources.setBounds(35, 184, 46, 14);
 		contentPane.add(lblCources);
 		
-		JComboBox comboBox = new JComboBox();
+		final JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"MCA", "BE", "BTECH"}));
 		comboBox.setBounds(122, 181, 86, 20);
 		contentPane.add(comboBox);
@@ -83,15 +89,62 @@ public class RegisterPage extends JFrame {
 		lblDepart.setBounds(35, 242, 46, 14);
 		contentPane.add(lblDepart);
 		
-		JCheckBox chckbxUg = new JCheckBox("UG");
+		final JCheckBox chckbxUg = new JCheckBox("UG");
 		chckbxUg.setBounds(122, 238, 64, 23);
 		contentPane.add(chckbxUg);
 		
-		JCheckBox chckbxPg = new JCheckBox("PG");
+		final JCheckBox chckbxPg = new JCheckBox("PG");
 		chckbxPg.setBounds(213, 238, 97, 23);
 		contentPane.add(chckbxPg);
 		
-		JButton btnRegister = new JButton("REGISTER");
+		final JButton btnRegister = new JButton("REGISTER");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt)
+			{
+				try
+				{
+					String u=textField.getText();
+					String gen="";
+					String course=(String) comboBox.getSelectedItem();
+					String ug="";
+					String pg="";
+					if(rdbtnMale.isSelected())
+					{
+						gen="MALE";
+					}
+					else
+					{
+						gen="FEMALE";
+					}
+					if(chckbxUg.isSelected())
+					{
+						ug="UG";
+						pg="NULL";
+					}
+					else if(chckbxPg.isSelected())
+					{
+						ug="NULL";
+						pg="PG";
+					}
+					else if(chckbxUg.isSelected()&&chckbxPg.isSelected())
+					{
+						ug="UG";
+						pg="PG";
+					}
+					
+					String str="insert into adddata values('"+u+"','"+gen+"','"+course+"','"+ug+"','"+pg+"')";
+					Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+					Connection con=DriverManager.getConnection("jdbc:odbc:adddata");
+					Statement stm=con.createStatement();
+					stm.executeUpdate(str);
+					JOptionPane.showMessageDialog(btnRegister, "Inserted!!!");
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnRegister.setBounds(95, 301, 89, 23);
 		contentPane.add(btnRegister);
 		

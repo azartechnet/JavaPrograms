@@ -1,0 +1,8 @@
+
+public class ExceptionDemo  extends Exception
+{
+    public ExceptionDemo()
+    {
+    	super("salarynotcredited");
+    }
+}

@@ -1,0 +1,22 @@
+
+public class MainDemo 
+{
+    public void get(int amount)
+    {
+    	int sal=1000;
+    	if((sal-amount)<500)
+    	{
+    		throw new 
+    	}
+    	else
+    	{
+    		
+    	}
+    }
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.niit.product;
+
+import com.niit.category.*;
+
+public class Product 
+{
+  public void display1()
+  {
+	  System.out.println("ProductPackage"+cname);
+  }
+}
+class DemoMain
+{
+	public static void main(String as[])
+	{
+		Category g=new Category();
+		g.display1();
+	}
+}

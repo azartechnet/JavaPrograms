@@ -10,9 +10,12 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
+import java.awt.Toolkit;
+
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -46,8 +49,13 @@ public class HomePage extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	public void close()
+    {
+        WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
+        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
+    }
+
 	public HomePage() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -95,35 +103,33 @@ public class HomePage extends JFrame {
 			{
 				try
 				{
-				if(evt.getSource()==btnLogin)
-				{
-					
-					  String u=textField.getText();
-					  String p=textField_1.getText();
-					  String str="select * from login1";	
-					  Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-					  Connection conn=DriverManager.getConnection("jdbc:odbc:ulogin4");
-					  Statement stm=conn.createStatement();
-					  ResultSet rs=stm.executeQuery(str);
-					  rs.next();
-					  String uname=rs.getString(1);
-					  String pass=rs.getString(2);
-					  System.out.println("***"+rs.getString(1));
-					  if(u.equals(uname)&&p.equals(pass))
-					  {
-						  
-						  JOptionPane.showMessageDialog(btnLogin,"LoginSucess");
-						  new RegisterPage().setVisible(true);
-					  }
-					  else
-					  {
-						  JOptionPane.showMessageDialog(btnLogin,"LoginFail");
-					  }
-							  
+					String u1=textField.getText();
+					String p1=textField_1.getText();
+					String str="select * from validate where uname='"+u1+"' OR pass='"+p1+"'";
+					Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+					Connection con=DriverManager.getConnection("jdbc:odbc:validate");
+					Statement stm=con.createStatement();
+					ResultSet rs=stm.executeQuery(str);
+					rs.next();
+					String uname=rs.getString(1).trim();
+					String pass=rs.getString(2).trim();
+					System.out.println("***"+uname+""+pass);
+					if(u1.equals(uname)&&p1.equals(pass))
+					{
+						
+						JOptionPane.showMessageDialog(btnLogin, "LoginSucess!!!");
+						close();
+						new RegisterPage().setVisible(true);
+						
+						
+						
+						
+					}
+					else
+					{
+						JOptionPane.showMessageDialog(btnLogin, "LoginFail!!");
+					}
 				}
-				}
-					
-			
 				catch(Exception t)
 				{
 					System.out.println(t);

@@ -20,12 +20,9 @@ public class DemoProgram
 		}
 		catch(ArrayIndexOutOfBoundsException t)
 		{
-			
+			System.out.println("Please enter correct size"+t);
 		}
-		finally
-		{
-			System.out.println("finally block");
-		}
+		
 		
 		
 		

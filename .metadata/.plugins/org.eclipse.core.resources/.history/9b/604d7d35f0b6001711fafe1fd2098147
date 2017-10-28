@@ -1,0 +1,21 @@
+package com.niit.category;
+
+import com.niit.product.*;
+
+public class Category
+{
+  public String cname="lux";
+  
+ public void display()
+  {
+	  System.out.println("CategoryPackage"+cname);
+  }
+ 
+}
+class DemoMain
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.niit.category;
+
+
+
+public class Category
+{
+  
+  public String cname="bis";
+ public Category()
+  {
+	  System.out.println("CategoryPackage"+cname);
+  }
+ 
+}
+

@@ -1,0 +1,21 @@
+
+public class Demo
+{
+  void g1()
+  {
+	  
+  }
+  void g2()
+  {
+	  
+  }
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
