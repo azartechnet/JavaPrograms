@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Foo1 
+{
+  String pname;
+  int pid,dis;
+  int pprice;
+  Scanner g=new Scanner(System.in);
+  public void g1()
+  {
+	  System.out.println("Enter the pname");
+	  pname=g.next();
+	  System.out.println("Enter the pid");
+	  pid=g.nextInt();
+	  System.out.println("Enter the prices");
+	  pprice=g.nextInt();
+	  
+	  
+  }
+  public void process()
+  {
+	  if()
+	  {
+		  System.out.println("Enter the discount");
+		  dis=g.nextInt();
+		  if()
+		  {
+			  
+		  }
+		  else
+		  {
+			  
+		  }
+	  }
+	  else
+	  {
+		  
+	  }
+  }
+}
+class Foo
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

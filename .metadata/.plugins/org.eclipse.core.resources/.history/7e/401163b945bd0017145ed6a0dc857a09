@@ -1,0 +1,23 @@
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class FileDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	       Path g=Paths.get("D:\\sample1.txt");
+	       
+	       System.out.println(""+g.getNameCount());
+	       System.out.println(""+g.getClass());
+	       System.out.println(""+g.getFileName());
+	       System.out.println(""+g.getName(1));
+	       System.out.println(""+g.getClass());
+	       
+	       System.out.format("path %s",g,Files.exists(g, LinkOption.NOFOLLOW_LINKS));
+
+	}
+
+}

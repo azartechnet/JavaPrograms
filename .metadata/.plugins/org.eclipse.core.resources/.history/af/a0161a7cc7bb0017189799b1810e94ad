@@ -1,0 +1,20 @@
+
+public class Foo1 
+{
+  String pname;
+  int pid;
+  int pprice;
+  public void g1()
+  {
+	  
+  }
+}
+class Foo
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

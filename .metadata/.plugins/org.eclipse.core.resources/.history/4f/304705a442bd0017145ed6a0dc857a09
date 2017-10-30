@@ -1,0 +1,17 @@
+import java.io.FileInputStream;
+
+public class FileInputStreamExample 
+{
+   void g2()
+   {
+	   try
+	   {
+		   FileInputStream fis=new FileInputStream("D:\\Sample1.txt");
+		   
+	   }
+	   catch(Exception t)
+	   {
+		   
+	   }
+   }
+}

@@ -1,9 +1,0 @@
-package com.niit.product;
-
-public class Product 
-{
-  void display()
-  {
-	  System.out.println("ProductPackage"+cname);
-  }
-}

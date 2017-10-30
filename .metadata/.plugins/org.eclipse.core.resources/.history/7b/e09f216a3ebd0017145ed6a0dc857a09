@@ -1,0 +1,17 @@
+
+
+public class FileWriterDemo 
+{
+	
+	void g1()
+	{
+   try
+   {
+	   
+   }
+   catch(Exception)
+   {
+	   
+   }
+	}
+}

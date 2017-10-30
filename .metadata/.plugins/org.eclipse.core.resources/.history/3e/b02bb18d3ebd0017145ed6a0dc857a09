@@ -1,0 +1,18 @@
+import java.io.FileWriter;
+
+public class FileWriterDemo 
+{
+	
+	void g1()
+	{
+   try
+   {
+	   FileWriter fw=new FileWriter("D:\\sample2.txt");
+	   fw.write("hai");
+   }
+   catch(Exception t)
+   {
+	   
+   }
+	}
+}

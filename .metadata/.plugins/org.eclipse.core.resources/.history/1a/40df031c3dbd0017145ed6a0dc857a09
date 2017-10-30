@@ -1,0 +1,15 @@
+
+public class FileWriteDemo 
+{
+  void get1()
+  {
+	  try
+	  {
+		  
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}

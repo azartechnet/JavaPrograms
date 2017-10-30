@@ -1,0 +1,15 @@
+
+public class FileInputStreamExample 
+{
+   void g2()
+   {
+	   try
+	   {
+		   
+	   }
+	   catch(Exception t)
+	   {
+		   
+	   }
+   }
+}

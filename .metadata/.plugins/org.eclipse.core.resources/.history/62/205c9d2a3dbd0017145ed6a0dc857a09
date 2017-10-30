@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+
+public class FileWriteDemo 
+{
+  void get1()
+  {
+	  try
+	  {
+		  String uname="niit";
+		  FileOutputStream fos=new FileOutputStream("D:\\sample1.txt");
+		  
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}

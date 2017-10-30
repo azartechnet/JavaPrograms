@@ -1,0 +1,17 @@
+
+public class Foo1 
+{
+  public void g1()
+  {
+	  
+  }
+}
+class Foo
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
