@@ -1,0 +1,12 @@
+class Demo1
+{
+
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

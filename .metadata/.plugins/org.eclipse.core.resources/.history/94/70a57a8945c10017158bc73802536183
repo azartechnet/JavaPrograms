@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class TicketExample 
+{
+  String cname[]=new String[10];
+  String movie[]=new String[10];
+  int ticketid[]=new int[10];
+  Scanner g=new Scanner(System.in);
+  void bookingTicket()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
