@@ -2,7 +2,7 @@
  public class Demo 
 {
      
-   int a=100;
+   final	int a=100;
 	 String uname;//class scope variable
 	 void get(String uname)//methodscope variable
 	 {

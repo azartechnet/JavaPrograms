@@ -4,7 +4,7 @@
      
    int a=100;
 	 String uname;//class scope variable
-	 void get(String uname)//methodscope variable
+	final void get1()//methodscope variable
 	 {
 		 this.uname=uname;
 		 System.out.println("Result is:\n"+uname);

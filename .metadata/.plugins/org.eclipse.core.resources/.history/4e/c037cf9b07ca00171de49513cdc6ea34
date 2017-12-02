@@ -2,11 +2,11 @@
  public class Demo 
 {
      
-   int a=100;
+	int a=100;
 	 String uname;//class scope variable
 	 void get(String uname)//methodscope variable
 	 {
-		 this.uname=uname;
+		 /*this.uname=uname;*/
 		 System.out.println("Result is:\n"+uname);
 	 }
 	 void disp()
@@ -18,7 +18,7 @@ class D extends Demo
 {
 	void get1()
 	{
-		a=200;
+		int a=200;
 		System.out.println("Inheritance value is:\n"+uname);
 		System.out.println("Inheritance Super is:\n"+a);
 	}
