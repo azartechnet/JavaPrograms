@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Demo 
+{
+	
+	String uname,pass;
+	Scanner s=new Scanner(System.in);
+   void g1()
+   {
+	   System.out.println("Enter the input");
+	   uname=s.next();
+	   pass=s.next();
+   }
+   void g2()
+   {
+	   if(uname.equals("admin")&&pass.equals("admin"))
+	   {
+		   System.out.println("LoginSucess!1");
+	   }
+	   else
+	   {
+		   JOptionPane.showMessageDialog(pass,"Login");
+	   }
+   }
+}
+class Demo1
+{
+
+	public static void main(String[] args)
+	{
+		Demo g=new Demo();
+		
+
+	}
+
+}

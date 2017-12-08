@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+	
+	String uname,pass;
+	Scanner s=new Scanner(System.in);
+   void g1()
+   {
+	   System.out.println("Enter the input");
+	   
+   }
+   void g2()
+   {
+	   
+   }
+}
+class Demo1
+{
+
+	public static void main(String[] args)
+	{
+		Demo g=new Demo();
+		
+
+	}
+
+}

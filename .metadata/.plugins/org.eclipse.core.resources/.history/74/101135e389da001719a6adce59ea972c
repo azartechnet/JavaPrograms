@@ -1,0 +1,23 @@
+
+public class Demo 
+{
+	
+   void g1(int p)
+   {
+   }
+   void g2(String name)
+   {
+	   
+   }
+}
+class Demo1
+{
+
+	public static void main(String[] args)
+	{
+		Demo g=new Demo();
+		
+
+	}
+
+}
