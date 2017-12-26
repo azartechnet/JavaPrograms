@@ -1,0 +1,18 @@
+
+public class Doo 
+{
+
+	public static void main(String[] args)
+	{
+		try
+		{
+		int sal=100/0;	
+		}
+		catch(Exception t)
+		{
+			System.out.println(t);
+		}
+
+	}
+
+}

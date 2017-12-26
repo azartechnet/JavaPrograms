@@ -1,0 +1,24 @@
+package interfaceprogram1;
+
+interface Sample
+{
+	
+	void get1();
+}
+class D implements Sample
+{
+	public void get1()
+	{
+		
+	}
+}
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

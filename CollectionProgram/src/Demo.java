@@ -33,9 +33,7 @@ public class Demo
             System.out.println("\nUsing Iterator\n"+d1.next());
            
         }
-         System.out.println("Data"+d1.getClass());
-         System.out.println("Remove"+f.remove("b1"));
-        System.out.println("Searching"+f.contains("b1"));
+        
 
            
     }

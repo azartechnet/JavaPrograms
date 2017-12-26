@@ -1,0 +1,16 @@
+
+public class Doo 
+{
+
+	Scanner g=new Scanner(System.in);
+	void get1()
+	{
+		
+	}
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

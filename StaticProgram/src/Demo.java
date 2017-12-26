@@ -1,9 +1,9 @@
 
 public class Demo
 {
-	 static int a=10;
+	static int a=10;
 	
-	Demo()
+	static void demo1()
 	{
 		
 		a++;
@@ -17,8 +17,9 @@ class Sample
 	{
 		// TODO Auto-generated method stub
 		//new Demo();
-		new Demo();
-		new Demo();
+		Demo h=new Demo();
+		Demo.demo1();
+		Demo.demo1();
 		
 
 	}

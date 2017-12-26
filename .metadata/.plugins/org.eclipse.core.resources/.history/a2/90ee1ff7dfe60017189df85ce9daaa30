@@ -1,0 +1,27 @@
+
+class Sample
+{
+	int a;//classvariable or instance variable
+	Scanner g=new Scanner(System.in);
+  void g1()
+  {
+	  String name;//localvariable
+	  System.out.println("variable value is:\n"+name+""+a);
+	  
+  }
+  void g2()
+  {
+	  System.out.println(""+a);
+  }
+}
+class Demo
+{
+	public static void main(String as[]) 
+	{
+		Sample h=new Sample();
+		h.g1();
+		h.g2();
+
+	}
+
+}

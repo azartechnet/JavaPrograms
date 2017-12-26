@@ -1,0 +1,27 @@
+
+public class Demo
+{
+	 int a=10;
+	
+	stativ void demo1()
+	{
+		
+		a++;
+		System.out.println("Value is:"+a);
+	}
+	
+}
+class Sample
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		//new Demo();
+		Demo h=new Demo();
+		h.demo1();
+		h.demo1();
+		
+
+	}
+
+}

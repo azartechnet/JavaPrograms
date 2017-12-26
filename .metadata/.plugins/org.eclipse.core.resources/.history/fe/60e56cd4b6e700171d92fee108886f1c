@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Doo 
+{
+
+	Scanner g=new Scanner(System.in);
+	int a;
+	void get1()
+	{
+		System.out.println("Enter the value is:\n");
+		a=g.nextFloat();
+	}
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

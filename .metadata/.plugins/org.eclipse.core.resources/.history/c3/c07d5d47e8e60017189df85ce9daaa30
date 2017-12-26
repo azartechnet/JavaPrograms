@@ -1,0 +1,26 @@
+package interfaceprogram1;
+
+interface Sample
+{
+	
+	void get1();
+}
+class D implements Sample
+{
+	public void get1()
+	{
+		System.out.println("welcome");
+	}
+}
+
+
+public class Demo {
+
+	public static void main(String[] args) 
+	{
+	    D h=new D();
+	    h.get1();
+
+	}
+
+}
