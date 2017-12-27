@@ -1,0 +1,23 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class SetExample 
+{
+	
+	// Scanner h=new Scanner(System.in);
+	 void process()
+	 {
+		HashSet<String> g=new HashSet<>();
+		g.add("a1");
+		g.add("b1");
+		g.add("c1");
+	 }
+}
+class Demo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

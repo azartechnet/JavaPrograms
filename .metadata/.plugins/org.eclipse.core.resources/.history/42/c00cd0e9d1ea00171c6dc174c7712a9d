@@ -1,0 +1,23 @@
+import java.util.ArrayDeque;
+
+public class ArrayDequeExample
+{
+	ArrayDeque<Integer> h1=new ArrayDeque<>();
+	void g1()
+	{
+		h1.add(101);
+		h1.add(102);
+		h1.add(103);
+		
+		System.out.println("Display"+h1);
+		
+	}
+}
+class Demo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
