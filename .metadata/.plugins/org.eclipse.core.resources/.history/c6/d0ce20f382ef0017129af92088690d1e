@@ -1,0 +1,26 @@
+
+public class Demo1 
+{
+	int stid=1001;
+  void get1()
+  {
+	  
+	  System.out.println("welcome-1"+a+""+stid);
+  }
+  void get2()
+  {
+	  System.out.println("welcome-2"+uname+""+stid);
+  }
+}
+class Sample
+{
+	
+	public static void main(String[] args) 
+	{
+		Demo1 g=new Demo1();
+		g.get1(100);
+		g.get2("azar");
+
+	}
+
+}

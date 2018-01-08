@@ -1,9 +1,9 @@
 
 public class Demo1 extends Thread
 {
-	public void run()
+/*	public void run()
 	{
-		/*try
+		try
 		{
 		for(int i=0;i<5;i++)
 		{
@@ -15,8 +15,8 @@ public class Demo1 extends Thread
 		catch(Exception g)
 		{
 			System.out.println(g);
-		}*/
-	}
+		}
+	}*/
 	
 	synchronized void get1()
 	{

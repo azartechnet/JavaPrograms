@@ -7,7 +7,7 @@ public class Demo
 	float f1;
 	String name;
 	DataInputStream f=new DataInputStream(System.in);
-  void g1() throws NumberFormatException, IOException
+  void g1() throws IOException
   {
 	  System.out.println("Enter the value is:\n");
 	  a=Integer.parseInt(f.readLine());

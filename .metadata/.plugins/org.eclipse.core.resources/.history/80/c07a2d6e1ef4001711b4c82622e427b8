@@ -1,0 +1,26 @@
+
+public class Demo 
+{
+	int pid=300;//class variable
+  void g1()
+  {
+	int sal=2000;//local variable
+	System.out.println("varibles-1"+pid+""+sal);
+	
+  }
+  void g2()
+  {
+	  System.out.println("Varible-2"+pid);
+  }
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		Demo g=new Demo();
+		g.g1();
+		g.g2();
+
+	}
+
+}

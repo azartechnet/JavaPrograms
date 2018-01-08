@@ -1,0 +1,21 @@
+
+public class Demo
+{
+	void p1()
+	{
+		
+		
+	}
+	void p2()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
