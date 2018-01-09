@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class CollectionExample 
 {
 	
-	ArrayList<String> k1=new ArrayList<>();
+	HashSet<String> k1=new HashSet<>();
 	void get1()
 	{
 	 	k1.add("a1");
@@ -23,6 +23,7 @@ public class CollectionExample
 	 	System.out.println(""+k1.size());
 	 	System.out.println(""+k1.remove("a1"));
 	 	System.out.println(""+k1.contains("a1"));
+	 	System.out.println(""+k1.size());
 	 	
 	}
 }

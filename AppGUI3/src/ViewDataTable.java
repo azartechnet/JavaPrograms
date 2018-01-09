@@ -103,6 +103,10 @@ public class ViewDataTable extends JFrame {
 		panel.add(lblNewLabel);
 		
 		JButton btnDeleteproduct = new JButton("DeleteProduct");
+		btnDeleteproduct.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnDeleteproduct.setFont(new Font("Times New Roman", Font.BOLD, 12));
 		btnDeleteproduct.setBounds(139, 120, 114, 28);
 		panel.add(btnDeleteproduct);

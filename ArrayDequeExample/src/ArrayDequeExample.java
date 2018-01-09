@@ -13,7 +13,7 @@ public class ArrayDequeExample
 		
 		h1.addLast(109);
 		
-		//h1.removeFirst();
+		h1.removeFirst();
 		
 		h1.removeLast();
 		

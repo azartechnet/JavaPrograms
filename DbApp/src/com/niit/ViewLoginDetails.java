@@ -76,7 +76,8 @@ public class ViewLoginDetails extends JFrame {
 				try
 				{
 					 String uname=textField.getText();
-						String str="select * from ureg where uname='"+uname+"'";
+    				String str="select * from ureg where uname='"+uname+"'";
+//					String str="select * from ureg";
 						Class.forName("org.h2.Driver");
 						  Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/javadb","sa","");
 						Statement stm=con.createStatement();
@@ -100,15 +101,13 @@ public class ViewLoginDetails extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		
-		
 		//Important code for view tables
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 11, 381, 264);
-		panel.add(scrollPane);
-		
-		table = new JTable();
-		scrollPane.setViewportView(table);
+				JScrollPane scrollPane = new JScrollPane();
+				scrollPane.setBounds(10, 11, 381, 264);
+				panel.add(scrollPane);
+				
+				table = new JTable();
+				scrollPane.setViewportView(table);
 
 
 		
