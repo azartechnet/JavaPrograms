@@ -1,0 +1,19 @@
+
+public class Demo
+{
+	int pid;
+	String name;
+	float f1;
+	void g1()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class Demo extends Thread
+{
+	
+	void g1()
+	{
+		
+	}
+	void g2()
+	{
+		
+	}
+}
+class Foo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

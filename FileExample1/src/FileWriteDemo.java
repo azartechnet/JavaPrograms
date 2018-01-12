@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FileWriteDemo 
 {
-  void get1()throws IOException
+  void g17()throws IOException
   {
 	  try
 	  {
@@ -19,4 +19,12 @@ public class FileWriteDemo
 		  
 	  }
   }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		FileWriterDemo g=new FileWriterDemo();
+		g.g17();
+	}
 }

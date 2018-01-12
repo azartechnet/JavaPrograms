@@ -32,6 +32,6 @@ class Sample
 		t1.setPriority(Thread.MAX_PRIORITY);
 		t2.start();
 		t2.setPriority(Thread.NORM_PRIORITY);
-		//t1.setName("ThreadOne");
+		t1.setName("ThreadOne");
 	}
 }
