@@ -6,7 +6,7 @@
 	 String uname;//class scope variable
 	 void get(String uname)//methodscope variable
 	 {
-		 this.uname=uname;
+		// this.uname=uname;
 		 System.out.println("Result is:\n"+uname);
 	 }
 	 void disp()
