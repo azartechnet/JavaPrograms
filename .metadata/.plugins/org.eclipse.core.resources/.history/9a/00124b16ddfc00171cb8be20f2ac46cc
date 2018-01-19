@@ -93,7 +93,7 @@ public class LoginPage extends JFrame {
 				{
 					  String u=textField.getText();
 					  String p=textField_1.getText();
-					  String str="select * from ulogin";
+					  String str="select * from ulogin where uname='"+u+"'";
 					  Class.forName("org.h2.Driver");
 					  Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/javadb1","sa","");
 					  Statement stm=con.createStatement();

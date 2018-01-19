@@ -1,19 +1,13 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-
-
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -26,12 +20,6 @@ public class LoginPage extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 
-	
-	public void close()
-    {
-        WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
-        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
-    }
 	/**
 	 * Launch the application.
 	 */
@@ -52,6 +40,7 @@ public class LoginPage extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginPage() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -85,7 +74,7 @@ public class LoginPage extends JFrame {
 		panel.add(textField_1);
 		textField_1.setColumns(10);
 		
-		final JButton btnLogin = new JButton("Login");
+		JButton btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt)
 			{
@@ -93,35 +82,18 @@ public class LoginPage extends JFrame {
 				{
 					  String u=textField.getText();
 					  String p=textField_1.getText();
-					  String str="select * from ulogin";
+					  String str="select * from ulogin"
 					  Class.forName("org.h2.Driver");
 					  Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/javadb1","sa","");
 					  Statement stm=con.createStatement();
 					  ResultSet rs=stm.executeQuery(str);
-					  rs.next();
-					  String uname=rs.getString(1);
-					  String pass=rs.getString(2);
-					  
-					  if(u.equals(uname)&&p.equals(pass))
-					   {
-						       JOptionPane.showMessageDialog(btnLogin, "LoginSucess!!");
-						       close();
-						       new RegisterPage().setVisible(true);
-						       
-					   }
-					  else
-					  {
-						  JOptionPane.showMessageDialog(btnLogin, "LoginFail!!");  
-					  }
-					  
-					  
 				}
 				catch(Exception t)
 				{
 					System.out.println(t);
 				}
 				}
-			
+			}
 		});
 		btnLogin.setBounds(140, 177, 89, 23);
 		panel.add(btnLogin);

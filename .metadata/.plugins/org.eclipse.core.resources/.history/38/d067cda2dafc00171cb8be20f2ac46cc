@@ -8,7 +8,6 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 import javax.swing.JComboBox;
-import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JCheckBox;
 import javax.swing.JButton;
@@ -73,11 +72,6 @@ public class RegisterPage extends JFrame {
 		JRadioButton rdbtnFemale = new JRadioButton("Female");
 		rdbtnFemale.setBounds(210, 125, 109, 23);
 		contentPane.add(rdbtnFemale);
-		
-		ButtonGroup bg=new ButtonGroup();
-		
-		bg.add(rdbtnMale);
-		bg.add(rdbtnFemale);
 		
 		JLabel lblCourse = new JLabel("Course");
 		lblCourse.setBounds(26, 184, 46, 14);

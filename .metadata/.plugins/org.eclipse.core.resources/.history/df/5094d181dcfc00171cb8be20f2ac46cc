@@ -1,6 +1,5 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,7 +12,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -26,12 +24,6 @@ public class LoginPage extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 
-	
-	public void close()
-    {
-        WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
-        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
-    }
 	/**
 	 * Launch the application.
 	 */
@@ -52,6 +44,7 @@ public class LoginPage extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginPage() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -104,10 +97,8 @@ public class LoginPage extends JFrame {
 					  
 					  if(u.equals(uname)&&p.equals(pass))
 					   {
-						       JOptionPane.showMessageDialog(btnLogin, "LoginSucess!!");
-						       close();
+						       JOptionPane.showMessageDialog(btnLogin, "LoginSucess!!");  
 						       new RegisterPage().setVisible(true);
-						       
 					   }
 					  else
 					  {
