@@ -1,4 +1,5 @@
-import java.io.IOException;
+
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,6 +15,7 @@ public class Doo
 		System.out.println("Enter the value is:\n");
 		a=g.nextInt();
 		
+		
 		}
 		catch(InputMismatchException t)
 		{
@@ -21,7 +23,7 @@ public class Doo
 		}
 		finally
 		{
-		System.out.println("****");
+		System.out.println("Your Input value:"+a);
 		}
 		
 	}

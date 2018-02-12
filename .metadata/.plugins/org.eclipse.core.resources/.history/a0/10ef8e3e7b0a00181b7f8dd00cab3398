@@ -1,0 +1,20 @@
+
+public class Foo
+{
+   void get1()
+   {
+	   System.out.println("welcome-1");
+   }
+   void get2()
+   {
+	   System.out.println("welcome-1");
+   }
+	public static void main(String[] args)
+	{
+		Foo h=new Foo();
+		h.get1();
+		h.get2();
+
+	}
+
+}

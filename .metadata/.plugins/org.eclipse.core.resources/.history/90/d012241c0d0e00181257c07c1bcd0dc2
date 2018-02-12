@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+	int pid;
+	float f1;
+	String uname;
+	DataInputStream g=new DataInputStream(System.in);
+	void get1()
+	{
+		
+	}
+	void get2()
+	{
+		
+	}
+}
+class Sample
+{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

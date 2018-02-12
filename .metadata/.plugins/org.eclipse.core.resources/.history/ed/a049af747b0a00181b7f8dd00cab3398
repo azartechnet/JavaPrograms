@@ -1,0 +1,22 @@
+
+public class Foo
+{
+	int a=100;
+   void get1()
+   {
+	   int b=300;
+	   System.out.println("welcome-1"+a);
+   }
+   void get2()
+   {
+	   System.out.println("welcome-2"+b);
+   }
+	public static void main(String[] args)
+	{
+		Foo h=new Foo();
+		h.get1();
+		h.get2();
+
+	}
+
+}
