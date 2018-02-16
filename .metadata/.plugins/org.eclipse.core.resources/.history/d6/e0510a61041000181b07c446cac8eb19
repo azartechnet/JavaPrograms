@@ -1,0 +1,29 @@
+import java.util.HashSet;
+import java.util.TreeSet;
+
+public class Foo 
+{
+  HashSet<String>g1=new HashSet<>();	
+  void get1()
+  {
+	  g1.add("a2");
+	  g1.add("a3");
+	  g1.add("a1");
+	  System.out.println("Value is:\n"+g1);
+	  System.out.println("Value is:\n"+g1.size());
+	  System.out.println("Class Name is:\n"+getClass());
+	  System.out.println("Remove data is:\n"+g1.remove("a2"));
+	  System.out.println("Value is:\n"+g1.size());
+	  System.out.println("Search data is:\n"+g1.contains("a2"));
+  }
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		Foo g=new Foo();
+		g.get1();
+
+	}
+
+}

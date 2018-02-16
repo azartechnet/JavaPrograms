@@ -20,7 +20,7 @@ class D extends Demo
 	{
 	   a=200;
 		System.out.println("Inheritance value is:\n"+uname);
-		System.out.println("Inheritance Super is:\n"+super.a);
+		System.out.println("Inheritance Super is:\n"+a);
 	}
 }
 class MainDemo

@@ -13,8 +13,8 @@ class D extends Demo
 {
 	void get2()
 	{ 
-	    i=200;
-		System.out.println("Dervied class"+super.i);
+	    //i=200;
+		System.out.println("Dervied class"+i);
 	}
 }
 class Demo1
