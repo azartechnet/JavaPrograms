@@ -1,0 +1,47 @@
+
+ public class Demo 
+{
+     
+     int a=100;
+	 String uname;//class scope variable
+	 void get(String uname)//methodscope variable
+	 {
+		 this.uname=uname;
+		 System.out.println("Result is:\n"+uname);
+	 }
+	 void disp()
+	 {
+		 System.out.println("Result is:\n"+uname+""+a);
+	 }
+}
+ class D1 extends Demo
+ {
+	 int  b=300;
+	 void get2()
+	 {
+		 
+	 }
+ }
+class D extends D1
+{
+	void get1()
+	{
+	   b=200;
+		System.out.println("Inheritance value is:\n"+uname);
+		System.out.println("Inheritance Super is:\n"+super.b);
+	}
+}
+class MainDemo
+{
+	public static void main(String[] args) 
+	{
+		D h=new D();
+		h.get("niit");
+		h.disp();
+		h.get2();
+		h.get1();
+		
+
+	}
+
+}

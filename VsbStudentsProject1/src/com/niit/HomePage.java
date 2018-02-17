@@ -51,7 +51,16 @@ public class HomePage extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JButton btnUlogin = new JButton("ULogin");
+		final JButton btnUlogin = new JButton("ULogin");
+		btnUlogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0)
+			{
+				if(arg0.getSource()==btnUlogin)
+				{
+					new ULoginPage().setVisible(true);
+				}
+			}
+		});
 		btnUlogin.setFont(new Font("Sylfaen", Font.PLAIN, 14));
 		btnUlogin.setBounds(143, 71, 89, 23);
 		panel.add(btnUlogin);
