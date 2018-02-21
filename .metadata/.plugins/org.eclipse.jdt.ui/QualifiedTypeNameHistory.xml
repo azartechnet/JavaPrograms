@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.nio.file.LinkOption"/>
-<fullyQualifiedTypeName name="java.nio.file.FileSystem"/>
 <fullyQualifiedTypeName name="java.nio.file.FileSystems"/>
 <fullyQualifiedTypeName name="java.nio.file.Path"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
@@ -36,7 +34,6 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="SpecialDigit"/>
-<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
+<fullyQualifiedTypeName name="com.niit.ULoginPage"/>
+<fullyQualifiedTypeName name="com.niit.ViewMyDetails"/>
 </qualifiedTypeNameHistroy>
