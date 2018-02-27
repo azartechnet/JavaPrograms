@@ -3,14 +3,14 @@ package interfaceprogram1;
 interface Sample
 {
 	
-	//int a=100;
+	//int a;
 	void get1();
 }
-interface Sample1
+interface Sample1 extends Sample
 {
 	void get2();
 }
-class D implements Sample1,Sample
+class D implements Sample1
 {
 	public void get1()
 	{

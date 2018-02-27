@@ -3,7 +3,7 @@ import java.util.*;
 public class MapProgram 
 {
 	
-Map<Integer,String> g1=new HashMap<Integer,String>();
+TreeMap<Integer,String> g1=new TreeMap<Integer,String>();
  void get()
  {
 	 g1.put(101, "Azar");
@@ -11,6 +11,7 @@ Map<Integer,String> g1=new HashMap<Integer,String>();
 	 
 	 for(Map.Entry m:g1.entrySet())
 	 {
+		
 		 System.out.println("Your value is:\n"+m.getKey()+""+m.getValue());
 	 }
 	 System.out.println("Your size is:\n"+g1.size());

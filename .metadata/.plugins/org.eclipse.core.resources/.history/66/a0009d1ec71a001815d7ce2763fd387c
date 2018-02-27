@@ -1,0 +1,28 @@
+
+public class Demo 
+{
+   
+	String name="niit";
+	void g1()
+	{
+		int a=100;
+		
+		
+		System.out.println("welcome to niit");
+	}
+	void g2()
+	{
+		System.out.println("welcome");
+	}
+	
+	
+	public static void main(String as[])
+	{
+	
+		Demo h=new Demo();//object creation
+		h.g1();
+		h.g2();
+
+	}
+
+}

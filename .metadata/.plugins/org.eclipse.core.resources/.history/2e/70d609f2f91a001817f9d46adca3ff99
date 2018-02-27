@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.TreeSet;
+
+
+public class Demo 
+{
+	
+  //HashSet<String> list=new HashSet<>();
+	
+	//TreeSet<String> list=new TreeSet<>();
+	//collection
+	//TreeSet list=new TreeSet();
+	ArrayList<String>list=new ArrayList<>();
+  void g1()
+  {
+	  
+	  list.add("a2");
+	  list.add("a5");
+	  list.add("a2");
+	  list.add("a4");
+	  list.add("a3");
+	  
+	  ListIterator<String> m=list.listIterator();
+	  
+	  while(m.hasNext())
+	  {
+		  System.out.println("Value is:\n"+m.next());
+		  System.out.println("Value is:\n"+m.previous());
+	  }
+	  
+	  System.out.println("Before Removing Data:"+list.size());
+	  System.out.println("Data Remove:"+list.remove("a3"));
+	  System.out.println("After Removing Data"+list.size());
+	  System.out.println("Searching.."+list.contains("a3"));
+	  System.out.println(" Arrayclass:"+list.getClass());
+	  
+	  
+	  
+  }
+ 
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Demo k=new Demo();
+		k.g1();
+
+	}
+
+}

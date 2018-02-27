@@ -1,0 +1,22 @@
+
+public class Demo 
+{
+   
+	void g1()
+	{
+		System.out.println("welcome to niit");
+	}
+	void g2()
+	{
+		
+	}
+	
+	
+	public static void main(String as[])
+	{
+	
+		
+
+	}
+
+}

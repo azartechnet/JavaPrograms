@@ -1,0 +1,34 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+	
+  HashSet<String> list=new HashSet<>();
+		  
+  void g1()
+  {
+	  list.add("a1");
+	  list.add("a2");
+	  list.add("a3");
+	  list.add("a4");
+	  
+	  
+	  System.out.println("Value is:\n"+list);
+  }
+  void g2()
+  {
+	  
+  }
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Demo k=new Demo();
+		k.g1();
+
+	}
+
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+	
+  int sal,age,n;
+  Scanner g=new Scanner(System.in);
+  void g1()
+  {
+	  
+  }
+  void g2()
+  {
+	  
+  }
+}
+class Foo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

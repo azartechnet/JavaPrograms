@@ -1,0 +1,49 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+public class Demo 
+{
+	
+  HashSet<String> list=new HashSet<>();
+	
+	//collection
+	//TreeSet list=new TreeSet();
+	
+  void g1()
+  {
+	  
+	  list.add("a2");
+	  list.add("a5");
+	  list.add("a2");
+	  list.add("a4");
+	  list.add("a3");
+	  
+	  Iterator<String> m=list.iterator();
+	  
+	  while(m.hasNext())
+	  {
+		  System.out.println("Value is:\n"+m.next());
+	  }
+	  
+	  System.out.println("Your Size:"+list.size());
+	  System.out.println("Data Remove:"+list.remove(o));
+	  System.out.println("Your Search:"+list.);
+	  
+	  
+	  
+  }
+ 
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		Demo k=new Demo();
+		k.g1();
+
+	}
+
+}
