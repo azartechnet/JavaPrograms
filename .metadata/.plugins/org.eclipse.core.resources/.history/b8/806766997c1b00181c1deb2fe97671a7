@@ -4,24 +4,19 @@ class Demo1
 {
 	
 	Scanner h=new Scanner(System.in);
-	int a;
-	
+	int pid;
+	float f1;
+	String u1;
    void get1()
    {
 	   System.out.println("Enter the value is:\n");
-	   a=h.nextInt();
-	   
+	   pid=h.nextInt();
+	   f1=h.nextFloat();
+	   u1=h.next();
    }
    void get2()
    {
-	  if(a%2==0)
-	  {
-		  System.out.println("Even"+a);
-	  }
-	  else
-	  {
-		  System.out.println("Odd"+a);
-	  }
+	   System.out.println("welcome to niit-2");
    }
 }
 class Foo
