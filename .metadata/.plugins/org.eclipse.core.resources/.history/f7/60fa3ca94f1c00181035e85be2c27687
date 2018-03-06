@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+	
+	int a=200;//class or instance variable
+	void g1()
+	{
+		int b=300;//local variable
+		System.out.println("welcome to "+b+""+a);
+	}
+	void g2()
+	{
+		System.out.println("welcome to"+a);
+	}
+
+	public static void main(String as[])
+	{
+		Demo g=new Demo();
+		
+		g.g1();
+		g.g2();
+
+	}
+
+}

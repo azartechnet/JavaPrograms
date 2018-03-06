@@ -5,8 +5,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.awt.event.ActionEvent;
 
 public class URegisterPage extends JFrame {
 
@@ -74,7 +80,34 @@ public class URegisterPage extends JFrame {
 		panel.add(textField_2);
 		textField_2.setColumns(10);
 		
-		JButton btnInsert = new JButton("Insert");
+		final JButton btnInsert = new JButton("Insert");
+		btnInsert.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt) 
+			{
+				try
+				{
+					String u=textField.getText();
+					String p=textField_1.getText();
+					String m=textField_2.getText();
+					
+					String str="insert into ureg values(?,?,?)";
+					
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/dgl","sa","");
+					PreparedStatement pt=conn.prepareStatement(str);
+					pt.setString(1,u);
+					pt.setString(2,p);
+					pt.setString(3, m);
+					pt.executeUpdate();
+					JOptionPane.showMessageDialog(btnInsert, "LoginSucess");
+					new ULoginPage().setVisible(true);
+				}
+				catch(Exception t)
+				{
+					
+				}
+			}
+		});
 		btnInsert.setBounds(75, 224, 89, 23);
 		panel.add(btnInsert);
 		

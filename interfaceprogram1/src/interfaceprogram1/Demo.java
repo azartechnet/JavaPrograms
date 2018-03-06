@@ -6,11 +6,11 @@ interface Sample
 	//int a;
 	void get1();
 }
-interface Sample1 extends Sample
+interface Sample1 
 {
 	void get2();
 }
-class D implements Sample1
+class D implements Sample1,Sample
 {
 	public void get1()
 	{
