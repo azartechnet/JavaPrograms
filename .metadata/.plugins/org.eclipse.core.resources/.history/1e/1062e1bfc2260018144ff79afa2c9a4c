@@ -1,0 +1,21 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+  
+  HashSet<String> g=new HashSet<>();	
+  void g1()
+  {
+	  
+  }
+	
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

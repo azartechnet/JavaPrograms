@@ -70,8 +70,8 @@ public class ViewAlluserdetails extends JFrame {
 				try
 				{
 					 String uname=textField.getText();
-    				//String str="select * from registeruser where uname='"+uname+"'";
-				String str="select * from registeruser";
+    				String str="select * from registeruser where uname='"+uname+"'";
+				//String str="select * from registeruser";
 						Class.forName("org.h2.Driver");
 						  Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/javadb","sa","");
 						Statement stm=con.createStatement();

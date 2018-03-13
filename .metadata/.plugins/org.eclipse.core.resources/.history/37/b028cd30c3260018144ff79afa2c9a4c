@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+  
+  HashSet<String> g=new HashSet<>();	
+  void g1()
+  {
+	  g.add("a1");
+	  g.add("b1");
+	  g.add("c1");
+	  g.add("d1");
+	  System.out.println("ListData is:::"+g);
+	  System.out.println("Size of is:::"+g.size());
+  }
+	
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+	  Demo h=new Demo();
+	  h.g1();
+
+	}
+
+}

@@ -1,13 +1,17 @@
 
 public class Demo
 {
-	static int a=10;
+	 static int a=10;
 	
 	Demo()
 	{
 		
 		a++;
 		System.out.println("Value is:"+a);
+	}
+	static void get1()
+	{
+	a++;	
 	}
 	
 }
@@ -22,6 +26,7 @@ class Sample
 		
 		/*Demo.demo1();
 		Demo.demo1();*/
+		Demo.get1();
 		
 
 	}

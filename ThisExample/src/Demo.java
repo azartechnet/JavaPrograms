@@ -2,7 +2,7 @@
  public class Demo 
 {
      
-     int a=100;
+    int a=100;
 	 String uname;//class scope variable
 	 void get(String uname)//methodscope variable
 	 {
@@ -19,7 +19,7 @@ class D extends Demo
 {
 	void get1()
 	{
-	 int a=300;
+   int a=300;
 		System.out.println("Inheritance value is:\n"+uname);
 		System.out.println("Inheritance Super is:\n"+super.a);
 	}

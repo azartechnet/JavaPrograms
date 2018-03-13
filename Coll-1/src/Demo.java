@@ -8,12 +8,15 @@ import java.util.TreeSet;
 public class Demo 
 {
 	
-  //HashSet<String> list=new HashSet<>();
+  HashSet<String> list=new HashSet<>();
 	
 	//TreeSet<String> list=new TreeSet<>();
-	//collection
+  
+//ArrayList<String>list=new ArrayList<>();
+  
+//collection concepts
 	//TreeSet list=new TreeSet();
-	ArrayList<String>list=new ArrayList<>();
+	
   void g1()
   {
 	  
@@ -23,7 +26,8 @@ public class Demo
 	  list.add("mm");
 	  list.add("bb");
 	  
-	  ListIterator<String> m=list.listIterator();
+	  //ListIterator<String> m=list.listIterator();
+	  Iterator<String>m=list.iterator();
 	  
 	  while(m.hasNext())
 	  {
