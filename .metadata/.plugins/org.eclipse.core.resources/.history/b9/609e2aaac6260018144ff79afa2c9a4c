@@ -1,0 +1,24 @@
+import java.util.HashMap;
+
+public class Demo
+{
+	
+	HashMap<Integer,String>k=new HashMap<>();
+	void g2()
+	{
+	  k.put(1001,"a1");
+	  k.put(1002, "a2");
+	  
+	  System.out.println("Value is:\n"+k);
+	}
+}
+class Demo1
+{
+	public static void main(String[] args) 
+   {
+		Demo p=new Demo();
+		p.g2();
+
+	}
+}
+
