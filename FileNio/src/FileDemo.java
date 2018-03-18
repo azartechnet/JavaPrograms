@@ -5,14 +5,15 @@ import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class FileDemo {
+public class FileDemo 
+{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	       //Path g=Paths.get("D:\\sample1.txt");
+	       //Path g=Paths.get("D:\\f1.txt");
 	         FileSystem f1=FileSystems.getDefault();
-	         Path g=Paths.get("D:\\sample1.txt");
+	         Path g=Paths.get("D:\\f1.txt");
 	       System.out.println(""+g.getNameCount());
 	       System.out.println(""+g.getClass());
 	       System.out.println(""+g.getFileName());

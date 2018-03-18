@@ -1,0 +1,28 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class FileDemo 
+{
+	
+  void fileWrite()
+  {
+	  try
+	  {
+	FileOutputStream g=new FileOutputStream("D:\\f1.txt");
+	  }
+	  catch(FileNotFoundException t)
+	  {
+		  System.out.println(t);
+	  }
+  }
+  
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

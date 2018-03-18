@@ -1,0 +1,38 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FileDemo 
+{
+	
+ String uname;
+ Scanner k=new Scanner(System.in);
+  void fileWrite() throws IOException
+  {
+	  try
+	  {
+	    FileOutputStream g=new FileOutputStream("D:\\f1.txt");
+	    System.out.println("Enter the value is:\n");
+	    uname=k.next();
+	    byte s[]=uname.getBytes();
+	    g.write(s);
+	    System.out.println("File Ins...");
+	    
+	  }
+	  catch(FileNotFoundException t)
+	  {
+		  System.out.println(t);
+	  }
+  }
+  
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
