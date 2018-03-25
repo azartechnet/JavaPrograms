@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Demo 
+{
+	HashMap<Integer,String>g1=new HashMap<>();
+    void g1()
+    {
+     g1.put(1001,"p1");
+     g1.put(1002, "p2");
+     g1.put(1003, "p3");
+    }
+
+}
+class Demo1
+{
+	
+
+	public static void main(String[] args) 
+	{
+		
+         Demo h=new Demo();
+         h.g1();
+	}
+
+}

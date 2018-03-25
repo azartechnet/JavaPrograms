@@ -1,0 +1,24 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+	HashSet<String> g1=new HashSet<>();
+    void g1()
+    {
+      g1.add("a1");
+      g1.add("b1");
+      g1.add("c1");
+    }
+
+}
+class Demo1
+{
+	
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

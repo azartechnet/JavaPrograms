@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class Demo 
+{
+	TreeSet<String> g1=new TreeSet<>();
+    void g1()
+    {
+      g1.add("a1");
+      g1.add("b1");
+      g1.add("c1");
+      
+      System.out.println("Data is::\n"+g1);
+    }
+
+}
+class Demo1
+{
+	
+
+	public static void main(String[] args) 
+	{
+		
+         Demo h=new Demo();
+         h.g1();
+	}
+
+}
