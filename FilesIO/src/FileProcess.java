@@ -10,7 +10,7 @@ public class FileProcess
    {
 	  try
 	  {
-	  /*System.out.println("Enter the name is:\n");
+	 /* System.out.println("Enter the name is:\n");
 	  name=g.next();
 	  FileOutputStream fos=new FileOutputStream("F:\\abc.txt");
 	  byte s[]=name.getBytes();
@@ -19,11 +19,11 @@ public class FileProcess
 		  FileInputStream fis=new FileInputStream("F:\\abc.txt");
 		  FileOutputStream fos=new FileOutputStream("F:\\abc1.txt");
 		  int i;
-		  while((i=fis.read())!=-1)
+	    while((i=fis.read())!=-1)
 		  {
-			// System.out.print((char)i);
+			 //System.out.print((char)i);
 			  fos.write((byte)i);
-		  }
+	  }
 	  }
 	  catch(Exception g)
 	  {
