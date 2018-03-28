@@ -11,6 +11,8 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class HomePage extends JFrame {
 
@@ -54,7 +56,16 @@ public class HomePage extends JFrame {
 		lblProjectTitles.setBounds(129, 11, 164, 25);
 		panel.add(lblProjectTitles);
 		
-		JButton btnUlogin = new JButton("Ulogin");
+		final JButton btnUlogin = new JButton("Ulogin");
+		btnUlogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				if(arg0.getSource()==btnUlogin)
+				{
+					new loginpage1().setVisible(true);
+				}
+			}
+		});
 		btnUlogin.setBounds(143, 69, 89, 23);
 		panel.add(btnUlogin);
 		

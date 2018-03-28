@@ -1,0 +1,51 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+public class DemoApp 
+{
+
+  String uname;
+  Scanner g=new Scanner(System.in);
+  void getWrite()
+  {
+	  try
+	  {
+      		  
+	 /* FileOutputStream fout=new FileOutputStream("F:\\s1.txt");
+	  System.out.println("Enter the name is:\n");
+	  uname=g.next();
+	  
+	  byte d[]=uname.getBytes();
+	  
+	  fout.write(d);
+	  System.out.println("File Inserted sucss");*/
+	  FileInputStream fis=new FileInputStream("F:\\s1.txt");
+	  FileOutputStream fout1=new FileOutputStream("F:\\s2.txt");
+	  int i;
+	  
+	  while((i=fis.read())!=-1)
+	  {
+		//System.out.print((char)i);  
+		  fout1.write((byte)i);
+	  }
+		  
+		  
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class Foo
+{
+	
+	public static void main(String[] args)
+	{
+		DemoApp g=new DemoApp();
+		g.getWrite();
+
+	}
+
+}

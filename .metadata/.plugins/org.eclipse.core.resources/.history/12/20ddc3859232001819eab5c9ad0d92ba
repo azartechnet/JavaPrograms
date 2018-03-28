@@ -1,0 +1,28 @@
+import java.io.FileOutputStream;
+
+public class DemoApp 
+{
+
+  String uname;
+  void getWrite()
+  {
+	  try
+	  {
+	  FileOutputStream fout=new FileOutputStream("F:\\s1.txt");
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class Foo
+{
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

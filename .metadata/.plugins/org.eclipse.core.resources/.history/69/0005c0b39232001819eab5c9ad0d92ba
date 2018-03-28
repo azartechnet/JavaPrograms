@@ -1,0 +1,37 @@
+import java.io.FileOutputStream;
+import java.util.Scanner;
+
+public class DemoApp 
+{
+
+  String uname;
+  Scanner g=new Scanner(System.in);
+  void getWrite()
+  {
+	  try
+	  {
+      		  
+	  FileOutputStream fout=new FileOutputStream("F:\\s1.txt");
+	  System.out.println("Enter the name is:\n");
+	  uname=g.next();
+	  
+	  byte d[]=uname.getBytes();
+	  
+	  fout.write(d);
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class Foo
+{
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}
