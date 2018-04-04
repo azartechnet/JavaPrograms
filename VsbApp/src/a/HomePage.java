@@ -41,25 +41,33 @@ public class HomePage extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		final JButton btnUlogin = new JButton("ULogin");
-		btnUlogin.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) 
-			{
-				if(arg0.getSource()==btnUlogin)
-				{
-					new ULogin().setVisible(true);
-				}
-			}
-		});
-		btnUlogin.setBounds(153, 44, 89, 23);
-		contentPane.add(btnUlogin);
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 11, 414, 239);
+		contentPane.add(panel);
+		panel.setLayout(null);
 		
 		JButton btnRegister = new JButton("Register");
-		btnRegister.setBounds(153, 124, 89, 23);
-		contentPane.add(btnRegister);
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				new RegisterPage().setVisible(true);
+			}
+		});
+		btnRegister.setBounds(159, 24, 89, 23);
+		panel.add(btnRegister);
 		
-		JButton btnAlogin = new JButton("ALogin");
-		btnAlogin.setBounds(153, 196, 89, 23);
-		contentPane.add(btnAlogin);
+		JButton btnUlogin = new JButton("Ulogin");
+		btnUlogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new LoginPage().setVisible(true);
+			}
+		});
+		btnUlogin.setBounds(159, 90, 89, 23);
+		panel.add(btnUlogin);
+		
+		JButton btnViewdetails = new JButton("ViewDetails");
+		btnViewdetails.setBounds(159, 163, 89, 23);
+		panel.add(btnViewdetails);
 	}
 }
