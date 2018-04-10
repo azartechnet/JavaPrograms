@@ -30,7 +30,7 @@ class Foo
 	public static void main(String[] args) 
 	{
 		Demo t1=new Demo();
-		t1.start();
+		t1.run();
 		t1.run1();
 
 	}

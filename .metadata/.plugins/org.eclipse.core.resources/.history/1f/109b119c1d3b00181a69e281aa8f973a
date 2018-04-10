@@ -1,0 +1,31 @@
+
+public class Demo extends Thread
+{
+	
+ public void run()
+ {
+	
+	try
+	{
+		System.out.println("in"); 
+	Thread.sleep(2000);
+	System.out.println("in");
+	}
+	catch(InterruptedException r)
+	{
+		System.out.println(r);
+	}
+ }
+
+	
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		Demo g=new Demo();
+		g.start();
+
+	}
+
+}
