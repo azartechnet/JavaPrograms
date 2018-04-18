@@ -1,0 +1,22 @@
+
+public class Demo 
+{
+  void m1()
+  {
+	  
+  }
+  void m2()
+  {
+	  
+  }
+	
+}
+class Foo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}
