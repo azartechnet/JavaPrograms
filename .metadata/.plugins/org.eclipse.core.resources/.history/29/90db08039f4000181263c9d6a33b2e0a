@@ -1,0 +1,30 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class FileDemo 
+{
+	
+  	String uname="azar";
+  void input()
+  {
+	  try
+	  {
+	   FileOutputStream fos=new FileOutputStream("d:\\a1.txt");
+	   byte s[]=uname.getBytes();
+	  }
+	  catch(FileNotFoundException r)
+	  {
+		  
+	  }
+	
+  }
+}
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
