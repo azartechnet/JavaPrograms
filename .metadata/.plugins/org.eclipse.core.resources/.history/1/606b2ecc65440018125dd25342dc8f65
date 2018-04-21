@@ -1,0 +1,28 @@
+
+interface B
+{
+	int a=100;
+	void g1();
+}
+public class Demo implements B
+{
+
+	@Override
+	public void g1() 
+	{
+		System.out.println("welcome"+a);
+		
+	}
+	void g2()
+	{
+		System.out.println("Normal method...");
+	}
+
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

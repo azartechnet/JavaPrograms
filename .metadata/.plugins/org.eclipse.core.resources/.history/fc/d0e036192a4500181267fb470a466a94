@@ -1,0 +1,17 @@
+
+public class Demo
+{
+
+	Demo()//default cons
+	{
+		
+	}
+	Demo(int a)//param cons
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+
+public class Demo
+{
+
+	Demo()//default cons
+	{ 
+		static int a1;
+		a1++;
+		System.out.println("welcome"+a1);
+	}
+	Demo(int a)//param cons
+	{
+		System.out.println("data is"+a);
+	}
+	
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+           new Demo();//default invoke
+           new Demo();
+           new Demo(300);
+
+	}
+
+}

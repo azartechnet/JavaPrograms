@@ -1,0 +1,40 @@
+
+interface B
+{
+	int a=100;
+	void g1();
+}
+interface B1 extends B
+{
+	void h1();
+}
+public class Demo implements B1
+{
+
+	@Override
+	public void g1() 
+	{
+		System.out.println("welcome"+a);
+		
+	}
+	void g2()
+	{
+		System.out.println("Normal method...");
+	}
+	@Override
+	public void h1() 
+	{
+		
+	System.out.println("welcome secd interface");	
+	}
+
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		Demo g1=new Demo();
+		g1.g1();
+		g1.g2();
+	}
+}

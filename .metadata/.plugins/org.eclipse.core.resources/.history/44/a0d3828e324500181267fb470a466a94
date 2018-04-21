@@ -1,0 +1,31 @@
+
+
+class B
+{
+	int a=100;
+  void g1()
+  {
+	  System.out.println("welcome-1::"+a);
+  }
+}
+class D1 extends B
+{
+	void g2()
+	{
+		System.out.println("welcome-2::"+a);
+	}
+}
+
+
+
+
+
+public class Demo 
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
