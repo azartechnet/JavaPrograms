@@ -1,0 +1,26 @@
+
+public class Sample 
+{
+    
+	void g1()
+	{
+	   try
+	   {
+	   int a=100/0;
+	   }
+	   catch(ArithmeticException t)
+	   {
+		   System.out.println(t);
+	   }
+	   System.out.println("Exception");
+
+	}
+	
+	public static void main(String[] args) 
+	{
+		Sample g=new Sample();
+		g.g1();
+
+	}
+
+}

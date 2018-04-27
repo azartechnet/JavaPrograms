@@ -1,0 +1,28 @@
+
+public class Sample 
+{
+    String uname;
+    Scanner g=new Scanner(System.in);
+	void g1()
+	{
+	   try
+	   {
+	   int a=100/0;
+	   }
+	   catch(ArithmeticException t)
+	   {
+		   System.out.println("please enter number"+t);
+	   }
+	   System.out.println("Enter the value is:\n");
+	   
+
+	}
+	
+	public static void main(String[] args) 
+	{
+		Sample g=new Sample();
+		g.g1();
+
+	}
+
+}

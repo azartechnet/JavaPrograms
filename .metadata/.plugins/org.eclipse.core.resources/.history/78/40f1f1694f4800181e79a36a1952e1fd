@@ -1,0 +1,23 @@
+import java.util.HashSet;
+
+public class DemoApp 
+{
+	
+	
+  void input()
+  {
+	HashSet<String>list=new HashSet<>();
+	list.add("s1");
+	
+  }
+	
+}
+class App
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
