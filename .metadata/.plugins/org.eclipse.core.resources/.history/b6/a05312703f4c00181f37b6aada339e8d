@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class SampleProgram 
+{
+	
+   Map<Integer,String>j1=new HashMap<>();	
+   void g1()
+   {
+	   j1.put(101,"s1");
+	   j1.put(102,"s2");
+	   j1.put(102,"s2");
+	   j1.put(103,"s3");
+   }
+   void g2()
+   {
+	   System.out.println("Display of"+j1);
+   }
+
+}
+class Hoo
+{
+	
+	public static void main(String[] args) 
+	{
+		SampleProgram k=new SampleProgram();
+		k.g1();
+		k.g2();
+
+	}
+
+}

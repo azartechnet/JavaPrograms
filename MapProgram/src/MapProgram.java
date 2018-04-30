@@ -11,6 +11,7 @@ TreeMap<Integer,String> g1=new TreeMap<Integer,String>();
 	 
 	 for(Map.Entry m:g1.entrySet())
 	 {
+		 
 		
 		 System.out.println("Your value is:\n"+m.getKey()+""+m.getValue());
 	 }

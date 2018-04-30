@@ -1,0 +1,23 @@
+
+public class SampleProgram 
+{
+   void g1()
+   {
+	   
+   }
+   void g2()
+   {
+	   
+   }
+
+}
+class Hoo
+{
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
