@@ -1,0 +1,30 @@
+
+public class Demo extends Thread  
+{
+ public void run()
+  {
+	  for(int i=0;i<=5;i++)
+	  {
+		  try
+		  {
+			  System.out.println("SleepInside"+i);
+			  Thread.sleep(4000);
+			  System.out.println("SleepOutSide"+i);
+		  }
+		  catch(InterruptedException r)
+		  {
+			  
+		  }
+	  }
+  }
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+	   Demo g=new Demo();
+	   g.run();
+
+	}
+
+}

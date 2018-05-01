@@ -1,0 +1,27 @@
+
+public class Demo extends Thread  
+{
+ public void run()
+  {
+	  for(int i=0;i<=3;i++)
+	  {
+		  try
+		  {
+			  Thread.sleep(4000);
+		  }
+		  catch(InterruptedException r)
+		  {
+			  
+		  }
+	  }
+  }
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,31 @@
+
+public class Demo implements Runnable
+{
+ public void run()
+  {
+	  for(int i=0;i<=5;i++)
+	  {
+		  try
+		  {
+			  System.out.println("SleepInside"+i);
+			  Thread.sleep(4000);
+			  System.out.println("SleepOutSide"+i);
+		  }
+		  catch(InterruptedException r)
+		  {
+			  
+		  }
+	  }
+  }
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+	   Demo g=new Demo();
+	   Thread t1=new Thread();
+	   g.run();
+
+	}
+
+}
