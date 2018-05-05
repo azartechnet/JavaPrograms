@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Sample 
@@ -21,7 +22,7 @@ public class Sample
 	   
 
 	}
-	void g2()throws NullPointerException
+	void g2()throws NullPointerException,FileNotFoundException
 	{
 		
 			String a=null;

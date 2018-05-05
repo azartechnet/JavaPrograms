@@ -1,0 +1,52 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Demo 
+{
+	String uname;
+	Scanner g1=new Scanner(System.in);
+	void writeProcess() throws IOException,InterruptedException
+	{
+		try
+		{
+			FileOutputStream fout=new FileOutputStream("F:\\f1.txt");
+			System.out.println("Enter the value is::");
+			uname=g1.next();
+			
+			byte f[]=uname.getBytes();
+			
+			fout.write(f);
+			
+			Thread.sleep(2000);
+			
+			System.out.println("FileInserted Sucess!!!");
+			
+		}
+		catch(FileNotFoundException t)
+		{
+			
+		}
+	}
+	void readData()
+	{
+		try
+		{
+			FileInputStream fis=new FileInputStream("D:\\f1.txt");
+		}
+		catch(FileNotFoundException t)
+		{
+			
+		}
+	}
+
+	public static void main(String[] args) throws IOException, InterruptedException
+	{
+		Demo j1=new Demo();
+		//j1.writeProcess();
+
+	}
+
+}

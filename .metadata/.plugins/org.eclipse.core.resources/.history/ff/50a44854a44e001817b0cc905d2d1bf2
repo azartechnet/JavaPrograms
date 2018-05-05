@@ -1,0 +1,23 @@
+
+public class Demo 
+{
+
+	void g1()
+	{
+		try
+		{
+			Thread.sleep(3000);
+		}
+		catch(InterruptedException t)
+		{
+			
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
