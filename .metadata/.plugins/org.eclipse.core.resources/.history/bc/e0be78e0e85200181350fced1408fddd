@@ -1,0 +1,14 @@
+
+public class Sample 
+{
+
+	private String username:
+    private String pass;		
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

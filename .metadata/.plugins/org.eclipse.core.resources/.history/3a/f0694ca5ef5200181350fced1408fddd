@@ -1,0 +1,31 @@
+
+public class StaticInnerClassEx 
+{
+
+	
+	private static String fieldToValidate;
+	    static class ValidateCreditCards
+	  {
+	        void validate() 
+	       {
+	           /* code be added */
+	        }
+	    }
+
+	    static class ValidateDebitCards
+	    {
+	            void validate() 
+	     {
+	               /* code be added */
+	            }
+	        }
+	        static class ValidateNetBankingAccount
+	    {
+	            void validate() 
+	     {
+	               /* code be added */
+	            }
+	        }
+	    }
+
+}

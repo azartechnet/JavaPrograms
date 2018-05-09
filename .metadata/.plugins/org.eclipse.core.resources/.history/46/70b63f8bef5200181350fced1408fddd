@@ -1,0 +1,16 @@
+
+public class StaticInnerClassEx 
+{
+
+	
+	private static String fieldToValidate;
+	    static class ValidateCreditCards
+	  {
+	        void validate() 
+	       {
+	           /* code be added */
+	        }
+	    }
+
+
+}

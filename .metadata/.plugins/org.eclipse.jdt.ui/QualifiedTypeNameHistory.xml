@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="SpecialDigit"/>
-<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-<fullyQualifiedTypeName name="LoginPage"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="RegisterPage"/>
 <fullyQualifiedTypeName name="UserLogin"/>
 <fullyQualifiedTypeName name="ViewDetails"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.SequenceInputStream"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="Sample.Inner"/>
+<fullyQualifiedTypeName name="StaticInnerClassEx"/>
+<fullyQualifiedTypeName name="StaticInnerClassEx.ValidateNetBankingAccount"/>
+<fullyQualifiedTypeName name="StaticInnerClassEx.ValidateCreditCards"/>
 </qualifiedTypeNameHistroy>

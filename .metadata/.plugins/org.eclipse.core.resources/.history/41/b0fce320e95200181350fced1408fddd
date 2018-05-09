@@ -1,0 +1,24 @@
+
+public class Sample 
+{
+
+	private String username="admin";
+    private String pass="admin";		
+	
+    class Inner
+    {
+    	
+    	public void validate()
+    	{
+    		
+    	}
+    }
+    
+    
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

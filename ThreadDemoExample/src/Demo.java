@@ -3,36 +3,35 @@ import java.util.Scanner;
 public class Demo extends Thread
 {
 	
-	String uname;
-	Scanner g1=new Scanner(System.in);
+	
   public void run()
   {
 	  try
 	  {
-		  System.out.println("Enter the value is:::");
-		  uname=g1.next();
-	  Thread.sleep(3000);
-	  System.out.println("Display output::"+uname);
+		    Scanner reader = new Scanner(System.in); 
+		    System.out.println("Enter userName is:: ");
+		    System.out.println("Enter password is::");
+		    long limit = 5000L;
+		    long startTime = System.currentTimeMillis();
+		    String uname = reader.next();
+		    if ((startTime + limit) < System.currentTimeMillis())
+		        System.out.println("Sorry, your answer is too late");
+		    else if(uname.equals("admin"))
+		        System.out.println("LoginSucess!!");
 	  
 	  }
-	  catch(InterruptedException r)
+	  catch(Exception r)
 	  {
 		  System.out.println(r);
 	  }
   }
-  void run1()
-  {
-	  System.out.println("Normal method");
-  }
-}
-class Foo
-{
+  
+
 	public static void main(String[] args) 
 	{
 		Demo t1=new Demo();
-		t1.run();
-		t1.run1();
-
+		t1.start();
+		
 	}
 
 }
