@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="RegisterPage"/>
-<fullyQualifiedTypeName name="UserLogin"/>
-<fullyQualifiedTypeName name="ViewDetails"/>
-<fullyQualifiedTypeName name="net.proteanit.sql.DbUtils"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="com.niit.ULoginPage"/>
@@ -17,7 +13,6 @@
 <fullyQualifiedTypeName name="ULoginPage"/>
 <fullyQualifiedTypeName name="java.util.ListIterator"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="DemoFileWrite"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="StaticInnerClassEx"/>
 <fullyQualifiedTypeName name="StaticInnerClassEx.ValidateNetBankingAccount"/>
 <fullyQualifiedTypeName name="StaticInnerClassEx.ValidateCreditCards"/>
+<fullyQualifiedTypeName name="java.io.PipedOutputStream"/>
+<fullyQualifiedTypeName name="java.io.PipedInputStream"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 </qualifiedTypeNameHistroy>

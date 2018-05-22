@@ -11,14 +11,14 @@ public class Sample
     	System.out.println(""+username+""+pass);
     }
     
-    /*class Inner
+    class Inner
     {
     	
     	public void validate()
     	{
     		System.out.println(""+username+""+pass);
     	}
-    }*/
+    }
     
     
 	public static void main(String[] args) 
