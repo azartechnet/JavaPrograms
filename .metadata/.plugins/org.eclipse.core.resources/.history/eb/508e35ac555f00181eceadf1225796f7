@@ -1,0 +1,18 @@
+
+public class DemoPage 
+{
+   void get()
+   {
+	   System.out.println("welcome method-1");
+   }
+   void disp()
+   {
+	  System.out.println("welcome method-2"); 
+   }
+	public static void main(String[] args) 
+	{
+	
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class DemoPage 
+{
+	String uname="niit";
+   void get()
+   {
+	   int a=100;//local variable
+	   
+	   System.out.println("welcome method-1"+a+""+uname);
+   }
+   void disp()
+   {
+	  System.out.println("welcome method-2"+uname); 
+   }
+	public static void main(String[] args) 
+	{
+	   DemoPage g=new DemoPage();
+	   g.get();
+	   g.disp();
+
+	}
+
+}

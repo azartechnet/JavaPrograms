@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.DataInputStream"/>
-<fullyQualifiedTypeName name="java.lang.Float"/>
-<fullyQualifiedTypeName name="com.niit.ULoginPage"/>
 <fullyQualifiedTypeName name="com.niit.ViewMyDetails"/>
 <fullyQualifiedTypeName name="Demo"/>
 <fullyQualifiedTypeName name="URegisterPage"/>
@@ -16,7 +13,6 @@
 <fullyQualifiedTypeName name="DemoFileWrite"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
 <fullyQualifiedTypeName name="a.loginpage1"/>
 <fullyQualifiedTypeName name="a.registerpage"/>
 <fullyQualifiedTypeName name="a.RegisterPage"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="com.niit.LoginPage"/>
+<fullyQualifiedTypeName name="com.niit.RegisterPage"/>
+<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
+<fullyQualifiedTypeName name="DemoPage"/>
 </qualifiedTypeNameHistroy>
