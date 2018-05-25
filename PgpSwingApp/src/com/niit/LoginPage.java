@@ -9,10 +9,15 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class LoginPage extends JFrame {
@@ -75,11 +80,37 @@ public class LoginPage extends JFrame {
 		passwordField.setBounds(94, 96, 139, 27);
 		panel.add(passwordField);
 		
-		JButton btnLogin = new JButton("Login");
+		final JButton btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				new RegisterPage().setVisible(true);
+				try
+				{
+					String u=textField.getText();
+					String p=passwordField.getText();
+							String str="select * from adminlogin where auname='"+u+"'";
+					Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+					Connection conn=DriverManager.getConnection("jdbc:odbc:alogin","","");
+					Statement stmt=conn.createStatement();
+					ResultSet rs=stmt.executeQuery(str);
+					rs.next();
+					String auname=rs.getString(1);
+					String pass=rs.getString(2);
+					if(u.equals(auname)&&p.equals(pass))
+					{
+						JOptionPane.showMessageDialog(btnLogin, "LoginSucss");;
+						new AdminHomePage().setVisible(true);
+					}
+					else
+					{
+						JOptionPane.showMessageDialog(btnLogin, "LoginFaile");
+					}
+					
+				}
+				catch(Exception t)
+				{
+					JOptionPane.showMessageDialog(btnLogin, "LoginFail");
+				}
 			}
 		});
 		btnLogin.setBounds(74, 160, 89, 23);
