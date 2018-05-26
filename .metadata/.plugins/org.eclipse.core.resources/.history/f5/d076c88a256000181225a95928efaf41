@@ -1,0 +1,22 @@
+
+public class Demo
+{
+
+	int pid;
+	float f1;
+	String uname;
+	void g1()
+	{
+		
+	}
+	void g2()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

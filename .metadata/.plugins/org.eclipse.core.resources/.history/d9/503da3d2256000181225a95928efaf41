@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Demo
+{
+
+	int pid;
+	float f1;
+	String uname;
+	Scanner g=new Scanner(System.in);
+	void g1()
+	{
+		System.out.println("Enter the value is:\n");
+		pid=g.nextInt();
+	}
+	void g2()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
