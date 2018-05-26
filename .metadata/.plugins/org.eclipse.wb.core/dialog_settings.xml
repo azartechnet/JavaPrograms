@@ -6,6 +6,12 @@
 		<item value="228" key="y"/>
 		<item value="281" key="height"/>
 	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ComponentAddDialog">
+		<item value="374" key="x"/>
+		<item value="617" key="width"/>
+		<item value="184" key="y"/>
+		<item value="370" key="height"/>
+	</section>
 	<section name="org.eclipse.wb.internal.swing.model.property.editor.models.table.TableModelDialog">
 		<item value="295" key="x"/>
 		<item value="776" key="width"/>
