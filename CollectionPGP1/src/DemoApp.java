@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.TreeSet;
@@ -10,7 +11,7 @@ public class DemoApp
   {
 	/*HashSet<String>list=new HashSet<>();*/
 	  
-	  TreeSet<String>list=new TreeSet<>();
+	  ArrayList<String>list=new ArrayList<>();
 	  
 	list.add("s1");
 	list.add("s2");
