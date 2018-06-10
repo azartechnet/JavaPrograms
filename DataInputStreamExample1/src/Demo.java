@@ -7,7 +7,7 @@ public class Demo
 	String name;
 	float f1;
 	DataInputStream g=new DataInputStream(System.in);
-	void g1()throws IOException
+	void g1() throws  IOException
 	{
 		System.out.println("Enter the value is:\n");
 		pid=Integer.parseInt(g.readLine());
@@ -19,9 +19,7 @@ public class Demo
 		System.out.println("Result is:\n"+pid+""+name+""+f1);
 	}
 	
-}
-class Foo
-{
+
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		

@@ -1,0 +1,22 @@
+
+public class Demo
+{
+
+	int a;
+	Scanner f=new Scanner(System.in);
+	void get1()
+	{
+		
+	}
+	void get2()
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

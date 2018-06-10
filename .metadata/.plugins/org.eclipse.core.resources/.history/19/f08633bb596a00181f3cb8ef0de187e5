@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class App 
+{
+	//int a=100;
+	int a;
+	float f1;
+	String uname;
+	Scanner g=new Scanner(System.in);
+	void input()
+	{
+		System.out.println("Enter the value is::");
+		a=g.nextInt();
+	}
+	void output()
+	{
+		
+		System.out.println("method-2");
+	}
+  public static void main(String as[])
+  {
+	  
+   App g=new App();
+   g.input();
+   g.output();
+  }
+}

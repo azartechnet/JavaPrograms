@@ -1,0 +1,17 @@
+
+public class App 
+{
+	void input()
+	{
+		
+	}
+	void output()
+	{
+		
+	}
+  public static void main(String as[])
+  {
+	  System.out.println("welcome");
+	 
+  }
+}
