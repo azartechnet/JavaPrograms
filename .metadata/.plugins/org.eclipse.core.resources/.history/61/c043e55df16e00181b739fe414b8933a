@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+	String name;
+	int a1;
+	float f1;
+
+	Scanner g=new Scanner(System.identityHashCode(x);)
+	void get1()
+	{
+		System.out.println("Enter the value is::");
+		
+		
+	}
+	void get2()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

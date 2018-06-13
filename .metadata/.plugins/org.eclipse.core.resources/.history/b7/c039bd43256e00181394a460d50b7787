@@ -1,0 +1,23 @@
+
+public class Demo 
+{
+	
+	void get1()
+	{
+		System.out.println("welcome method-1");
+	}
+	void get2()
+	{
+		System.out.println("welcome method-2");
+	}
+	
+
+	public static void main(String[] args)
+	{
+          
+		 Demo g=new Demo();
+		 g.get1();
+
+	}
+
+}

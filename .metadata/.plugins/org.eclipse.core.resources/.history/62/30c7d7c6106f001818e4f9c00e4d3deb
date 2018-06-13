@@ -1,0 +1,21 @@
+package forloopprogram1;
+
+public class Demo
+{
+  int i;
+  void get1()
+  {
+	  for(i=0;i<=5;i++)
+	  {
+		  System.out.println("i value is:"+i);
+	  }
+  }
+  
+	public static void main(String[] args) 
+	{
+		Demo g=new Demo();
+		g.get1();
+
+	}
+
+}
