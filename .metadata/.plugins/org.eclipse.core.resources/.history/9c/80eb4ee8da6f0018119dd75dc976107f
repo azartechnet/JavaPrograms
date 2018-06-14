@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Demo
+{
+	 int n;
+	  
+	  Scanner g=new Scanner(System.in);
+	  void g1()
+	  {
+		  System.out.println("Enter the n value is:\n");
+		  n=g.nextInt();
+	  }
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

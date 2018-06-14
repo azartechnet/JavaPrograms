@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+
+	int rem=0,n,s;
+	Scanner scan=new Scanner(System.in);
+	void get1()
+	{
+		System.out.println("Enter the value is::");
+		n=scan.nextInt();
+	}
+	void cal()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
