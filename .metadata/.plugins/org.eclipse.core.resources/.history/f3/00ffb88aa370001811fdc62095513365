@@ -1,0 +1,22 @@
+
+public class DemoApp 
+{
+	
+	int a[]=new int[5];
+	
+	void input()
+	{
+		
+	}
+	void disp()
+	{
+		
+	}
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
