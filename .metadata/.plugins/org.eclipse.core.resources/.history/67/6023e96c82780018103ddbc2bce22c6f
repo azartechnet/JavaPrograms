@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class SingleDimArray 
+{
+  int p[]=new int[20];
+  int k[]=new int[20];
+  Scanner g=new Scanner(System.in);
+  int n,i,s,temp,pos;
+  void g1()
+  {
+	  System.out.println("Enter the n value is:\n");
+	  n=g.nextInt();
+	  for(i=0;i<=n;i++)
+	  {
+		  System.out.println("Enter the array value is:\n");
+		  p[i]=g.nextInt();
+		  //System.out.println("Result is:\n"+p[i]);
+	  }
+	 /* for(i=0;i<=n;i++)
+	  {
+		  System.out.println("Result is:\n"+p[i]);
+	  }*/
+	  
+	  
+	 
+	  System.out.println("Enter the index value is:\n");
+	   s=g.nextInt();
+	  
+	  
+	  
+	  for(i=0;i<=n;i++)
+	  {
+		  if(s==p[i])
+		  {
+			  int temp=1;
+			 int pos=i;
+			  System.out.println("your index value is:"+pos+"**"+p[i]);
+			//  System.out.println("k value is:"+k);
+		  }
+		  
+	  }
+	  if (temp==1)
+	  {
+		 System.out.println(""+s+""+pos);
+	  }
+		  else
+		  {
+		  System.out.println("Element not found\n");
+		  }
+  }
+  void g2()
+  {
+	  
+	  
+	  
+  }
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+		SingleDimArray g=new SingleDimArray();
+		g.g1();
+		g.g2();
+
+	}
+
+}
