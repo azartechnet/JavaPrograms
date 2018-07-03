@@ -1,0 +1,25 @@
+
+public class Demo 
+{
+
+	void g1(int a)
+	{
+		System.out.println("welcome");
+	}
+	void g2(String u,float f1)
+	{
+		System.out.println("welcome niit");
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		
+		Demo g=new Demo();
+		g.g1(100);
+		g.g2("azar",3.4);
+
+
+	}
+
+}

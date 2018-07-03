@@ -1,0 +1,19 @@
+
+public class Demo 
+{
+
+	void g1()
+	{
+		System.out.println("welcome");
+	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+		
+
+
+	}
+
+}

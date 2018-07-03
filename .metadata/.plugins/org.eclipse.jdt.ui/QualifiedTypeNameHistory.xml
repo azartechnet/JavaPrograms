@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="a.loginpage1"/>
 <fullyQualifiedTypeName name="a.registerpage"/>
 <fullyQualifiedTypeName name="a.RegisterPage"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="a.Viewdetails"/>
 <fullyQualifiedTypeName name="a.LoginPage"/>
 <fullyQualifiedTypeName name="FileDemo"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="DemoApp"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

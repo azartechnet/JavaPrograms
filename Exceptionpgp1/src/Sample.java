@@ -30,7 +30,7 @@ public class Sample
 			System.out.println(a.length());
 		
 	}
-	void g3()
+	/*void g3()
 	{
 		try
 		{
@@ -55,12 +55,12 @@ public class Sample
 		{
 			
 		}
-	}
+	}*/
 	
-	public static void main(String[] args) 
+	public static void main(String[] args) throws NullPointerException, FileNotFoundException 
 	{
 		Sample g=new Sample();
-		//g.g1();
+		g.g1();
 		g.g2();
 
 	}
