@@ -1,0 +1,31 @@
+
+import java.io.*;
+import java.util.Scanner;
+
+public class DemoApp 
+{
+	
+	String uname;
+	  Scanner f1=new Scanner(System.in);
+  public void get1()
+  {
+	  
+	  try
+	  {
+		 FileInputStream fis=new FileInputStream("F:\\d1.txt");
+		  
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class MainDemo
+{
+	public static void main(String as[])
+	{
+		DemoApp g=new DemoApp();
+	    g.get1();
+	}
+}

@@ -1,0 +1,27 @@
+
+import java.io.*;
+import java.scanner;
+
+public class DemoApp 
+{
+  public void get1()
+  {
+	  Scanner f1=new Scanner(System.in);
+	  try
+	  {
+		  File
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class MainDemo
+{
+	public static void main(String as[])
+	{
+		DemoApp g=new DemoApp();
+	    g.get1();
+	}
+}

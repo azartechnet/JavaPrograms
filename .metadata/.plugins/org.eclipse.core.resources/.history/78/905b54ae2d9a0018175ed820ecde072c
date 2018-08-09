@@ -1,0 +1,23 @@
+
+public class DemoApp 
+{
+  public void get1()
+  {
+	  try
+	  {
+		  
+	  }
+	  catch(Exception t)
+	  {
+		  
+	  }
+  }
+}
+class MainDemo
+{
+	public static void main(String as[])
+	{
+		DemoApp g=new DemoApp();
+	    g.get1();
+	}
+}

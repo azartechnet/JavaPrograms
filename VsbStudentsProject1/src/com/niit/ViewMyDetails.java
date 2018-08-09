@@ -75,7 +75,7 @@ public class ViewMyDetails extends JFrame {
 				{
 					 String uname=textField.getText();
     				//String str="select * from ureg where uname='"+uname+"'";
-				String str="select * from ureg";
+				String str="select * from ureg  where uname='"+uname+"'";
 						Class.forName("org.h2.Driver");
 						  Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/vsbjava","sa","");
 						Statement stm=con.createStatement();

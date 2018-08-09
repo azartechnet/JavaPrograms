@@ -1,0 +1,18 @@
+package cebprogram1;
+
+public class Demo 
+{
+
+	void get1()
+	{
+		
+	}
+	
+	public static void main(String as[]) {
+		
+		
+		System.out.println("welcome-1");
+
+	}
+
+}

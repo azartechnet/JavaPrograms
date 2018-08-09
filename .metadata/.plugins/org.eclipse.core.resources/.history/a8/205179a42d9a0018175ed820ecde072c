@@ -1,0 +1,16 @@
+
+public class DemoApp 
+{
+  public void get1()
+  {
+	  
+  }
+}
+class MainDemo
+{
+	public static void main(String as[])
+	{
+		DemoApp g=new DemoApp();
+	    g.get1();
+	}
+}
