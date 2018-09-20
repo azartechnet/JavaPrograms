@@ -1,0 +1,19 @@
+
+public class Foo 
+{
+
+	int a,b,c;
+	Scanner g=new Scanner(System.in)
+	
+	void input()
+	{
+		
+	}
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

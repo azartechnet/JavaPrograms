@@ -1,0 +1,24 @@
+
+public class Demo
+{
+
+	void method1()
+	{
+		
+	}
+	void method2()
+	{
+		
+	}
+	
+}	
+class MainClass
+{
+	public static void main(String[] args)
+	{
+		
+	
+
+	}
+
+}
