@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class DglSwitchProgram 
+{
+	
+	int s1;
+	Scanner g=new Scanner(System.in);
+	void input()
+	{
+		System.out.println("Ente the value is:\n");
+		s1=g.nextInt();
+	}
+	void dis()
+	{
+		
+	}
+ 
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}
