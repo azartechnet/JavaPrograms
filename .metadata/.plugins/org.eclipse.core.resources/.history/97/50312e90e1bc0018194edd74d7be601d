@@ -1,0 +1,30 @@
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class Foo 
+{
+	int a;
+	float f1;
+	String name;
+	char ds;
+	DataInputStream dis=new DataInputStream(System.in);
+	void input() throws NumberFormatException, IOException
+	{
+		System.out.println("Enter the value is:");
+		a=Integer.parseInt(dis.readLine());
+		
+	}
+	void process()
+	{
+		
+	}
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

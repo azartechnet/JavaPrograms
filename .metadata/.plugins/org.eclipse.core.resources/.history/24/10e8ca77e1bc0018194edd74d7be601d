@@ -1,0 +1,27 @@
+import java.io.DataInputStream;
+
+public class Foo 
+{
+	int a;
+	float f1;
+	String name;
+	char ds;
+	DataInputStream dis=new DataInputStream(System.in);
+	void input()
+	{
+		System.out.println("Enter the value is:");
+	}
+	void process()
+	{
+		
+	}
+}
+class Sample
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

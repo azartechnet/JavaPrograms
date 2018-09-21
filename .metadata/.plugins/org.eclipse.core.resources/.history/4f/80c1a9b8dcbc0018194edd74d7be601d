@@ -1,0 +1,14 @@
+
+public class Sample
+{
+	
+  void get()
+  {
+	  System.out.println("Method-1");
+  }
+	
+  public static void main(String as[])
+  {
+	 
+  }
+}

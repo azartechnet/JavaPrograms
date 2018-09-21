@@ -1,0 +1,19 @@
+
+public class Demo 
+{
+	int a;
+	float f1;
+	String uname;
+   void input()
+   {
+	   
+   }
+}
+class Sample
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
