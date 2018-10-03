@@ -1,0 +1,16 @@
+package switchcaseprogram;
+
+public class Sample
+{
+  void h1()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

@@ -1,0 +1,18 @@
+package switchcaseprogram;
+
+public class Sample
+{
+	int n;
+	Scanner f=new Scanner(System.in);
+  void h1()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

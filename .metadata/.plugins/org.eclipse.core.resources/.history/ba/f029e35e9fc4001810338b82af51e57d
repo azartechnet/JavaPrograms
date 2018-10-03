@@ -1,0 +1,27 @@
+package switchcaseprogram;
+
+import java.util.Scanner;
+
+public class Sample
+{
+	int n;
+	Scanner f=new Scanner(System.in);
+  void h1()
+  {
+	  System.out.println("Enter the n value is:\n");
+	  n=f.nextInt();
+	  
+	  switch(n)
+	  {
+	  case 1:
+		  System.out.println("case-1");
+	  }
+  }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}
