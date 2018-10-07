@@ -1,0 +1,26 @@
+
+public class Sample
+{
+	
+  int n,rev=0;
+  Scanner d=new Scanner(System.in);
+  void input()
+  {
+	  
+  }
+  void display()
+  {
+	  
+  }
+}
+
+class Demo
+{
+
+	public static void main(String[] args) 
+	{
+
+
+	}
+
+}

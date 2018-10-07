@@ -1,0 +1,16 @@
+
+public class Demo 
+{
+
+	void get()
+	{
+		static a=10;
+	}
+	
+	
+	public static void main(String as[]) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

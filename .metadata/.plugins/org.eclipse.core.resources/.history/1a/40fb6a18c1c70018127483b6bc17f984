@@ -1,0 +1,25 @@
+
+public class Sample
+{
+	
+  int n,rev=0;	
+  void input()
+  {
+	  
+  }
+  void display()
+  {
+	  
+  }
+}
+
+class Demo
+{
+
+	public static void main(String[] args) 
+	{
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class Sample
+{
+  void input()
+  {
+	  
+  }
+  void display()
+  {
+	  
+  }
+}
+
+class Demo
+{
+
+	public static void main(String[] args) 
+	{
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class Demo 
+{
+
+	static int a=10;
+	void get()
+	{
+		
+		
+	}
+	
+	
+	public static void main(String as[]) {
+		
+		
+		Demo f1=new Demo();
+		f1.get();
+		f1.get();
+		//Demo f2=new Demo();
+
+	}
+
+}
