@@ -1,0 +1,20 @@
+
+
+
+
+public class Sample 
+{
+	
+	int pid[]=new int pid[20];
+	
+	void input()
+	{
+		
+	}
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}

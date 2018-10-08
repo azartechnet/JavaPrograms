@@ -1,0 +1,16 @@
+
+public class Demo 
+{
+	
+	int a[]=new int[5];
+	void get()
+	{
+		
+	}
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}

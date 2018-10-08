@@ -1,0 +1,20 @@
+
+import java.util.*;
+public class Demo 
+{
+	
+	int a[]=new int[5];
+ 
+	 int i;
+	Scanner f=new Scanner(System.in);
+	void get()
+	{
+		
+	}
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}

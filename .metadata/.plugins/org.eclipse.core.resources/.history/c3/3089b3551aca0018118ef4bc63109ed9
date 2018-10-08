@@ -1,0 +1,20 @@
+
+
+
+
+public class Sample 
+{
+	
+	int pid[]=new int[20];//declaration for one-dim-array
+	int i,n;
+	void input()
+	{
+		
+	}
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}

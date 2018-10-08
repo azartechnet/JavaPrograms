@@ -1,0 +1,21 @@
+
+import java.util.*;
+public class Demo 
+{
+	
+	int a[]=new int[5];
+ 
+	 int i,n;
+	Scanner f=new Scanner(System.in);
+	void get()
+	{
+		System.out.println("Enter the value is:\n");
+		n=f.nextInt();
+	}
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}
