@@ -1,0 +1,20 @@
+
+public class Sample
+{
+	int a;
+  void get()
+  {
+	  
+  }
+}
+class D
+{
+	
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

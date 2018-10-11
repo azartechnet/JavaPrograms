@@ -1,0 +1,15 @@
+
+public class Sample 
+{
+  void input1()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

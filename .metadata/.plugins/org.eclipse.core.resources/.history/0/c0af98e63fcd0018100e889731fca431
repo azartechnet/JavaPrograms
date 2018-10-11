@@ -1,0 +1,20 @@
+
+public class Sample
+{
+	int a;
+  void get()
+  {
+	  System.out.println("BaseClass value is:\n"+a);
+  }
+}
+class D
+{
+	
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

@@ -1,0 +1,23 @@
+
+public class Sample
+{
+	int a;
+  void get()
+  {
+	  System.out.println("BaseClass value is:\n"+a);
+  }
+}
+class D
+{
+	void inheritance()
+	{
+		System.out.println("Dervied value is:\n"+a);
+	}
+}
+class Demo
+{
+	public static void main(String as[])
+	{
+		
+	}
+}
