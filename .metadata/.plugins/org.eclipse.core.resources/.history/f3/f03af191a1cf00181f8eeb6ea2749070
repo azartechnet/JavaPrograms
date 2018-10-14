@@ -1,0 +1,18 @@
+
+public class Sample
+{
+  
+	
+  void get1()
+  {
+	  final int p=10;
+  }
+	
+}
+class Demo
+{
+  public static void main(String as[])
+  {
+	  
+  }
+}

@@ -1,0 +1,25 @@
+
+public class Sample 
+{
+	void get1()
+	{
+		
+	}
+}
+class D extends Sample
+{
+	void get2()
+	{
+		
+	}
+}
+
+class Demo
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

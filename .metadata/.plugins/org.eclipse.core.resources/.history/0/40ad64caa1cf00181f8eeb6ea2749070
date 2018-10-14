@@ -1,0 +1,21 @@
+
+public class Sample
+{
+int p=10;
+	
+  void get1()
+  {
+	  p++;
+	  System.out.println(p);
+  }
+	
+}
+class Demo
+{
+  public static void main(String as[])
+  {
+	  Sample g=new Sample();
+	  g.get1();
+	  g.get1();
+  }
+}

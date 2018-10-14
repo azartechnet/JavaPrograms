@@ -1,0 +1,23 @@
+
+abstract class S1
+{
+	int p=100;
+	public void g1()
+	{
+		System.out.println("Welcome to Normal Method..");
+	}
+	abstract public void g2();
+}
+
+
+
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
