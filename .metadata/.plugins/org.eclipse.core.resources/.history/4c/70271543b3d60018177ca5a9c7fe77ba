@@ -1,0 +1,23 @@
+import java.util.HashSet;
+
+public class SampleApp 
+{
+	
+   HashSet j1=new HashSet();	
+   void get1()
+   {
+	   j1.add("a1");
+	   j1.add("a2");
+	   j1.add("a3");
+   }
+}
+
+class Foo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

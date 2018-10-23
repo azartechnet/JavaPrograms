@@ -1,0 +1,25 @@
+
+public class Sample
+{
+
+	void get1(int a)
+	{
+		
+	}
+	void get1(int a1)
+	{
+		
+	}
+	
+}
+class Sample1
+{
+	public static void main(String[] args) 
+	{
+		Sample d1=new Sample1();
+		d1.get1(10);
+		d1.get1(20);
+
+	}
+
+}

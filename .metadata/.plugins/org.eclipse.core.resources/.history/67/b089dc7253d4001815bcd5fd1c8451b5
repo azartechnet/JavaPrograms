@@ -1,0 +1,25 @@
+
+public class SampleApp 
+{
+   
+  SampleApp()
+  {
+	  System.out.println("Welcome default class..");
+  }
+  SampleApp(String uname)
+  {
+	  System.out.println("welcome to "+uname);
+  }
+	
+}
+
+class Demo
+{
+	public static void main(String[] args)
+	{
+		
+		new SampleApp();
+
+	}
+
+}

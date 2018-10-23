@@ -1,0 +1,19 @@
+
+public class Demo<T>
+{
+	
+	private T t;
+	
+	public void setValue()
+	{
+		
+	}
+	
+
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

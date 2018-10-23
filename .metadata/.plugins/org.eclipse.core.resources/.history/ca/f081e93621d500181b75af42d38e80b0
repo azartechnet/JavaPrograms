@@ -1,0 +1,38 @@
+
+public class Demo<T>
+{
+	
+	/*private T t;
+	
+	public void setValue(T t)
+	{
+		this.t=t;
+	}
+	public T get()
+	{
+		return t;
+	}*/
+	
+	//private T y=100;
+	
+	public T get2()
+	{
+		T=100;
+		System.out.println("Welcome to"+y);
+	}
+	
+
+	public static void main(String[] args)
+	{
+		Demo<Integer>h1=new Demo<Integer>();
+		
+		h1.get2();
+		
+		//h1.setValue(100);
+		
+		//System.out.println("Value is:\n"+h1.get());
+		
+
+	}
+
+}

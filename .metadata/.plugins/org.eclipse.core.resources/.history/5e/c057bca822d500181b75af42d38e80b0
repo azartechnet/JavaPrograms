@@ -1,0 +1,11 @@
+
+public class SampleTest
+{
+	public <M> M test(M t)
+	
+	
+   public static void main(String as[])
+   {
+	   
+   }
+}

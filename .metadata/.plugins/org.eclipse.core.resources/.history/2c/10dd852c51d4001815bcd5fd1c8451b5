@@ -1,0 +1,21 @@
+
+public class SampleApp 
+{
+   
+	
+	
+
+	public static void main(String[] args)
+	{
+		
+		SampleApp()
+		{
+		  System.out.println("default Cons..");	
+		}
+		
+		
+		//new SampleApp();
+
+	}
+
+}

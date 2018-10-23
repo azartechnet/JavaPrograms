@@ -1,0 +1,26 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class SampleApp 
+{
+	
+   HashSet j1=new HashSet();	
+   void get1()
+   {
+	   j1.add("a1");
+	   j1.add("a2");
+	   j1.add("a3");
+	   
+	   Iterator g1=j1.iterator();
+   }
+}
+
+class Foo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

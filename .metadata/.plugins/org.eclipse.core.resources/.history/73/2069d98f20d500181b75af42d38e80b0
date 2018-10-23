@@ -1,0 +1,23 @@
+
+public class Demo<T>
+{
+	
+	private T t;
+	
+	public void setValue(T t)
+	{
+		this.t=t;
+	}
+	public T get()
+	{
+		
+	}
+	
+
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}
