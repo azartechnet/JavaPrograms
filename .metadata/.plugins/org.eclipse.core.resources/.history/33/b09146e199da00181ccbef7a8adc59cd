@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Sample 
+{
+
+	ArrayList<String>list=new ArrayList<>();
+	void get1()
+	{
+		list.add("a1");
+		list.add("a2");
+		list.add("a1");
+		System.out.println("List value is:\n"+list);
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		Sample g1=new Sample();
+		g1.get1();
+
+	}
+
+}

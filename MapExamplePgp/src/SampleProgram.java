@@ -9,12 +9,15 @@ public class SampleProgram
    {
 	   j1.put(101,"s1");
 	   j1.put(102,"s2");
-	   j1.put(102,"s5");
+	   j1.put(104,"s2");
 	   j1.put(103,"s3");
    }
    void g2()
    {
-	   System.out.println("Display of"+j1);
+	   for(Map.Entry k:j1.entrySet())
+	   {
+	   System.out.println("Display of"+k.getKey()+"\n"+k.getValue());
+	   }
 	   System.out.println("Searching of"+j1.containsKey(101));
 	   System.out.println("Remove of"+j1.remove(102));
 	   System.out.println("Check of"+j1.containsKey(102));
