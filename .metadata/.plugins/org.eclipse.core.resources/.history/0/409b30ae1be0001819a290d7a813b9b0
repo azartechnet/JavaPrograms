@@ -1,0 +1,19 @@
+
+public class Program1 
+{
+	int a=100;
+   void get1()
+   {
+	   
+   }
+  
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

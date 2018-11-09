@@ -1,0 +1,23 @@
+
+public class Program1 
+{
+	int a=100,c;
+   void get1()
+   {
+	   System.out.println("Exception In");
+	   c=a/1;
+	   System.out.println("Exception Out");
+   }
+    
+  
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		Program1 g1=new Program1();
+		g1.get1();
+
+	}
+
+}
