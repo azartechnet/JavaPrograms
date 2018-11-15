@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="SampleProgram"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="Sample.Inner"/>
 <fullyQualifiedTypeName name="StaticInnerClassEx"/>
 <fullyQualifiedTypeName name="StaticInnerClassEx.ValidateNetBankingAccount"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 </qualifiedTypeNameHistroy>

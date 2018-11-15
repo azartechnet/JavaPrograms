@@ -1,0 +1,21 @@
+
+public class Sample 
+{
+   void run()
+   {
+	   System.out.println("welcome thread..");
+   }
+	
+}
+class Demo
+{
+	
+
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("MainMethod");
+
+	}
+
+}
