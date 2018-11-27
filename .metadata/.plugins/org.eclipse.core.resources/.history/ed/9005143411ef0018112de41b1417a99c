@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class Sample 
+{
+	
+  String n="niit";	
+	
+  void writeData()throws IOException,FileNotFoundException
+  {
+	  FileOutputStream fos1=new FileOutputStream("D:\\v1.txt");
+	  FileOutputStream fos2=new FileOutputStream("D:\\v2.txt");
+	  
+	  
+	  
+	  
+  }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -15,20 +15,15 @@ public class Demo extends Thread
   		}
   		
   	}
-  	 synchronized void get()
+  	synchronized void get() throws InterruptedException
 		{
-			try
-			{ 
+			
 				System.out.println("Wait block IN");
 				wait(5000);
 				System.out.println("Wait block OUT");
 				notify();
 				System.out.println("NOTIFY OUT");
-			}
-			catch(InterruptedException t)
-			{
-				System.out.println(t);
-			}
+			
 		}
 }
 class Demo1

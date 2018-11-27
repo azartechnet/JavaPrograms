@@ -1,0 +1,15 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class Sample 
+{
+  void writeData()
+  {
+	  FileOutputStream fos1=new FileOutputStream("D:\\v1.txt");
+  }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
