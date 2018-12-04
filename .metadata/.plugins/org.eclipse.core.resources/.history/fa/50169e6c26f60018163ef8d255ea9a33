@@ -1,0 +1,18 @@
+
+public class SampleApp extends Thread
+{
+  public void run()
+   {
+	   
+   }
+}
+class Demo
+{
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

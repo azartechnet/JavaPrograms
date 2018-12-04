@@ -1,0 +1,23 @@
+
+public class SampleApp extends Thread
+{
+  public void run()
+   {
+	   System.out.println("welcome to Thread..");
+   }
+  void Sample()
+  {
+	  System.out.println("welcome...");
+  }
+}
+class Demo
+{
+	
+	public static void main(String[] args) 
+	{
+		SampleApp t1=new SampleApp();
+		t1.start();
+
+	}
+
+}

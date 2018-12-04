@@ -1,0 +1,18 @@
+
+public class SampleApp 
+{
+   void run()
+   {
+	   
+   }
+}
+class Demo
+{
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
