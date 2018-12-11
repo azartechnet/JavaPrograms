@@ -1,0 +1,21 @@
+
+public class Demo 
+{
+   void addProduct()
+   {
+	   
+   }
+   void viewProduct()
+   {
+	   
+   }
+}
+class Foo
+{
+	public static void main(String df[])
+	{
+		System.out.println("welcome to niit");
+      
+	}
+
+}

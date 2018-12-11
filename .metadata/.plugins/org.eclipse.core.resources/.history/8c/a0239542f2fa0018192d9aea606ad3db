@@ -1,0 +1,23 @@
+
+public class Sample
+{
+
+  int a1;
+  float f1;
+  String name;
+  char c;
+  void get1()
+  {
+	  
+  }
+}
+class Demo
+{
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

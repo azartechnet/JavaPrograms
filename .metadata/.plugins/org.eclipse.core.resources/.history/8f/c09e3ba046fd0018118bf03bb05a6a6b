@@ -1,0 +1,16 @@
+
+public class Sample 
+{
+
+	String uname="niit";
+	void get1()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class Demo
+{
+
+  public void get()
+	{
+		
+	}
+
+
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

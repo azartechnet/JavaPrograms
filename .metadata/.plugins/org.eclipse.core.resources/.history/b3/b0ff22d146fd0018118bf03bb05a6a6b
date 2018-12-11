@@ -1,0 +1,26 @@
+import java.io.FileOutputStream;
+
+public class Sample 
+{
+
+	String uname="niit";
+	
+	void get1()
+	{
+		try
+		{
+		FileOutputStream fos=new FileOutputStream("d:\\g1.txt");
+		byte h[]=uname.getBytes();
+		}
+		catch(Exception r)
+		{
+			System.out.println(r);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

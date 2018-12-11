@@ -28,7 +28,7 @@ class Sample
       t1.start();
       try
       {
-    	  System.out.println("JoinIN");
+      System.out.println("JoinIN");
       t1.join(5000);
       System.out.println("JoinOut");
       }

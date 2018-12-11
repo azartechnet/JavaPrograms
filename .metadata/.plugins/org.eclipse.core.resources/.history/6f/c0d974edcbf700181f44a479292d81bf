@@ -1,0 +1,22 @@
+
+public class Sample
+{
+    int a=10;//class or instance variables
+	void get1()
+	{
+		
+	}
+	void get2()
+	{
+		
+	}
+}
+class Demo
+{
+	public static void main(String as[]) 
+	{
+		System.out.println("welcome to niit");
+
+	}
+
+}

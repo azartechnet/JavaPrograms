@@ -22,7 +22,7 @@ public class Sample
 	   
 
 	}
-	void g2()throws NullPointerException,FileNotFoundException
+	void g2()throws NullPointerException
 	{
 		
 			String a=null;
@@ -57,7 +57,7 @@ public class Sample
 		}
 	}*/
 	
-	public static void main(String[] args) throws NullPointerException, FileNotFoundException 
+	public static void main(String[] args) throws NullPointerException
 	{
 		Sample g=new Sample();
 		g.g1();

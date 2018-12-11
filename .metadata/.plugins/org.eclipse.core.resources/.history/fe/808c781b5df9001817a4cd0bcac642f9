@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Sample 
+{
+  int a;
+  float f1;
+  double d1;
+  String name;
+  Scanner scan=new Scanner(System.in);
+  void get1()
+  {
+	  
+  }
+  void get2()
+  {
+	  
+  }
+}
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

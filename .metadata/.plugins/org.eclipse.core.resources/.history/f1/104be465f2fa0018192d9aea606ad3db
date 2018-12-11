@@ -1,0 +1,25 @@
+import java.io.DataInputStream;
+
+public class Sample
+{
+
+  int a1;
+  float f1;
+  String name;
+  char c;
+  DataInputStream dis=new DataInputStream(System.in);
+  void get1()
+  {
+	  
+  }
+}
+class Demo
+{
+	
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Demo 
+{
+
+
+	public static void main(String df[])
+	{
+		System.out.println("welcome to niit");
+      
+	}
+
+}

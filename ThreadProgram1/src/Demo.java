@@ -6,6 +6,7 @@ public class Demo extends Thread
   		try
   		{
   	    	
+  		Thread.sleep(100000);	
   	   System.out.println("ThreadPrity:::"+currentThread().getPriority());
   		System.out.println("CurrentThread:::"+currentThread().getName());
   		}
