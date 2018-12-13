@@ -1,0 +1,20 @@
+package krrcebprogram1;
+
+public class Sample 
+{
+
+	int a;
+	float f1;
+	String namel
+	void input()
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	 
+
+	}
+
+}

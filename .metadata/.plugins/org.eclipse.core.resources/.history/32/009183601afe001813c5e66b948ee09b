@@ -1,0 +1,26 @@
+package krrcebprogram1;
+
+import java.util.Scanner;
+
+public class Sample 
+{
+
+	int a;
+	float f1;
+	String name;
+	Scanner g=new Scanner(System.in);
+	void input()
+	{
+		System.out.println("Enter the value is:");
+		a=g.nextInt();
+		f1=g.nextFloat();
+		name=g.next();
+	}
+	
+	public static void main(String[] args)
+	{
+	 
+
+	}
+
+}

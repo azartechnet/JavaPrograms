@@ -2,19 +2,30 @@ package com.niit;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
+import java.awt.Color;
+import javax.swing.border.LineBorder;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.ActionEvent;
 
 public class HomePage extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+   public void close()
+   {
+	    
+	    WindowEvent win=new WindowEvent(this,WindowEvent.WINDOW_CLOSING);
+	        
+	Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(win);
+	    
+	}
 
 	/**
 	 * Launch the application.
@@ -31,51 +42,59 @@ public class HomePage extends JFrame {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the frame.
 	 */
 	public HomePage() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 416);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 11, 397, 239);
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
+		panel.setForeground(Color.MAGENTA);
+		panel.setBounds(33, 40, 358, 307);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblHrsystem = new JLabel("HRSYSTEM");
-		lblHrsystem.setBounds(155, 11, 119, 19);
-		panel.add(lblHrsystem);
+		final JButton btnLoginpage = new JButton("LoginPage");
+		btnLoginpage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getSource()==btnLoginpage)
+				{
+					JOptionPane.showMessageDialog(btnLoginpage, "LoginSuces..");
+					
+					new LoginPage().setVisible(true);
+					//close();
+					
+				}
+			}
+		});
+		btnLoginpage.setBounds(25, 70, 115, 31);
+		panel.add(btnLoginpage);
 		
-		JLabel lblEmail = new JLabel("Email");
-		lblEmail.setBounds(25, 56, 46, 14);
-		panel.add(lblEmail);
+		final JButton btnRegisterpage = new JButton("RegisterPage");
+		btnRegisterpage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getSource()==btnRegisterpage)
+				{
+					new RegisterPage().setVisible(true);
+					
+					
+				}
+			}
+		});
+		btnRegisterpage.setBounds(169, 70, 115, 31);
+		panel.add(btnRegisterpage);
 		
-		textField = new JTextField();
-		textField.setBounds(87, 53, 156, 20);
-		panel.add(textField);
-		textField.setColumns(10);
-		
-		JLabel lblPass = new JLabel("Pass");
-		lblPass.setBounds(25, 126, 46, 14);
-		panel.add(lblPass);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(87, 123, 156, 20);
-		panel.add(textField_1);
-		textField_1.setColumns(10);
-		
-		JButton btnSubmit = new JButton("Submit");
-		btnSubmit.setBounds(80, 184, 89, 23);
-		panel.add(btnSubmit);
-		
-		JButton btnReset = new JButton("Reset");
-		btnReset.setBounds(185, 184, 89, 23);
-		panel.add(btnReset);
+		JButton btnNewButton = new JButton("View");
+		btnNewButton.setBounds(25, 143, 115, 31);
+		panel.add(btnNewButton);
 	}
 }

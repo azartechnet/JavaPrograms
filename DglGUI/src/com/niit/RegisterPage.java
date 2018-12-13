@@ -9,15 +9,18 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
+import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
 
 	/**
 	 * Launch the application.
@@ -40,57 +43,82 @@ public class RegisterPage extends JFrame {
 	 */
 	public RegisterPage() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 371);
+		setBounds(100, 100, 450, 458);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Email");
-		lblNewLabel.setBounds(22, 31, 46, 14);
-		contentPane.add(lblNewLabel);
+		JLabel lblRegisterform = new JLabel("RegisterForm");
+		lblRegisterform.setBounds(170, 29, 87, 24);
+		contentPane.add(lblRegisterform);
+		
+		JLabel lblUname = new JLabel("Uname");
+		lblUname.setBounds(23, 71, 46, 14);
+		contentPane.add(lblUname);
 		
 		textField = new JTextField();
-		textField.setBounds(90, 28, 140, 20);
+		textField.setBounds(92, 64, 152, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
-		JLabel lblPass = new JLabel("Pass");
-		lblPass.setBounds(22, 86, 46, 14);
-		contentPane.add(lblPass);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(90, 83, 140, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
-		
 		JLabel lblGender = new JLabel("Gender");
-		lblGender.setBounds(22, 154, 46, 14);
+		lblGender.setBounds(23, 128, 46, 14);
 		contentPane.add(lblGender);
 		
-		JRadioButton rdbtnMale = new JRadioButton("male");
-		rdbtnMale.setBounds(100, 150, 109, 23);
+		JRadioButton rdbtnMale = new JRadioButton("Male");
+		rdbtnMale.setBounds(97, 124, 75, 23);
 		contentPane.add(rdbtnMale);
 		
 		JRadioButton rdbtnFemale = new JRadioButton("Female");
-		rdbtnFemale.setBounds(224, 150, 109, 23);
+		rdbtnFemale.setBounds(202, 124, 109, 23);
 		contentPane.add(rdbtnFemale);
 		
-		JLabel lblCourse = new JLabel("Course");
-		lblCourse.setBounds(22, 220, 46, 14);
-		contentPane.add(lblCourse);
+		ButtonGroup bg=new ButtonGroup();
+		bg.add(rdbtnMale);
+		bg.add(rdbtnFemale);
+		
+		JLabel lblPay = new JLabel("Pay");
+		lblPay.setBounds(23, 192, 46, 14);
+		contentPane.add(lblPay);
+		
+		JCheckBox chckbxCc = new JCheckBox("CC");
+		chckbxCc.setBounds(97, 188, 97, 23);
+		contentPane.add(chckbxCc);
+		
+		JCheckBox chckbxDc = new JCheckBox("DC");
+		chckbxDc.setBounds(214, 188, 97, 23);
+		contentPane.add(chckbxDc);
+		
+		JLabel lblCity = new JLabel("City");
+		lblCity.setBounds(23, 261, 46, 14);
+		contentPane.add(lblCity);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"MCA", "BE", "BTECH", "BCA"}));
-		comboBox.setBounds(117, 213, 113, 28);
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Karur", "Dindigul", "Salem"}));
+		comboBox.setBounds(97, 258, 97, 20);
 		contentPane.add(comboBox);
 		
-		JButton btnRegister = new JButton("Register");
-		btnRegister.setBounds(90, 287, 89, 23);
-		contentPane.add(btnRegister);
+		JButton btnInsert = new JButton("Insert");
+		btnInsert.setBounds(83, 325, 89, 23);
+		contentPane.add(btnInsert);
 		
 		JButton btnReset = new JButton("Reset");
-		btnReset.setBounds(222, 287, 89, 23);
+		btnReset.setBounds(232, 325, 89, 23);
 		contentPane.add(btnReset);
+		
+		final JButton btnBack = new JButton("BACK");
+		btnBack.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				if(e.getSource()==btnBack)
+				{
+					new HomePage().setVisible(true);
+										
+				}
+			}
+		});
+		btnBack.setBounds(319, 385, 89, 23);
+		contentPane.add(btnBack);
 	}
 }
