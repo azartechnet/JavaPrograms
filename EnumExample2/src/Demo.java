@@ -4,27 +4,27 @@
 	 
 public class Demo 
 {
-	enum employee{aa,ff};
-		/*public int g;
-		employee(int p1)
+	enum employee{a,b};
+	void get()
+	{
+	//	String name[]={"aa","bb"};
+		
+		
+		
+		
+		for (employee g : employee.values())
 		{
-			g=p1;
+			System.out.println("Value is:"+g);
 		}
-		int get()
-		{
-			return g;
-		}*/
-	
-	
+		
+		
+	}
 	
 	public static void main(String[] args)
 	{
-	  /*employee p1=employee.s;
-      System.out.println(""+p1.get());*/
-		for (employee g:employee.values())
-		{
-		  System.out.println(""+g);	
-		}
+	   Demo h=new Demo();
+	   h.get();
+		
 	}
 
 }

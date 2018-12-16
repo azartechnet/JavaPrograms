@@ -7,7 +7,7 @@ public class Demo
 	{
 		
 		for (ss m : ss.values()) {
-			System.out.println(""+m);
+			System.out.println("Enum Value is"+m);
 		}
 		
 	}

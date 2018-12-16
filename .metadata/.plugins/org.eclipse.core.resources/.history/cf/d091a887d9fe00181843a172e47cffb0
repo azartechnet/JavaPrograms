@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Sample 
+{
+
+	String name;
+	Scanner g=new Scanner(System.in);
+	void get()
+	{
+		System.out.println("Enter the String value is:\n");
+		name=g.next();
+	}
+}
+
+class Demo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

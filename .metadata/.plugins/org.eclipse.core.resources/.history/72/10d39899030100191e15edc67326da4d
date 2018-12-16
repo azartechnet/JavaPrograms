@@ -1,0 +1,18 @@
+
+public class Demo
+{
+
+  int a[]=new int[5];	
+  void input()
+  {
+	  
+  }
+}
+
+class Sample
+{
+  public static void main(String as[])
+  {
+	  
+  }
+}

@@ -1,0 +1,26 @@
+
+
+  
+	 
+public class Demo 
+{
+	enum employee{a,b};
+	void get()
+	{
+		for (employee g:employee.values())
+		{
+		  System.out.println("Enter the value is:");
+		  
+		  System.out.println(""+g);	
+		  
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+	   Demo h=new Demo();
+	   h.get();
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+
+
+  
+	 
+public class Demo 
+{
+	//enum employee{a,b};
+	void get()
+	{
+		String name[]=new String[2];
+		for (String g : name)
+		{
+			
+		}
+		
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	   Demo h=new Demo();
+	   h.get();
+		
+	}
+
+}

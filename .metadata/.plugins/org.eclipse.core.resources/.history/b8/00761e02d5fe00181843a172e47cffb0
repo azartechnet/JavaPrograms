@@ -1,0 +1,21 @@
+
+public class Sample 
+{
+
+	int a;
+	Scanner f1=new Scanner(System.in);
+	void input()
+	{
+		
+	}
+	void cal()
+	{
+		
+	}
+	public static void main(String[] args) 
+	{
+	
+
+	}
+
+}

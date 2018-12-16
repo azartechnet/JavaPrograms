@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Demo 
+{
+	
+   String name[][]=new String[2][2];
+   int i,j,n,m;
+   Scanner f1=new Scanner(System.in);
+   void input()
+   {
+	   
+   }
+}
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

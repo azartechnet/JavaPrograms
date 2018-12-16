@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Sample 
+{
+
+	String name;
+	Scanner g=new Scanner(System.in);
+	void get()
+	{
+		
+	}
+}
+
+class Demo
+{
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

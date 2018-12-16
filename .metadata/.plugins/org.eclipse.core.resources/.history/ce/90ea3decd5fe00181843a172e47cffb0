@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Sample 
+{
+
+	int a;
+	Scanner f1=new Scanner(System.in);
+	void input()
+	{
+		System.out.println("Enter the number is:\n");
+		a=f1.nextInt();//to read input from the user
+		
+		
+	}
+	void cal()
+	{
+		if(a%2==0)
+		{
+			
+			System.out.println("Even"+a);
+		}
+		else
+		{
+			System.out.println("Odd"+a);
+		}
+	}
+	public static void main(String[] args) 
+	{
+	
+
+	}
+
+}

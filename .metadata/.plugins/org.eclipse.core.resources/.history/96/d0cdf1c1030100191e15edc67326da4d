@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Demo
+{
+
+  int i,n;
+  int a[]=new int[5];//array declartion
+  Scanner f1=new Scanner(System.in);
+  void input()
+  {
+	  
+  }
+}
+
+class Sample
+{
+  public static void main(String as[])
+  {
+	  
+  }
+}

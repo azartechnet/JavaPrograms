@@ -1,0 +1,19 @@
+
+
+  
+	 
+public class Demo 
+{
+	enum employee{aa,ff};
+		
+	
+	public static void main(String[] args)
+	{
+	 
+		for (employee g:employee.values())
+		{
+		  System.out.println(""+g);	
+		}
+	}
+
+}

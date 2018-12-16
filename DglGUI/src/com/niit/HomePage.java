@@ -67,7 +67,7 @@ public class HomePage extends JFrame {
 			{
 				if(e.getSource()==btnLoginpage)
 				{
-					JOptionPane.showMessageDialog(btnLoginpage, "LoginSuces..");
+					//JOptionPane.showMessageDialog(btnLoginpage, "LoginSuces..");
 					
 					new LoginPage().setVisible(true);
 					//close();

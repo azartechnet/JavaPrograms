@@ -1,0 +1,30 @@
+
+
+  
+	 
+public class Demo 
+{
+	//enum employee{a,b};
+	void get()
+	{
+		String name[]={"aa","bb"};
+		
+		
+		
+		
+		for (String g : name)
+		{
+			System.out.println("Value is:"+g);
+		}
+		
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	   Demo h=new Demo();
+	   h.get();
+		
+	}
+
+}
