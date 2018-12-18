@@ -1,0 +1,29 @@
+package krrLoop1;
+
+import java.util.Scanner;
+
+public class Demo 
+{
+
+ int n,i,rev=0;
+ Scanner g=new Scanner(System.in);
+  void get1()
+  {
+	  System.out.println("Enter the n value is:\n");
+	  n=g.nextInt();
+	  while (n != 0)
+	   {
+	      reverse = reverse * 10;
+	      reverse = reverse + n%10;
+	      n       = n/10;
+	   }
+	  
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

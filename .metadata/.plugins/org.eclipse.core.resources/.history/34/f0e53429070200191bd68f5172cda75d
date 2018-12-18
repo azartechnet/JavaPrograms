@@ -1,0 +1,15 @@
+package krrArray1;
+
+public class Sample 
+{
+	
+  void get1()
+  {
+	  
+  }
+  public static void main(String as[])
+  {
+	  
+  }
+  
+}

@@ -1,0 +1,16 @@
+package krrArray1;
+
+public class Sample 
+{
+	
+  int a[]=new int[]={10,20};	
+  void get1()
+  {
+	  
+  }
+  public static void main(String as[])
+  {
+	  
+  }
+  
+}

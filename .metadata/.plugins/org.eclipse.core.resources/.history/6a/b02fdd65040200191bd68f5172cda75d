@@ -1,0 +1,16 @@
+package krrLoop1;
+
+public class Demo 
+{
+  void get1()
+  {
+	  
+  }
+}
+class Sample
+{
+	public static void main(String as[])
+	{
+		
+	}
+}

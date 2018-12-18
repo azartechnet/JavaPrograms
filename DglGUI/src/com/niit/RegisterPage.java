@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
 import javax.swing.JCheckBox;
@@ -15,6 +16,9 @@ import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
@@ -66,11 +70,11 @@ public class RegisterPage extends JFrame {
 		lblGender.setBounds(23, 128, 46, 14);
 		contentPane.add(lblGender);
 		
-		JRadioButton rdbtnMale = new JRadioButton("Male");
+		final JRadioButton rdbtnMale = new JRadioButton("Male");
 		rdbtnMale.setBounds(97, 124, 75, 23);
 		contentPane.add(rdbtnMale);
 		
-		JRadioButton rdbtnFemale = new JRadioButton("Female");
+		final JRadioButton rdbtnFemale = new JRadioButton("Female");
 		rdbtnFemale.setBounds(202, 124, 109, 23);
 		contentPane.add(rdbtnFemale);
 		
@@ -82,11 +86,11 @@ public class RegisterPage extends JFrame {
 		lblPay.setBounds(23, 192, 46, 14);
 		contentPane.add(lblPay);
 		
-		JCheckBox chckbxCc = new JCheckBox("CC");
+		final JCheckBox chckbxCc = new JCheckBox("CC");
 		chckbxCc.setBounds(97, 188, 97, 23);
 		contentPane.add(chckbxCc);
 		
-		JCheckBox chckbxDc = new JCheckBox("DC");
+		final JCheckBox chckbxDc = new JCheckBox("DC");
 		chckbxDc.setBounds(214, 188, 97, 23);
 		contentPane.add(chckbxDc);
 		
@@ -94,16 +98,90 @@ public class RegisterPage extends JFrame {
 		lblCity.setBounds(23, 261, 46, 14);
 		contentPane.add(lblCity);
 		
-		JComboBox comboBox = new JComboBox();
+		final JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Karur", "Dindigul", "Salem"}));
 		comboBox.setBounds(97, 258, 97, 20);
 		contentPane.add(comboBox);
 		
-		JButton btnInsert = new JButton("Insert");
+		final JButton btnInsert = new JButton("Insert");
+		btnInsert.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				
+			
+								
+				
+				
+				try
+				{
+					String uname=textField.getText();
+					
+					String gen="";
+					
+					String pay1="";
+					
+					String pay2="";
+					
+					String city=(String) comboBox.getSelectedItem();
+					
+					if(rdbtnMale.isSelected())
+					{
+						gen="MALE";
+					}
+					else
+					{
+						gen="FEMALE";
+					}
+					
+					if(chckbxDc.isSelected()&&chckbxCc.isSelected())
+					{
+						pay1="DC";
+						pay2="CC";
+					}
+					else if(chckbxDc.isSelected())
+					{
+						pay1="DC";
+						pay2="null";
+					}
+					else if(chckbxCc.isSelected())
+					{
+						pay1="null";
+						pay2="CC";
+					}
+
+					String str="insert into reg values('"+uname+"','"+gen+"','"+pay1+"','"+pay2+"','"+city+"')";
+				
+					Class.forName("org.h2.Driver");
+					
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/dgldb","sa","");
+					
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str);
+					
+					JOptionPane.showMessageDialog(btnInsert, "Inserted...");
+					
+					
+					
+				}
+				catch(Exception r)
+				{
+					System.out.println(r);
+				}
+			}
+		});
 		btnInsert.setBounds(83, 325, 89, 23);
 		contentPane.add(btnInsert);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				
+				textField.setText("");
+			
+			}
+		});
 		btnReset.setBounds(232, 325, 89, 23);
 		contentPane.add(btnReset);
 		
