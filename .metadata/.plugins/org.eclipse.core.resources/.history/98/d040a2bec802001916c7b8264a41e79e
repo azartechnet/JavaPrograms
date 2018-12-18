@@ -1,0 +1,25 @@
+
+public class Sample 
+{
+	int a=100;
+	void method1()
+	{
+		
+	}
+}
+
+class D
+{
+	
+}
+
+
+
+class Demo
+{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

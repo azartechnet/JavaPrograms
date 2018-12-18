@@ -1,0 +1,19 @@
+package ashwinip1;
+
+public class Sample 
+{
+
+	void get()
+	{
+	  System.out.println("hi..");	
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("welcome to niit");
+		
+
+	}
+
+}
