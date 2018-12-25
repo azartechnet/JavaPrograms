@@ -1,0 +1,29 @@
+
+interface b
+{
+	int a=10;
+	public void get();
+}
+class D implements b
+{
+	public void get()
+	{
+	  System.out.println("Value is:"+a);	
+	}
+	void input()
+	{
+		System.out.println("Normal Class..");
+	}
+}
+
+
+public class Sample 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

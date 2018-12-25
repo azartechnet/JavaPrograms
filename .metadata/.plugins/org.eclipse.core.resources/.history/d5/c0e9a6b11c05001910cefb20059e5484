@@ -1,0 +1,24 @@
+
+interface b
+{
+	public void get();
+}
+class D implements b
+{
+	public void get()
+	{
+		
+	}
+}
+
+
+public class Sample 
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

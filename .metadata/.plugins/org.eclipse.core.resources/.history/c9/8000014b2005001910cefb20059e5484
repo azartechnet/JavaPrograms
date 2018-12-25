@@ -1,0 +1,19 @@
+
+public class Sample
+{
+	
+	Sample()
+	{
+		System.out.println("welcome to default cons...");
+	}
+	
+	
+	
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

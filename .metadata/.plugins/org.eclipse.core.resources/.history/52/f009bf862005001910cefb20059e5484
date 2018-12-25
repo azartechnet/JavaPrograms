@@ -1,0 +1,24 @@
+
+public class Sample
+{
+	
+	Sample()
+	{
+		System.out.println("welcome to default cons...");
+	}
+	Sample(String name)
+	{
+		System.out.println(name);
+	}
+	
+	
+	
+
+	public static void main(String[] args) 
+	{
+		new Sample();
+		new Sample("niit");
+
+	}
+
+}

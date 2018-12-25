@@ -1,0 +1,10 @@
+
+public class Sample 
+{
+  public static void main(String as[])
+  {
+	  String s1="niit";
+	  
+	  String s2="niit";
+  }
+}

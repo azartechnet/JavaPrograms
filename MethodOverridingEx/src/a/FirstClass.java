@@ -6,7 +6,7 @@ public class FirstClass
   {
 	  System.out.println("welcome to niit-1");
   }
-  public void g2()
+  public void g1()
   {
 	  System.out.println("welcome to niit-2");
   }

@@ -2,11 +2,11 @@ package a;
 
 public class Foo extends FirstClass
 {
-   public void h1()
+   public void g1()
    {
 	   System.out.println("Dervied class-1");
    }
-   void g2()
+   public void g1()
    {
 	   System.out.println("Dervied class-2");
    }
