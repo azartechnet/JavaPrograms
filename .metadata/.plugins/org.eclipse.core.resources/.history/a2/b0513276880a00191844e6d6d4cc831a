@@ -159,24 +159,13 @@ public class ViewForm extends JFrame {
 		btnUpdate.setBounds(221, 278, 89, 23);
 		contentPane.add(btnUpdate);
 		
-		final JButton btnDelete = new JButton("Delete");
+		JButton btnDelete = new JButton("Delete");
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{ 
 				try
 				{
 					String u=textField.getText();
-					
-					String str="delete from reg where uname='"+u+"'";
-					Class.forName("org.h2.Driver");
-					
-					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/dgldb","sa","");
-					
-					Statement stm=conn.createStatement();
-					stm.executeUpdate(str);
-					
-					JOptionPane.showMessageDialog(btnDelete, "Deleted..");
-					
 				}
 				catch(Exception t)
 				{

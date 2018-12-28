@@ -159,7 +159,7 @@ public class ViewForm extends JFrame {
 		btnUpdate.setBounds(221, 278, 89, 23);
 		contentPane.add(btnUpdate);
 		
-		final JButton btnDelete = new JButton("Delete");
+		JButton btnDelete = new JButton("Delete");
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{ 
