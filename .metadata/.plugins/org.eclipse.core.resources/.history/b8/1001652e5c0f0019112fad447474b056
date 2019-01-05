@@ -1,0 +1,20 @@
+import java.util.HashSet;
+
+public class Sample
+{
+
+	
+	void get1()
+	{
+		HashSet list=new HashSet();
+		
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
