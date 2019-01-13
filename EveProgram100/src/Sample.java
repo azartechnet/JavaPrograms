@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Sample
 {
@@ -6,12 +7,19 @@ public class Sample
 	
 	void get1()
 	{
-		HashSet list=new HashSet();
+		HashSet<String> list=new HashSet<>();
 		
 		list.add("a1");
 		list.add("a2");
 		list.add("a3");
 		list.add("a1");
+		
+		Iterator<String> k=list.iterator();
+		
+		while(k.hasNext())
+		{
+			System.out.println(k.next());
+		}
 		
 		System.out.println(""+list);
 		System.out.println("Size "+list.size());
