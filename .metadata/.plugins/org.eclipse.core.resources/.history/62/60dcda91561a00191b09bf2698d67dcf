@@ -1,0 +1,24 @@
+
+
+import java.lang.*;//Default api
+public class Demo
+{
+	
+	void input()
+	{
+		
+	}
+	
+}
+
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		
+		
+	  System.out.println("Welcome to niit");//display the data in console
+
+	}
+
+}
