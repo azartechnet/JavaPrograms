@@ -119,7 +119,7 @@ public class AddProductPage extends JFrame {
 				}
 			}
 		});
-		btnAddproduct.setBounds(84, 306, 128, 24);
+		btnAddproduct.setBounds(136, 306, 128, 24);
 		contentPane.add(btnAddproduct);
 		
 		final JButton btnView = new JButton("VIEW");
@@ -154,7 +154,53 @@ public class AddProductPage extends JFrame {
 				}
 			}
 		});
-		btnView.setBounds(248, 306, 99, 24);
+		btnView.setBounds(325, 306, 99, 24);
 		contentPane.add(btnView);
+		
+		final JButton btnUpdate = new JButton("Update");
+		btnUpdate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					
+					String pid=textField.getText();
+					String pn=textField_1.getText();
+					
+					String str="update addproduct set pname='"+pn+"' where pid='"+pid+"'";
+					
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/krr","sa","");
+					Statement stm=conn.createStatement();
+					stm.executeUpdate(str);
+					
+					JOptionPane.showMessageDialog(btnUpdate,"Updated..");
+					
+					
+				}catch(Exception t)
+				{
+					
+				}
+			}
+		});
+		btnUpdate.setBounds(315, 230, 89, 23);
+		contentPane.add(btnUpdate);
+		
+		JButton btnDelete = new JButton("Delete");
+		btnDelete.setBounds(315, 167, 89, 23);
+		contentPane.add(btnDelete);
+		
+		JButton btnNewButton = new JButton("Reset");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				textField.setText("");
+				textField_1.setText("");
+				textField_2.setText("");
+				textField_3.setText("");
+			}
+		});
+		btnNewButton.setBounds(10, 307, 89, 23);
+		contentPane.add(btnNewButton);
 	}
 }

@@ -88,14 +88,14 @@ public class ViewAlluserdetails extends JFrame {
 		});
 		btnViewall.setBounds(293, 28, 89, 23);
 		contentPane.add(btnViewall);
-		
+		//Important code for view tables
 		JPanel panel = new JPanel();
 		panel.setBorder(new LineBorder(new Color(0, 0, 0)));
 		panel.setBounds(26, 74, 398, 332);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		//Important code for view tables
+		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(10, 11, 381, 310);
 		panel.add(scrollPane);
