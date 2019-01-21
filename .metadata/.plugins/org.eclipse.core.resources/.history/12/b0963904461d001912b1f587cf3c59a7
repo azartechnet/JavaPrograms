@@ -122,7 +122,7 @@ public class AddProductPage extends JFrame {
 		btnAddproduct.setBounds(84, 306, 128, 24);
 		contentPane.add(btnAddproduct);
 		
-		final JButton btnView = new JButton("VIEW");
+		JButton btnView = new JButton("VIEW");
 		btnView.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
 			{
@@ -135,9 +135,9 @@ public class AddProductPage extends JFrame {
 					Statement stm=conn.createStatement();
 					ResultSet rs=stm.executeQuery(str1);
 					rs.next();
-					String pn=rs.getString(2);
-					String pp=rs.getString(3);
-					String pq=rs.getString(4);
+					String pn=rs.getString(1);
+					String pp=rs.getString(2);
+					String pq=rs.getString(3);
 					
 					textField_1.setText(pn);
 					textField_2.setText(pp);
