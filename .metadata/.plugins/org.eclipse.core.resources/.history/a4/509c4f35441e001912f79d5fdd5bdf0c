@@ -1,0 +1,22 @@
+
+public class Sample 
+{
+	
+   int pid;
+   float f1;
+   String name;
+   void get1()
+   {
+	   
+   }
+}
+
+class Demo
+{
+	public static void main(String[] args) 
+	{
+	    
+
+	}
+
+}
