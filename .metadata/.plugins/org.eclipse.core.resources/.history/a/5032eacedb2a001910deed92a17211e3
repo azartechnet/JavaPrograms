@@ -1,0 +1,18 @@
+
+public class Sample
+{
+
+	
+	void get1()
+	{
+		System.out.println("welcome to Method-1");
+	}
+	
+	public static void main(String[] args) 
+	{
+		
+		
+
+	}
+
+}

@@ -1,0 +1,23 @@
+
+public class Sample 
+{
+
+	public float averg(int...nums)
+	{
+		int sum=0;
+		for(int x:nums)
+		{
+			sum+=x;
+		}
+		return((float)sum/nums.length);
+	}
+	
+	public static void main(String[] args)
+	{
+	    Sample d=new Sample();
+	    float avg=d.averg(2,5,5);
+	    System.out.println(avg);
+
+	}
+
+}
