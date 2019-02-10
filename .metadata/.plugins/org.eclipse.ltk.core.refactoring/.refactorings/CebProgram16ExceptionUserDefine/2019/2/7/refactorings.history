@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;friends.java&apos; to &apos;DbSundayBatch/src&apos;&#x0D;&#x0A;- Original project: &apos;CebProgram16ExceptionUserDefine&apos;&#x0D;&#x0A;- Destination element: &apos;DbSundayBatch/src&apos;&#x0D;&#x0A;- Original element: &apos;friends.java&apos;" description="Copy compilation unit" destination="=DbSundayBatch/src" element1="/src&lt;{friends.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1549784892331" units="1" version="1.0"/>
+</session>

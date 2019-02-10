@@ -60,7 +60,7 @@
 	</section>
 	<section name="completion_proposal_size">
 		<item value="252" key="size.y"/>
-		<item value="360" key="size.x"/>
+		<item value="366" key="size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="SortOrdering"/>
