@@ -8,9 +8,11 @@ public class Demo<T>
 	{
 		this.t=t;
 	}
-	public T get()
+	public void get()
 	{
-		return t;
+		//return t;
+		
+		System.out.println(""+t);
 	}
 	
 	
@@ -21,9 +23,11 @@ public class Demo<T>
 		
 		//h1.get2(100);
 		
-		h1.setValue(100);
+		 h1.setValue(100);
+		 
+		 h1.get();
 		
-		System.out.println("Value is:\n"+h1.get());
+		//System.out.println("Value is:\n"+h1.get());
 		
 
 	}
