@@ -29,14 +29,16 @@ class Sample
       try
       {
       System.out.println("JoinIN");
-      t1.join(5000);
+      t2.join();
       System.out.println("JoinOut");
       }
       catch(InterruptedException t)
       {
     	  System.out.println(t);
       }
+      System.out.println("t2 started");
       t2.start();
+      System.out.println("t2 ended..");
 	}
 
 }
