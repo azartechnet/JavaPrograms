@@ -1,0 +1,34 @@
+
+public class Sample extends Thread
+{
+   public void run()
+   {
+	   try
+	   {
+		   System.out.println("ThreadRunIN");
+		    
+		    wait(10000);
+		   
+		   System.out.println("ThreadRunOut");
+	   }
+	   catch(InterruptedException r)
+	   {
+		   
+	   }
+   }
+   synchronized void get1()
+   {
+	   notifyAll();
+   }
+}
+
+class Demo
+{
+	public static void main(String[] args) 
+	{
+		Sample t1=new Sample();
+		t1.start();
+
+	}
+
+}

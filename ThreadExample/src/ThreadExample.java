@@ -15,6 +15,7 @@ public class ThreadExample extends Thread
 		t1.setPriority(Thread.MAX_PRIORITY);
 		t1.setName("Azar");
 		t2.start();
+		System.out.println(t2.isAlive());
 		
 	}
 
