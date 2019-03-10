@@ -1,0 +1,23 @@
+package cebfile1;
+
+import java.io.FileOutputStream;
+
+public class Sample
+{
+   void input()
+   {
+	   String name="niit";
+	   FileOutputStream fos=new FileOutputStream("F:\\abc1.txt");
+   }
+}
+
+class Demo
+{
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

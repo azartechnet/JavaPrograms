@@ -13,7 +13,7 @@ public class Demo {
 		Path m=Paths.get("D:/NIO");
 		Files.createDirectories(m);
 		
-		Path n=Paths.get("D:/NIO/jk.pdf");
+		Path n=Paths.get("D:/NIO/jk.txt");
 		Files.createFile(n);
 		
 	}

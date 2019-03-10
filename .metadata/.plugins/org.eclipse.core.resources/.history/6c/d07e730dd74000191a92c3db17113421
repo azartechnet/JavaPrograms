@@ -1,0 +1,29 @@
+package cebfile1;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Sample
+{
+   void input()throws IOException,FileNotFoundException
+   {
+	   String name="niit";
+	   FileOutputStream fos=new FileOutputStream("F:\\abc1.txt");
+	   byte b[]=name.getBytes();
+	   fos.write(b);
+	   System.out.println("Inserted..");
+	   
+   }
+}
+
+class Demo
+{
+	
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

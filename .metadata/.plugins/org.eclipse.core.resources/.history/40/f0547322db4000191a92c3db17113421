@@ -1,0 +1,29 @@
+package cebfile2;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Demo 
+{
+  void read()throws FileNotFoundException,IOException
+  {
+	  FileInputStream fis=new FileInputStream("F:\\abc1.txt");
+	  int i;
+	  while((i=fis.read())!=-1)
+	  {
+		  System.out.print((char)i);
+	  }
+	  
+	  
+  }
+}
+
+class Sample
+{
+	public static void main(String[] args) {
+		
+
+	}
+
+}
