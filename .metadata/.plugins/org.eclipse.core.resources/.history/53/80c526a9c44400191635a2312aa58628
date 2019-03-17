@@ -1,0 +1,20 @@
+package cebcollection2;
+
+public class Sample
+{
+	
+	void input()
+	{
+		
+	}
+	
+}
+class Demo
+{
+	public static void main(String[] args)
+	{
+	
+
+	}
+
+}
