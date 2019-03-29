@@ -4,4 +4,8 @@
 		id="org.eclipse.wb.swing.layouts javax.swing.SpringLayout"
 		category="org.eclipse.wb.swing.layouts"
 		nextEntry="org.eclipse.wb.swing.layouts javax.swing.GroupLayout"/>
+	<moveEntry
+		id="org.eclipse.wb.swing.components javax.swing.JLabel"
+		category="org.eclipse.wb.swing.layouts"
+		nextEntry="org.eclipse.wb.swing.layouts javax.swing.SpringLayout"/>
 </commands>

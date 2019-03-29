@@ -1,0 +1,63 @@
+package cebgui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+
+public class RegistrationForm extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					RegistrationForm frame = new RegistrationForm();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public RegistrationForm() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblName = new JLabel("NAME");
+		lblName.setBounds(34, 36, 46, 14);
+		contentPane.add(lblName);
+		
+		JLabel lblAge = new JLabel("AGE");
+		lblAge.setBounds(34, 78, 46, 14);
+		contentPane.add(lblAge);
+		
+		JLabel lblEmail = new JLabel("EMAIL");
+		lblEmail.setBounds(34, 120, 46, 14);
+		contentPane.add(lblEmail);
+		
+		JLabel lblPassword = new JLabel("PASSWORD");
+		lblPassword.setBounds(34, 154, 67, 14);
+		contentPane.add(lblPassword);
+		
+		JLabel lblPhoneNo = new JLabel("PHONE NO");
+		lblPhoneNo.setBounds(34, 186, 80, 14);
+		contentPane.add(lblPhoneNo);
+	}
+
+}

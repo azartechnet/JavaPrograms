@@ -21,11 +21,16 @@ public class Employee implements Comparable<Employee>
 	@Override
 	public int compareTo(Employee arg0) 
 	{
-		if(this.salary>arg0.salary)
-			return 1;
-		else if(this.salary<arg0.salary)
+		/*if(this.salary>arg0.salary)
+			System.out.println("***"+this.salary);
+		    System.out.println("&&&"+arg0.salary);
+			return 1; */
+		if(this.salary<arg0.salary)
+			System.out.println("***"+this.salary);
+	        System.out.println("&&&"+arg0.salary);
+		
 			return -1;
-		else
-			return 0;
+		/*else
+			return 0;*/
 	}
 }

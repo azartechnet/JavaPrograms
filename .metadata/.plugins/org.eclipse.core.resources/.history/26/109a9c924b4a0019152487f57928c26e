@@ -1,0 +1,19 @@
+
+public class Demo
+{
+
+  void get()
+  {
+	  
+  }
+}
+
+class Foo
+{
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
