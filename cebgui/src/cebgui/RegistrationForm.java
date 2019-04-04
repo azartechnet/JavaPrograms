@@ -133,7 +133,20 @@ public class RegistrationForm extends JFrame {
 		btnRegister.setBounds(313, 78, 89, 23);
 		contentPane.add(btnRegister);
 		
-		JButton btnReset = new JButton("Reset");
+		final JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				if(e.getSource()==btnReset)
+				{
+					textField.setText("");
+					textField_1.setText("");
+					textField_2.setText("");
+					textField_3.setText("");
+					textField_4.setText("");
+				}
+			}
+		});
 		btnReset.setBounds(313, 144, 89, 23);
 		contentPane.add(btnReset);
 	}
