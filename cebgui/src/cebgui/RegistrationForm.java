@@ -7,9 +7,13 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class RegistrationForm extends JFrame {
@@ -99,7 +103,30 @@ public class RegistrationForm extends JFrame {
 			{
 				if(e.getSource()==btnRegister)
 				{
-					new UserLoginPage().setVisible(true);
+					
+					try
+					{
+						String name=textField.getText();
+						String age=textField_1.getText();
+						String email=textField_2.getText();
+						String pass=textField_3.getText();
+						String mobile=textField_4.getText();
+						
+						String str="insert into reg values('"+name+"','"+age+"','"+email+"','"+pass+"','"+mobile+"')";
+						
+						
+						Class.forName("org.h2.Driver");
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/cebdb","sa","");
+						Statement stm=conn.createStatement();
+						stm.executeUpdate(str);
+						JOptionPane.showMessageDialog(btnRegister, "Inserted..");
+					}
+					catch(Exception r)
+					{
+						System.out.println(r);
+					}
+					
+					//new UserLoginPage().setVisible(true);
 				}
 			}
 		});
