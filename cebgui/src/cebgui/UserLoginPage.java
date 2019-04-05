@@ -90,6 +90,7 @@ public class UserLoginPage extends JFrame {
 					
 					String name1=rs.getString(1);
 					
+					
 					if(name.equals(name1))
 					{
 						new UserLoginHomePage().setVisible(true);
