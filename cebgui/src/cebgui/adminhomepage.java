@@ -41,7 +41,16 @@ public class adminhomepage extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnViewAllUser = new JButton("view all user details");
+		final JButton btnViewAllUser = new JButton("view all user details");
+		btnViewAllUser.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getSource()==btnViewAllUser)
+				{
+					new viewTabledetails().setVisible(true);
+				}
+			}
+		});
 		btnViewAllUser.setBounds(118, 41, 158, 23);
 		contentPane.add(btnViewAllUser);
 		

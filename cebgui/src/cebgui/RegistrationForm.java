@@ -112,7 +112,7 @@ public class RegistrationForm extends JFrame {
 						String pass=textField_3.getText();
 						String mobile=textField_4.getText();
 						
-						String str="insert into reg values('"+name+"','"+age+"','"+email+"','"+pass+"','"+mobile+"')";
+						String str="insert into regpage values('"+name+"','"+age+"','"+email+"','"+pass+"','"+mobile+"')";
 						
 						
 						Class.forName("org.h2.Driver");
