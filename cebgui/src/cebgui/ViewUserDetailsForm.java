@@ -117,11 +117,56 @@ public class ViewUserDetailsForm extends JFrame {
 		btnSearch.setBounds(49, 276, 89, 23);
 		panel.add(btnSearch);
 		
-		JButton btnUpdate = new JButton("Update");
+		final JButton btnUpdate = new JButton("Update");
+		btnUpdate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String n=textField.getText();
+					String age=textField_1.getText();
+					String str1="update regpage set age='"+age+"' where name='"+n+"'";
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/cebdb","sa","");
+					Statement stm=conn.createStatement();
+					stm.executeUpdate(str1);
+					JOptionPane.showMessageDialog(btnUpdate, "Updated");
+					
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+				
+			}
+		});
 		btnUpdate.setBounds(166, 276, 89, 23);
 		panel.add(btnUpdate);
 		
-		JButton btnDelete = new JButton("Delete");
+		final JButton btnDelete = new JButton("Delete");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				try
+				{
+					String u1=textField.getText();
+					
+					String str1="delete  from regpage where name='"+u1+"'";
+					
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/cebdb","sa","");
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str1);
+					
+					JOptionPane.showMessageDialog(btnDelete, "Userdeleted");
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnDelete.setBounds(118, 334, 89, 23);
 		panel.add(btnDelete);
 	}
