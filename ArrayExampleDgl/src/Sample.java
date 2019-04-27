@@ -11,14 +11,14 @@ public class Sample
 		System.out.println("Enter the value is:\n");
 		n=f.nextInt();
 		
-		for(i=0;i<=n;i++)
+		for(i=0;i<n;i++)
 		{
 			System.out.println("Enter the array value is:\n");
 			pid[i]=f.nextInt();
 		}
-		for(i=0;i<=n;i++)
+		for(i=0;i<n;i++)
 		{
-			System.out.println("Array Value is:\n"+pid[i]);
+			System.out.println("Array Value is:\n"+pid[0]);
 		}
 	}
 	
