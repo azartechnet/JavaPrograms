@@ -23,6 +23,8 @@ public class SampleProgram
 	   System.out.println("Check of"+j1.containsKey(102));
 	   System.out.println("Size of"+j1.size());
 	   System.out.println("index of"+j1.get(103));
+	   System.out.println(j1);
+	
    }
 
 }
