@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.niit.HomePage"/>
-<fullyQualifiedTypeName name="Demo.employee"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="com.niit.LoginHomePage"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
@@ -32,13 +30,8 @@
 <fullyQualifiedTypeName name="cebgui.LoginPage"/>
 <fullyQualifiedTypeName name="cebgui.LoginHomePage"/>
 <fullyQualifiedTypeName name="cebgui.UserLoginHomePage"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.DriverManager"/>
-<fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="cebgui.adminhomepage"/>
 <fullyQualifiedTypeName name="cebgui.viewTabledetails"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="FirstProgram1"/>
 <fullyQualifiedTypeName name="FirstProgram"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="product"/>
 <fullyQualifiedTypeName name="ProductImple"/>
 <fullyQualifiedTypeName name="ProductModel"/>
+<fullyQualifiedTypeName name="AdminLoginPage"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="AdminHomePage"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
