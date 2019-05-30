@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import javax.swing.JButton;
 
 public class AdminHomePage extends JFrame {
 
@@ -42,6 +43,9 @@ public class AdminHomePage extends JFrame {
 		lblAdminhomepage.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 		lblAdminhomepage.setBounds(156, 25, 145, 21);
 		contentPane.add(lblAdminhomepage);
+		
+		JButton btnAddstaff = new JButton("AddStaff");
+		btnAddstaff.setBounds(169, 73, 89, 23);
+		contentPane.add(btnAddstaff);
 	}
-
 }
