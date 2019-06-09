@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Demo 
+public class Demo
 {
  
 	
-  int pid[]=new int[5];
+  int pid[]=new int[5];//array declaration
   int n,i;
   Scanner g=new Scanner(System.in);
   void get1()
