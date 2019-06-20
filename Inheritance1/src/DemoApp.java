@@ -17,9 +17,9 @@ class d1 extends b1
 {
 	void get2()
 	{
-		 int a=200;
+		// int a=200;
 		System.out.println("Derived class is:"+age);
-		System.out.println("SuperKeyWord is:\n"+super.a);
+		//System.out.println("SuperKeyWord is:\n"+super.a);
 	}
 }
 /*class d2 extends d1//multilevel syntax

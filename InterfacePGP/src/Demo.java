@@ -4,12 +4,13 @@ interface B
 	int a=300;//only variable assign
 	String uname="niit";
 	void g1();//only method declartion
+	
 }
-interface B1
+interface B1 extends B
 {
 	void h1();
 }
-public class Demo implements B1,B
+public class Demo implements B1
 {
 
 	@Override

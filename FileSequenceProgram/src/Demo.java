@@ -8,8 +8,8 @@ public class Demo
   {
 	try
 	{
-		FileInputStream f1=new FileInputStream("F:\\abc.txt");
-		FileInputStream f2=new FileInputStream("F:\\abc1.txt");
+		FileInputStream f1=new FileInputStream("F:\\k1.txt");
+		FileInputStream f2=new FileInputStream("F:\\k2.txt");
 		//FileOutputStream f3=new FileOutputStream("F:\\abb.txt");
 		SequenceInputStream sq=new SequenceInputStream(f1, f2);
 		int i;

@@ -19,7 +19,6 @@ interface A extends B
 		System.out.println("Welcome to NIIT-1"+a);
 	}
 
-	@Override
 	public void g2()
 	{
 		

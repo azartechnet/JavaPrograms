@@ -5,18 +5,20 @@ import java.util.Scanner;
 public class Sample
 {
 	int n;
+	String c;
 	Scanner f=new Scanner(System.in);
   void h1()
   {
 	  System.out.println("Enter the n value is:\n");
-	  n=f.nextInt();
+	  //n=f.nextInt();
+	  c=f.next();
 	  
-	  switch(n)
+	  switch(c)
 	  {
-	  case 1:
+	  case "azar":
 		  System.out.println("case-1");
 		  break;
-	  case 2:
+	  case "bsss":
 		  System.out.println("case-2");
 		  break;
 		  
@@ -28,8 +30,8 @@ public class Sample
 
 	public static void main(String as[])
 	{
-		Sample j=new Sample();
-		j.h1();
+		Sample J=new Sample();
+		J.h1();
 		
 		
 	}
