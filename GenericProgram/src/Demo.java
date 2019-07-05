@@ -2,7 +2,7 @@
 public class Demo<T>
 {
 	
-	private T t;
+	public T t;
 	
 	
 	

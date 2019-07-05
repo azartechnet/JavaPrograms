@@ -1,24 +1,30 @@
 
 public class Demo 
 {
-	 static int pid=100;
+	
 
 	Demo()//default Cons..
 	{
-		pid++;
-		System.out.println("Default cons..."+pid);
+		
+		System.out.println("Default cons...");
 	}
 	Demo(int a)//param cons..
 	{
 		System.out.println("param cons"+a);
 		
 	}
+	void get1()
+	{
+		System.out.println("welcome");
+	}
 	 
 	public static void main(String[] args) 
 	{
-		new Demo();
-		new Demo();
+		Demo t1=new Demo();
+		
 		new Demo(100);
+		
+		t1.get1();
 
 	}
 

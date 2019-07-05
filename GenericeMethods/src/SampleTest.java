@@ -1,7 +1,7 @@
 
 public class SampleTest
 {
-	public <M> void test(M t)
+	public <M>void test(M t)
 	{
 		System.out.println("Generic Methods.."+t);
 	}

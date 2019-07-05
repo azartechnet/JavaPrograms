@@ -17,6 +17,10 @@ public class Sample
  {
 	 System.out.println(t);
  }
+// finally
+// {
+//	 fos.close();
+// }
  
  }
 

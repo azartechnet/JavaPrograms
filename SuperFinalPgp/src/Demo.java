@@ -2,8 +2,8 @@
 
  class B
   {
-  int a=100;
-  void g1()
+   int a=100;
+  final void g1()
   {
 	  System.out.println("welcome-1::"+a);
   }
