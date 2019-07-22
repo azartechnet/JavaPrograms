@@ -3,6 +3,7 @@ public class Demo
 {
 
   int i=100;
+  int a=10;
 	void get1()
 	{
 		
@@ -11,10 +12,20 @@ public class Demo
 }
 class D extends Demo
 {
+	int b=20;
 	void get2()
 	{ 
 	    //i=200;
+		
 		System.out.println("Dervied class"+i);
+	}
+}
+class D1 extends D
+{
+	void get3()
+	{
+		int c=a*b;
+		System.out.println(c);
 	}
 }
 class Demo1
