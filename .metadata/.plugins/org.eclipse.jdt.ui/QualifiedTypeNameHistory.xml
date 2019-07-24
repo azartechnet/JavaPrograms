@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Locale"/>
-<fullyQualifiedTypeName name="cebgui.LOGINPAGE"/>
-<fullyQualifiedTypeName name="cebgui.LoginPage"/>
-<fullyQualifiedTypeName name="cebgui.LoginHomePage"/>
 <fullyQualifiedTypeName name="cebgui.UserLoginHomePage"/>
 <fullyQualifiedTypeName name="cebgui.adminhomepage"/>
 <fullyQualifiedTypeName name="cebgui.viewTabledetails"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="LoginPage"/>
+<fullyQualifiedTypeName name="RegisterPage"/>
+<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
 </qualifiedTypeNameHistroy>

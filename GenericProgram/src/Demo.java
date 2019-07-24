@@ -2,7 +2,7 @@
 public class Demo<T>
 {
 	
-	public T t;
+	public T t;//int t;
 	
 	
 	
