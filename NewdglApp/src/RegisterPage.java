@@ -5,10 +5,16 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JRadioButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -90,25 +96,57 @@ public class RegisterPage extends JFrame {
 		panel.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton btnRegister = new JButton("Register");
+		final JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent evt)
+			{
+				try
+				{
+					String u=textField.getText();
+					String p=textField_1.getText();
+					String em=textField_2.getText();
+					String ph=textField_3.getText();
+					//String gen="";
+					//if(rdb`)
+					
+					
+					String str="insert into ureg values('"+u+"','"+p+"','"+em+"','"+ph+"')";
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/project","sa","");
+					Statement stm=conn.createStatement();
+					stm.executeUpdate(str);
+					JOptionPane.showMessageDialog(btnRegister,"Inserted...");
+					
+					
+					
+					
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnRegister.setBounds(128, 400, 89, 23);
 		panel.add(btnRegister);
 		
-		JLabel lblGender = new JLabel("Gender");
-		lblGender.setBounds(25, 341, 46, 14);
-		panel.add(lblGender);
-		
-		JRadioButton rdbtnMale = new JRadioButton("Male");
-		rdbtnMale.setBounds(118, 337, 55, 23);
-		panel.add(rdbtnMale);
-		
-		JRadioButton rdbtnFemale = new JRadioButton("Female");
-		rdbtnFemale.setBounds(202, 337, 93, 23);
-		panel.add(rdbtnFemale);
+		final JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				if(e.getSource()==btnReset)
+				{
+					textField.setText(" ");
+					textField_1.setText(" ");
+					textField_2.setText(" ");
+					textField_3.setText(" ");
+				}
+			}
+		});
+		btnReset.setBounds(246, 400, 89, 23);
+		panel.add(btnReset);
 		
 		ButtonGroup bg=new ButtonGroup();
-		bg.add(rdbtnMale);
-		bg.add(rdbtnFemale);
 		
 		
 		

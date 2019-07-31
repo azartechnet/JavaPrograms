@@ -28,8 +28,6 @@
 <fullyQualifiedTypeName name="ProductImplementation"/>
 <fullyQualifiedTypeName name="Product"/>
 <fullyQualifiedTypeName name="ProductModel"/>
-<fullyQualifiedTypeName name="java.util.TreeSet"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="Nestedifelse"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -59,5 +57,7 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="AdminHomePage"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
