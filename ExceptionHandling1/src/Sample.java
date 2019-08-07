@@ -6,7 +6,8 @@ public class Sample
 	{
 		try
 		{
-		int a=100/2;
+		//int a=100/0;
+			int a=100/2;
 			//int a[]=new int[2];
 		System.out.println("welcome to "+a);
 		}

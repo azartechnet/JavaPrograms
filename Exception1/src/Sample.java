@@ -13,7 +13,7 @@ public class Sample
 		}
 		catch(Exception r)
 		{
-			System.out.println("Please");
+			System.out.println("Please"+r);
 		}
 		finally
 		{
