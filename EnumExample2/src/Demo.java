@@ -8,10 +8,7 @@ public class Demo
 	void get()
 	{
 	//	String name[]={"aa","bb"};
-		
-		
-		
-		
+						
 		for (employee g : employee.values())
 		{
 			System.out.println("Value is:"+g);
