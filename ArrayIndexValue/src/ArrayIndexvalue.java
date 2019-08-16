@@ -12,15 +12,15 @@ public class ArrayIndexvalue {
            int k;
            Scanner g1=new Scanner(System.in);
            
-           for(i=0;i<5;i++)
+           for(i=0;i<3;i++)
            {
-        	   System.out.println("Enter the Array value is:");
+        	   //System.out.println("Enter the Array value is:");
         	   a[i]=g1.nextInt();
            }
-           System.out.println("Enter the index value is:");
+          // System.out.println("Enter the index value is:");
            k=g1.nextInt();
            
-           for(i=0;i<5;i++)
+           for(i=0;i<3;i++)
            {
         	   if(k==i)
         	   {
