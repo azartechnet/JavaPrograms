@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="snippet.Snippet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="k1program3.SampleApp1"/>
-<fullyQualifiedTypeName name="AddProduct"/>
 <fullyQualifiedTypeName name="b1"/>
 <fullyQualifiedTypeName name="DaoImple"/>
 <fullyQualifiedTypeName name="Program2"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.awt.geom.CubicCurve2D"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="AddProduct"/>
 </qualifiedTypeNameHistroy>
