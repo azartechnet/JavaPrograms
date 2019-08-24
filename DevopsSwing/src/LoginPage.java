@@ -73,7 +73,7 @@ public class LoginPage extends JFrame {
 				
 				try
 				{
-					new AddProduct().setVisible(true);
+					
 				}
 				catch(Exception r)
 				{
