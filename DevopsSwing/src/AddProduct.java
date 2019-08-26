@@ -5,9 +5,16 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class AddProduct extends JFrame {
 
@@ -85,7 +92,29 @@ public class AddProduct extends JFrame {
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton btnInsert = new JButton("Insert");
+		final JButton btnInsert = new JButton("Insert");
+		btnInsert.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+				  String pid=textField.getText();
+				  String pname=textField_1.getText();
+				  String price=textField_2.getText();
+				  String qut=textField_3.getText();
+				  String str1="insert into addproduct values('"+pid+"','"+pname+"','"+price+"','"+qut+"')";
+				    Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/project1","sa","");
+					Statement stm=conn.createStatement();
+				    stm.executeUpdate(str1);
+				    JOptionPane.showMessageDialog(btnInsert, "Inserted..");
+				}
+				catch(Exception r)
+				{
+					
+				}
+			}
+		});
 		btnInsert.setBounds(284, 154, 89, 23);
 		contentPane.add(btnInsert);
 		

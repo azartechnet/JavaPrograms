@@ -12,7 +12,7 @@ public class FileDemo
 		// TODO Auto-generated method stub
 
 	      // Path g=Paths.get("D:\\f1.txt");
-         FileSystem f1=FileSystems.getDefault();
+        // FileSystem f1=FileSystems.getDefault();
          Path f=Paths.get("D:\\v1.txt");
 	      System.out.println(""+f.getNameCount());
 	       System.out.println(""+f.getClass());
