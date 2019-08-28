@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
@@ -119,15 +120,79 @@ public class AddProduct extends JFrame {
 		contentPane.add(btnInsert);
 		
 		JButton btnView = new JButton("View");
+		btnView.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				try
+				{
+					String pid=textField.getText();
+					String str2="select * from addproduct where pid='"+pid+"'";
+					 Class.forName("org.h2.Driver");
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/project1","sa","");
+						Statement stm=conn.createStatement();
+						ResultSet rs=stm.executeQuery(str2);
+						rs.next();
+						textField_1.setText(rs.getString(2));
+						textField_2.setText(rs.getString(3));
+						textField_3.setText(rs.getString(4));
+						
+					
+				}
+				catch(Exception r)
+				{
+					
+				}
+			}
+		});
 		btnView.setBounds(284, 219, 89, 23);
 		contentPane.add(btnView);
 		
-		JButton btnDelete = new JButton("Delete");
+		final JButton btnDelete = new JButton("Delete");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String pid=textField.getText();
+					
+					String str4="delete from addproduct where pid='"+pid+"'";
+					 Class.forName("org.h2.Driver");
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/project1","sa","");
+						Statement stm=conn.createStatement();
+						stm.executeUpdate(str4);
+						JOptionPane.showMessageDialog(btnDelete, "DeleteSuces..");
+				}
+				catch(Exception t)
+				{
+					
+				}
+			}
+		});
 		btnDelete.setBounds(284, 285, 89, 23);
 		contentPane.add(btnDelete);
 		
-		JButton btnReset = new JButton("Reset");
-		btnReset.setBounds(284, 95, 89, 23);
-		contentPane.add(btnReset);
+		final JButton btnUpdate = new JButton("Update");
+		btnUpdate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String pid=textField.getText();
+					String price=textField_2.getText();
+					String str3="update addproduct set price='"+price+"' where pid='"+pid+"'";
+					 Class.forName("org.h2.Driver");
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/project1","sa","");
+						Statement stm=conn.createStatement();
+						stm.executeUpdate(str3);
+						JOptionPane.showMessageDialog(btnUpdate, "UpdatedSuces..");
+				}
+				catch(Exception t)
+				{
+					
+				}
+			}
+		});
+		btnUpdate.setBounds(284, 95, 89, 23);
+		contentPane.add(btnUpdate);
 	}
 }
