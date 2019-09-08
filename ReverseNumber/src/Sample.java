@@ -8,7 +8,7 @@ public class Sample
   void input()
   {
 	  System.out.println("Enter the n value is:\n");
-	  n=d.nextInt();//n=321
+	  n=d.nextInt();//n=123
   }
   void display()
   {
