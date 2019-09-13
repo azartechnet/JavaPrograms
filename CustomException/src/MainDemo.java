@@ -3,7 +3,7 @@ public class MainDemo
 {
     public void get(int amount) throws ExceptionDemo
     {
-    	int sal=1000;
+    	int sal=20;
     	if((sal-amount)<500)
     	{
     		throw new ExceptionDemo();
@@ -17,7 +17,7 @@ public class MainDemo
 	{
 		
           MainDemo b=new MainDemo();
-          b.get(4000);
+          b.get(1000);
 	}
 
 }
