@@ -31,7 +31,7 @@ public class Demo
 	{
        D1 g=new D1();
       
-       g.g2("niit","dgl");
+       g.g2("niit","krr");
        g.g1();
  
 	}

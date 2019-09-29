@@ -4,12 +4,12 @@
 	 
 public class Demo 
 {
-	enum employee{a,b};
+	enum employee{raja,mohan};
 	void get()
 	{
 	//	String name[]={"aa","bb"};
 						
-		for (employee g : employee.values())
+		for (employee g : employee.values())//for each statement
 		{
 			System.out.println("Value is:"+g);
 		}
