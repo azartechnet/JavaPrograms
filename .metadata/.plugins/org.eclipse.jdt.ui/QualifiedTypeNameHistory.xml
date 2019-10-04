@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="AdminLoginPage"/>
 <fullyQualifiedTypeName name="UserHomePage"/>
 <fullyQualifiedTypeName name="dglcollection1.Program1"/>
 <fullyQualifiedTypeName name="AmountCredit"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="newpgpcustomException.CustomException"/>
+<fullyQualifiedTypeName name="newpgpswing.UserLogin"/>
 </qualifiedTypeNameHistroy>
