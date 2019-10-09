@@ -7,7 +7,7 @@ public class Sample
 
 	public static void main(String[] args) 
 	{
-		DateFormat dt=DateFormat.getDateInstance(DateFormat.LONG,new Locale("tn","TN"));
+		DateFormat dt=DateFormat.getDateInstance(DateFormat.FULL,new Locale("de","DE"));
 		
 		String f=dt.format(new Date());
 				

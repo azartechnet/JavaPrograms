@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="pgpfilewirte.fileread"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="RegisterPage"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="newpgpswing.UserLogin"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="RegForm"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 </qualifiedTypeNameHistroy>
