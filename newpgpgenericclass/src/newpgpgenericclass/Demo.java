@@ -8,10 +8,10 @@ class Sample<A>
 	{
 		this.a=a;
 	}
-	A display()
+	void display()
 	{
-		//System.out.println(a);
-		return a;
+		System.out.println(a);
+		//return a;
 	}
 }
 
@@ -21,14 +21,14 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		Sample<Integer>g1=new Sample<Integer>();
+		Sample<Integer>g1=new Sample<>();
 		g1.get1(100);
-		System.out.println(g1.display());
-		//g1.display();
-		Sample<String>g2=new Sample<String>();
+		//System.out.println(g1.display());
+		g1.display();
+		Sample<String>g2=new Sample<>();
 		g2.get1("niit");
-		//g2.display();
-		System.out.println(g2.display());
+	    g2.display();
+		//System.out.println(g2.display());
 
 	}
 

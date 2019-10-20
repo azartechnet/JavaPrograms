@@ -48,5 +48,15 @@ public class HomePage extends JFrame {
 		});
 		btnRegisterform.setBounds(154, 61, 124, 38);
 		contentPane.add(btnRegisterform);
+		
+		JButton btnNewButton = new JButton("LoginForm");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				new LoginPage().setVisible(true);
+			}
+		});
+		btnNewButton.setBounds(154, 148, 124, 38);
+		contentPane.add(btnNewButton);
 	}
 }

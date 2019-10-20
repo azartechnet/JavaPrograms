@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="AmountCredit"/>
 <fullyQualifiedTypeName name="snippet.Snippet"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="k1program3.SampleApp1"/>
@@ -17,7 +16,6 @@
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="pgpfilewirte.fileread"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-<fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="RegisterPage"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
@@ -33,7 +31,6 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.SequenceInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="Login.ValidateCer"/>
 <fullyQualifiedTypeName name="newpgplogic1.factorial1"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -50,14 +47,17 @@
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="newpgpcustomException.CustomException"/>
 <fullyQualifiedTypeName name="newpgpswing.UserLogin"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="RegForm"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="newpgpgenericclass.Sample"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="MyProfile"/>
+<fullyQualifiedTypeName name="LoginPage"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
