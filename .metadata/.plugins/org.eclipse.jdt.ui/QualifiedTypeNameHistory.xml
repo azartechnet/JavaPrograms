@@ -24,7 +24,6 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.awt.geom.CubicCurve2D"/>
 <fullyQualifiedTypeName name="AddProduct"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
@@ -34,7 +33,6 @@
 <fullyQualifiedTypeName name="Login.ValidateCer"/>
 <fullyQualifiedTypeName name="newpgplogic1.factorial1"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="newpgpinterface.Product"/>
 <fullyQualifiedTypeName name="newpgpinterface.ProductModel"/>
 <fullyQualifiedTypeName name="newpgpinterface.ProductImple"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
 </qualifiedTypeNameHistroy>
