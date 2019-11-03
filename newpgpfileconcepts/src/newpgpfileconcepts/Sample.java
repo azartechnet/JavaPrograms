@@ -10,6 +10,7 @@ class Foo
    {
 	   try
 	   {
+		   
 		   FileOutputStream fos=new FileOutputStream("E:\\d1.txt");
 		   String name="niit";
 		   byte s[]=name.getBytes();
