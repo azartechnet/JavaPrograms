@@ -8,4 +8,8 @@
 		id="org.eclipse.wb.swing.components javax.swing.JLabel"
 		category="org.eclipse.wb.swing.layouts"
 		nextEntry="org.eclipse.wb.swing.layouts javax.swing.SpringLayout"/>
+	<moveEntry
+		id="org.eclipse.wb.swing.components javax.swing.JTable"
+		category="org.eclipse.wb.swing.components"
+		nextEntry="org.eclipse.wb.swing.components javax.swing.JSlider"/>
 </commands>
