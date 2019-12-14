@@ -1,16 +1,24 @@
 package krrafternoonswing;
 
 import java.awt.BorderLayout;
+
+import java.sql.*;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
+import java.awt.event.ActionListener;
+import java.sql.DriverManager;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -82,7 +90,40 @@ public class RegisterPage extends JFrame {
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton btnDone = new JButton("Done");
+		final JButton btnDone = new JButton("Done");
+		btnDone.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String t1=textField.getText();
+					
+					String t2=textField_1.getText();
+					
+					String t3=textField_2.getText();
+					
+					String t4=textField_3.getText();
+					
+					
+					String str1="insert into user values('"+t1+"','"+t2+"','"+t3+"','"+t4+"')";
+					
+					Class.forName("org.h2.Driver");
+					
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+					
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str1);
+					
+					JOptionPane.showMessageDialog(btnDone, "Inserted");
+				}
+				catch(Exception n)
+				{
+					
+				}
+			}
+			
+		});
 		btnDone.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnDone.setBounds(140, 313, 89, 23);
 		contentPane.add(btnDone);

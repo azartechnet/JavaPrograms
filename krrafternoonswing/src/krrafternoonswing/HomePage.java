@@ -57,6 +57,12 @@ public class HomePage extends JFrame {
 		panel.add(btnUserlogin);
 		
 		JButton btnRegisterpage = new JButton("RegisterPage");
+		btnRegisterpage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new RegisterPage().setVisible(true);
+			}
+		});
 		btnRegisterpage.setBounds(134, 119, 122, 28);
 		panel.add(btnRegisterpage);
 	}

@@ -7,8 +7,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class AddProduct extends JFrame {
 
@@ -46,6 +53,7 @@ public class AddProduct extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblAddproduct = new JLabel("AddProduct");
+		lblAddproduct.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		lblAddproduct.setBounds(191, 11, 82, 25);
 		contentPane.add(lblAddproduct);
 		
@@ -85,11 +93,52 @@ public class AddProduct extends JFrame {
 		contentPane.add(textField_3);
 		textField_3.setColumns(10);
 		
-		JButton btnAddproduct = new JButton("AddProduct");
+		final JButton btnAddproduct = new JButton("AddProduct");
+		btnAddproduct.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+                    String t1=textField.getText();
+					
+					String t2=textField_1.getText();
+					
+					String t3=textField_2.getText();
+					
+					String t4=textField_3.getText();
+					
+					
+					String str1="insert into addproduct values('"+t1+"','"+t2+"','"+t3+"','"+t4+"')";
+					
+					Class.forName("org.h2.Driver");
+					
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+					
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str1);
+					
+					JOptionPane.showMessageDialog(btnAddproduct, "Inserted");
+				}
+				catch(Exception t)
+				{
+					
+				}
+			}
+		});
 		btnAddproduct.setBounds(83, 312, 89, 23);
 		contentPane.add(btnAddproduct);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				textField.setText("");
+				textField_1.setText("");
+				textField_2.setText("");
+				textField_3.setText("");
+			}
+		});
 		btnReset.setBounds(238, 312, 89, 23);
 		contentPane.add(btnReset);
 	}
