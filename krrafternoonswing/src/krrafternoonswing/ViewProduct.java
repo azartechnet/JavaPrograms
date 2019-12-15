@@ -142,11 +142,67 @@ public class ViewProduct extends JFrame {
 		btnView.setBounds(62, 380, 89, 23);
 		contentPane.add(btnView);
 		
-		JButton btnUpdated = new JButton("Updated");
+		final JButton btnUpdated = new JButton("Updated");
+		btnUpdated.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String p1=textField.getText();
+					
+					String p2=textField_1.getText();
+					
+					String p3=textField_2.getText();
+					
+					
+					String str3="update addproduct set pname='"+p2+"',price='"+p3+"' where pid='"+p1+"'";
+					
+                     Class.forName("org.h2.Driver");
+					
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+					
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str3);
+					
+					JOptionPane.showMessageDialog(btnUpdated, "Updated");
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnUpdated.setBounds(199, 380, 89, 23);
 		contentPane.add(btnUpdated);
 		
-		JButton btnDelete = new JButton("Delete");
+		final JButton btnDelete = new JButton("Delete");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				try
+				{
+					String pid=textField.getText();
+					
+					String str5="delete  from addproduct where pid='"+pid+"'";
+					
+					 Class.forName("org.h2.Driver");
+						
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+						
+						Statement stm=conn.createStatement();
+						
+						stm.executeUpdate(str5);
+						
+						JOptionPane.showMessageDialog(btnDelete, "Deleted..");
+					
+				}
+				catch(Exception r)
+				{
+					System.out.println(r);
+				}
+			}
+		});
 		btnDelete.setBounds(315, 380, 89, 23);
 		contentPane.add(btnDelete);
 	}
