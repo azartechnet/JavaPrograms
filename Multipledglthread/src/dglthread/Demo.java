@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 class Foo extends Thread
 {
-	int a;
-	Scanner f=new Scanner(System.in);
+	//int a;
+	//Scanner f=new Scanner(System.in);
 //	public void run()
 //	{
 //		try
@@ -70,9 +70,9 @@ public class Demo {
          //To creating Multiple thread
          t1.start();
          
-         t1.setName("thread1");
+        // t1.setName("thread1");
          
-         t2.setName("thread2");
+         //t2.setName("thread2");
          
          t2.start();
 	}
