@@ -23,7 +23,7 @@ public class Demo1 extends Thread
 		try
 		{
 			System.out.println("Wait IN");
-	        wait(3000);	
+	        wait(300000);	
 	       System.out.println("Wait OUT");
 		System.out.println("MethodIN");
 		notify();
@@ -42,7 +42,7 @@ class Foo
 	{
 		Demo1 t1=new Demo1();
         //Demo1 t2=new Demo1();
-        t1.start();
+      //  t1.start();
         t1.get1();
 
 	}
