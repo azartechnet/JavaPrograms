@@ -1,7 +1,7 @@
 
 public class Sample extends Thread
 {
-   synchronized public void get1()
+	synchronized public void get1()
    {
 	   try
 	   {
