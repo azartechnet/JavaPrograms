@@ -1,7 +1,7 @@
 
 interface B
 {
-   int a=100;
+   int a=200;
 	
     void g1();
     
