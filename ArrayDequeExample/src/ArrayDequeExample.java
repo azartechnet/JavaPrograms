@@ -9,7 +9,7 @@ public class ArrayDequeExample
 		h1.add(102);
 		h1.add(103);
 		
-		h1.addFirst(105);
+		h1.addFirst(102);
 		
 		h1.addLast(109);
 		
