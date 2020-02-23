@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="sundaybatchgui.RegisterPage"/>
 <fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="Arithmetic"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 </qualifiedTypeNameHistroy>
