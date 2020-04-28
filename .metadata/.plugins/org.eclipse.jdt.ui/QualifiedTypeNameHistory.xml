@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="RegForm"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="newpgpgenericclass.Sample"/>
 <fullyQualifiedTypeName name="MyProfile"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="dgljunitTestCase1.EvenOrOddTest"/>
 <fullyQualifiedTypeName name="dgljunitTestCase1.EvenOrOdd"/>
 <fullyQualifiedTypeName name="dgljunitTestCase2.Arithmetic"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 </qualifiedTypeNameHistroy>

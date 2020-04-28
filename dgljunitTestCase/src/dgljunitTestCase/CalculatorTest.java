@@ -3,6 +3,7 @@ package dgljunitTestCase;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CalculatorTest {
@@ -12,11 +13,11 @@ public CalculatorTest() {
 	}
 	
 	
-	@Before
-	public void setUp() throws Exception 
-	{
-        
-	}
+@BeforeClass
+public static void setUpClass() throws Exception 
+{
+    System.out.println("@BeforeClassImplmentated..");
+}
 
 	@Test
 	public void testAdd() {
