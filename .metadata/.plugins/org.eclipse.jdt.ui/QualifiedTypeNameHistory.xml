@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-<fullyQualifiedTypeName name="newpgpgenericclass.Sample"/>
-<fullyQualifiedTypeName name="MyProfile"/>
-<fullyQualifiedTypeName name="LoginPage"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="java.io.DataInputStream"/>
-<fullyQualifiedTypeName name="newpgpdatainputstream.SampleJava"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="newpgpswing.UserHomePage"/>
-<fullyQualifiedTypeName name="krrafternoonswing.UserLogin"/>
-<fullyQualifiedTypeName name="krrafternoonswing.RegisterPage"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -53,11 +42,22 @@
 <fullyQualifiedTypeName name="dglpgpthread.ThreadDemo"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-<fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="dgljunitTestCase.Calculator"/>
 <fullyQualifiedTypeName name="evenorodd.EvenOrOdd"/>
 <fullyQualifiedTypeName name="dgljunitTestCase1.EvenOrOddTest"/>
 <fullyQualifiedTypeName name="dgljunitTestCase1.EvenOrOdd"/>
 <fullyQualifiedTypeName name="dgljunitTestCase2.Arithmetic"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="dgljunitexception.Calculator"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="org.junit.runners.Parameterized"/>
+<fullyQualifiedTypeName name="dgljunitRunWithExample.CalculatorTest"/>
+<fullyQualifiedTypeName name="dgljunitRunWithExample.Calculator"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameters"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="dgljunittestsiteprogram.ReverseNumber"/>
+<fullyQualifiedTypeName name="dgljunittestsiteprogram.Factorial"/>
 </qualifiedTypeNameHistroy>
