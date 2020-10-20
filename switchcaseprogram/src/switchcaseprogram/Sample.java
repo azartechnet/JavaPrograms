@@ -15,10 +15,20 @@ public class Sample
 	  
 	  switch(c)
 	  {
-	  case "azar":
-		  System.out.println("case-1");
+	  case "a":
+		  int a;
+		  System.out.println("Enter the a value is::");
+		  a=f.nextInt();
+		  if(a%2==0)
+		  {
+			  System.out.println("Even"+a);
+		  }
+		  else
+		  {
+			  System.out.println("Odd"+a);
+		  }
 		  break;
-	  case "bsss":
+	  case "b":
 		  System.out.println("case-2");
 		  break;
 		  
