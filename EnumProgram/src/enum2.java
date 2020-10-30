@@ -15,7 +15,7 @@ public class enum2
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		gg g=gg.a1;
+		gg g=gg.b1;
 		System.out.println("value is:\n"+g.get());
 
 	}
