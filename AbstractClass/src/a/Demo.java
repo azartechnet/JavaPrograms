@@ -23,7 +23,7 @@ public class Demo
 
 	public static void main(String[] args) 
 	{
-	  D h=new Foo();
+	  D h=new D();
 	  h.g1();
 	  h.goo();
 
