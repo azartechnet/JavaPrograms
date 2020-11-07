@@ -1,9 +1,10 @@
 
 public class SampleTest
 {
-	public <M>void test(M t)
+	public <M> M test(M t)
 	{
-		System.out.println("Generic Methods.."+t);
+		//System.out.println("Generic Methods.."+t);
+		return t;
 	}
 	
 	
@@ -15,6 +16,6 @@ public class SampleTest
 	   
 	   g.test(2.3);
 	   
-	   g.test("niit");
+	   g.test("azar");
    }
 }
