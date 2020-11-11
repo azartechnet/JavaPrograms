@@ -3,8 +3,8 @@ public class MainDemo
 {
     public void get(int amount) throws ExceptionDemo
     {
-    	int sal=20;
-    	if((sal-amount)<500)
+    	int sal=400;
+    	if((sal-amount)<1000)
     	{
     		throw new ExceptionDemo();
     	}
