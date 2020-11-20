@@ -1,0 +1,209 @@
+DataInputStream
+================
+-->Getting User Data Read and Write data..
+
+import java.io.*;
+
+DataInputStream dis=new DataInputStream(System.in);
+
+WrapperClass Used in DataInputStream:
+=====================================
+Integer
+Charater
+Float
+Double
+Methods are Used
+================
+parseInt()
+parseFloat()
+parseDoble()
+readLine()
+
+Some of Exception Ocured..
+==========================
+IOException
+
+String Manipulating:
+=====================
+In Jumble world game application,xyz wants a user to enter the name before
+playing the game.Therefore,the name should appear with the message,"Welcome[Username]"
+To implement this functionality,there is a need to store the name of the user and
+the append the name with the welcome message.To manipulate this xyz can use
+the classes,such as String,StringBuilder and StringBuffer.
+
+Using String Class:
+====================
+
+The API Used in String Class in the java.lang package.
+
+String s1=new String("Hello");
+
+create a new string object in the heap memory,with the value ,Hello.
+
+Note:
+In JVM a special memory named string constant pool is used to store string literals
+
+Note:
+Heap Memory is an area within the jvm where object are stored..
+
+String s1="hello";
+
+In Java String class is an immutable class.
+
+The reference variable of the String class are mutable.
+
+InString Class Some Methods..
+============================
+int length()-->Return the length of the String Object
+public class Sample {
+
+	public static void main(String[] args) {
+		
+		String str="newstring";
+		
+		int len=str.length();
+		
+		System.out.println(len);
+
+	}
+
+}
+char CharAt(int index)-->Return the character at the Specified index.
+                String str="Fruit";
+		
+		char result=str.charAt(3);
+		
+		System.out.println(result);
+boolean equals(object obj)-->Compare the current String object  and another String 
+object.
+		String str1="admin";
+		
+		String str2="admin";
+		
+		if(str1.equals(str2))
+		{
+			System.out.println("Equal");
+		}
+		else
+		{
+			System.out.println("NotEqual");
+		}
+		
+
+int compareTo(String str)
+                String str1="Admin";
+		
+		String str2="Zero";
+		
+		int res=str1.compareTo(str2);
+		
+		System.out.println(res);
+		
+
+boolean startsWith(String prefix)
+               String str=new String("Welcome to Java");
+		
+		System.out.println(str.startsWith("A"));
+		System.out.println(str.startsWith("W"));
+boolean endsWith(String suffix)
+                String str=new String("Welcome to Java");
+		
+		System.out.println(str.endsWith("a"));
+		System.out.println(str.endsWith("w"));
+int indexOf(int ch)
+               String str=new String("Welcome to Java");
+		
+		System.out.println(str.indexOf('a'));
+int lastIndexOf(int ch)
+
+String str=new String("Welcome to Java")
+
+System.out.println(str.lastIndexOf('o'))
+
+o/p:9
+
+String concat(String str)
+
+String toUpperCase()
+
+String trim()
+
+String valueOf(object obj)-->Return the String representation of the
+Specified argument.Return null if the argument is null,The valueOf()
+method it a static method.
+
+int a=10;
+
+double b=2.0;
+
+char[] arr={'a','b'};
+
+System.out.println("Return value:"+String.valueOf(a));
+
+
+System.out.println("Return value:"+String.valueOf(b));
+
+======================================
+Using StringBuilder and StringBuffer Classes:
+==============================================
+You can also use the StringBuilder and StringBuffer classes to work with String.
+This classes are mutable classes as they do not create any new String object When
+manipulated.
+Such as appending,concatenating and deleting withe string literals.
+
+Syntax:
+=======
+
+StringBuilder s1=new StringBuilder("Hello");
+
+
+StringBuilder append(String obj)-->Appends the argument to the String Builder
+                StringBuilder sb=new StringBuilder("Fruits");
+		sb.append(" are good for health");
+		
+		System.out.println(sb);
+StringBuilder delete(int start,int end)
+		StringBuilder str=new StringBuilder("fruits are very good");
+		str.delete(10,15);
+	
+		System.out.println(str);
+
+
+StringBuilder insert(int offset,String obj)
+                StringBuilder str=new StringBuilder("fruits--good");
+		
+		str.insert(6,"are");
+		
+		System.out.println(str);
+StringBuilder reverse()
+==================================================
+Implementing Inheritance
+=========================
+In an Object oriented Programming Language,Such as Java You can resue or extend
+the functionalities of an existing class in a new class.
+This allow the sharing and reuse of code and help in making code of an application more
+orgainzed and efficient by reducing redundancy.
+Type of Inheritance:
+====================
+Single Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Multiple Inheritance--Used for More than one base class(Interface)
+
+Single Inheritance:
+===================
+One Base class and One Dervied Class
+
+Multilevel Inheritance:
+========================
+OneBaseClass,IntermDerviedclass,DerviedClass
+
+Hierarchical Inheritance:(Task)
+=========================
+OneBaseclass to mapping more than one dervied class
+
+
+
+
+
+

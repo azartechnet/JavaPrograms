@@ -1,0 +1,95 @@
+reverse=0; 
+while (n != 0)
+   {
+      reverse = reverse * 10;
+      reverse = reverse + n%10;
+      n       = n/10;
+   }
+ ---------------------------------------
+s=0;
+while(n>0)
+  {
+    rem=n%10;
+    s=s+rem*rem*rem;
+    n=n/10;
+    }
+if(n==s)
+{
+}
+else
+{
+}
+---------------------------------------------
+while (t != 0)
+   {
+      remainder = t % 10;
+      sum       = sum + remainder;
+      t         = t / 10;
+   }
+-----------------------------------
+ int n, first = 0, second = 1, next, c;
+     
+      for ( c = 0 ; c < n ; c++ )
+   {
+      if ( c <= 1 )
+         next = c;
+      else
+      {
+         next = first + second;
+         first = second;
+         second = next;
+      }
+     System.out.println(next);//cout<<next;
+   }
+------------------------------------------
+fact=1;
+ for (c = 1; c <= n; c++)
+    fact = fact * c;
+ 
+--------------------------------
+Swap two variables without using third variable.
+Explanation:
+#include<stdio.h>
+int main(){
+    int a=5,b=10;
+//process one
+    a=b+a;
+    b=a-b;
+    a=a-b;
+    printf("a= %d  b=  %d",a,b);
+
+//process two
+    a=5;
+    b=10;
+    a=a+b-(b=a);
+    printf("\na= %d  b=  %d",a,b);
+//process three
+    a=5;
+    b=10;
+    a=a^b;
+    b=a^b;
+    a=b^a;
+    printf("\na= %d  b=  %d",a,b);
+   
+//process four
+    a=5;
+    b=10;
+    a=b-~a-1;
+    b=a+~b+1;
+    a=a+~b+1;
+    printf("\na= %d  b=  %d",a,b);
+   
+//process five
+    a=5,
+    b=10;
+    a=b+a,b=a-b,a=a-b;
+    printf("\na= %d  b=  %d",a,b);
+    return 0;
+}
+
+
+
+
+
+
+
