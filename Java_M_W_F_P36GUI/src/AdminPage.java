@@ -1,0 +1,85 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class AdminPage extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AdminPage frame = new AdminPage();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public AdminPage() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 355);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
+		panel.setBounds(22, 11, 383, 280);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblAdminlogin = new JLabel("AdminLogin");
+		lblAdminlogin.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblAdminlogin.setBounds(149, 27, 98, 22);
+		panel.add(lblAdminlogin);
+		
+		JLabel lblAdminname = new JLabel("AdminName");
+		lblAdminname.setBounds(44, 83, 68, 14);
+		panel.add(lblAdminname);
+		
+		textField = new JTextField();
+		textField.setBounds(174, 80, 115, 20);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblAdminpassword = new JLabel("AdminPassword");
+		lblAdminpassword.setBounds(46, 147, 85, 14);
+		panel.add(lblAdminpassword);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(174, 144, 115, 20);
+		panel.add(textField_1);
+		textField_1.setColumns(10);
+		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.setBounds(79, 222, 89, 23);
+		panel.add(btnLogin);
+		
+		JButton btnReset = new JButton("Reset");
+		btnReset.setBounds(200, 222, 89, 23);
+		panel.add(btnReset);
+	}
+
+}
