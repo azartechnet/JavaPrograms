@@ -7,6 +7,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AdminHomePaage extends JFrame {
 
@@ -45,16 +47,14 @@ public class AdminHomePaage extends JFrame {
 		contentPane.add(lblAdminhomepage);
 		
 		JButton btnAddproduct = new JButton("AddProduct");
-		btnAddproduct.setBounds(160, 89, 102, 31);
+		btnAddproduct.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new AddProduct().setVisible(true);
+			}
+		});
+		btnAddproduct.setBounds(160, 140, 102, 31);
 		contentPane.add(btnAddproduct);
-		
-		JButton btnViewproduct = new JButton("ViewProduct");
-		btnViewproduct.setBounds(160, 153, 102, 31);
-		contentPane.add(btnViewproduct);
-		
-		JButton btnDeleteproduct = new JButton("DeleteProduct");
-		btnDeleteproduct.setBounds(160, 222, 102, 31);
-		contentPane.add(btnDeleteproduct);
 	}
 
 }
