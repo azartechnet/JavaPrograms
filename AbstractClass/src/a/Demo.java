@@ -2,17 +2,18 @@ package a;
 
 abstract class Foo
 {
-	abstract void goo();
-	public void g1()
+	abstract void goo();//abstract method
+	int a=100;
+	public void g1()//normal method
 	{
 	System.out.println("welcome normal method...");	
 	}
 }
  class D extends Foo
 {
-	public void goo()
+	public void goo()//To define the abstract method
 	{
-		System.out.println("abstract welcome");
+		System.out.println("abstract welcome"+a);
 	}
 	
 }

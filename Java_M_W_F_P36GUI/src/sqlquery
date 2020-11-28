@@ -1,0 +1,9 @@
+select * from userreg
+
+create table admin(adminname varchar(50),adminpass varchar(80))
+
+create table product(productid varchar(60),productname varchar(70),price varchar(60))
+
+create table userreg(username varchar(70),password varchar(70),email varchar(70))
+
+select * from product
