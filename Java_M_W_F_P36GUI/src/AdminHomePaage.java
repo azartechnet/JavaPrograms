@@ -55,6 +55,9 @@ public class AdminHomePaage extends JFrame {
 		});
 		btnAddproduct.setBounds(160, 140, 102, 31);
 		contentPane.add(btnAddproduct);
+		
+		JButton btnViewproduct = new JButton("ViewProduct");
+		btnViewproduct.setBounds(160, 227, 89, 23);
+		contentPane.add(btnViewproduct);
 	}
-
 }
