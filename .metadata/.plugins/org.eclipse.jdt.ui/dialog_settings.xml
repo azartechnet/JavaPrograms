@@ -3,6 +3,7 @@
 	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<item value="C:\Program Files (x86)\H2\bin" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="F:\MyOTraining\JHC\YouTube2018\JavaPrograms" key="org.eclipse.jdt.ui.last.external.project"/>
+	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
