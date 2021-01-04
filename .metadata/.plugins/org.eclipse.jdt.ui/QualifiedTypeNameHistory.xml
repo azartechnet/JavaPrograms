@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="Arithmetic"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
@@ -30,7 +29,6 @@
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="AdminPage"/>
-<fullyQualifiedTypeName name="RegisterPage"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="com.oracle.jrockit.jfr.Producer"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="RegisterPage"/>
+<fullyQualifiedTypeName name="AdminLogin"/>
 </qualifiedTypeNameHistroy>

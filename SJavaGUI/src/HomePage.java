@@ -4,7 +4,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class HomePage extends JFrame {
 
@@ -37,8 +41,36 @@ public class HomePage extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(158, 83, 89, 23);
-		contentPane.add(btnNewButton);
+		JLabel lblHrMappingSystem = new JLabel("HR Mapping System");
+		lblHrMappingSystem.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblHrMappingSystem.setBounds(152, 23, 173, 22);
+		contentPane.add(lblHrMappingSystem);
+		
+		JButton btnUserlogin = new JButton("UserLogin");
+		btnUserlogin.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnUserlogin.setBounds(165, 73, 107, 23);
+		contentPane.add(btnUserlogin);
+		
+		JButton btnAdminlogin = new JButton("AdminLogin");
+		btnAdminlogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new AdminLogin().setVisible(true);
+			}
+		});
+		btnAdminlogin.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnAdminlogin.setBounds(165, 133, 107, 23);
+		contentPane.add(btnAdminlogin);
+		
+		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new RegisterPage().setVisible(true);
+			}
+		});
+		btnRegister.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnRegister.setBounds(165, 203, 107, 23);
+		contentPane.add(btnRegister);
 	}
 }
