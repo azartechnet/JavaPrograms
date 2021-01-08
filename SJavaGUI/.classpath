@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="C:/Program Files (x86)/H2/bin/h2-1.4.195.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
