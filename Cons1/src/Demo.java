@@ -13,18 +13,18 @@ public class Demo
 		System.out.println("param cons"+a);
 		
 	}
-	void get1()
-	{
-		System.out.println("welcome");
-	}
+//	void get1()
+//	{
+//		System.out.println("welcome");
+//	}
 	 
 	public static void main(String[] args) 
 	{
-		Demo t1=new Demo();
+		new Demo();
 		
 		new Demo(100);
 		
-		t1.get1();
+		//t1.get1();
 
 	}
 
