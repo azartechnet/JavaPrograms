@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 <fullyQualifiedTypeName name="dglpgpthread.ThreadDemo"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -25,11 +24,8 @@
 <fullyQualifiedTypeName name="ss"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="AdminPage"/>
-<fullyQualifiedTypeName name="UserHomePage"/>
-<fullyQualifiedTypeName name="AddProduct"/>
 <fullyQualifiedTypeName name="AdminHomePaage"/>
 <fullyQualifiedTypeName name="Demo"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -58,6 +54,10 @@
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="AdminHomePage"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="AddProduct"/>
+<fullyQualifiedTypeName name="AddEmployee"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="UserHomePage"/>
 </qualifiedTypeNameHistroy>
