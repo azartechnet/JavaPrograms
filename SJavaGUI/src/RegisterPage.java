@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
@@ -12,6 +13,11 @@ import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -93,6 +99,37 @@ public class RegisterPage extends JFrame {
 		panel.add(lblGender);
 		
 		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				try
+				{
+					String uname=textField.getText();
+					String pass=textField_1.getText();
+					String email=textField_2.getText();
+					
+					String gender=(String)comboBox.getSelectedItem();
+					
+					String str1="insert into userreg values('"+uname+"','"+pass+"','"+email+"','"+gender+"')";
+							
+				
+					 Class.forName("org.h2.Driver");
+						
+						Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/sjava","sa","");
+						
+						Statement stmt=conn.createStatement();
+						
+						stmt.executeUpdate(str1);
+						
+						JOptionPane.showMessageDialog(btnRegister,"Inserted..");
+					
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnRegister.setBackground(new Color(135, 206, 250));
 		btnRegister.setForeground(new Color(0, 0, 255));
 		btnRegister.setToolTipText("New register");

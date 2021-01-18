@@ -7,6 +7,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AdminHomePage extends JFrame {
 
@@ -45,6 +47,12 @@ public class AdminHomePage extends JFrame {
 		contentPane.add(lblAdminhomepage);
 		
 		JButton btnAddproduct = new JButton("AddProduct");
+		btnAddproduct.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new AddProduct().setVisible(true);
+			}
+		});
 		btnAddproduct.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnAddproduct.setBounds(143, 98, 110, 23);
 		contentPane.add(btnAddproduct);
@@ -55,6 +63,12 @@ public class AdminHomePage extends JFrame {
 		contentPane.add(btnViewproduct);
 		
 		JButton btnAddemployee = new JButton("AddEmployee");
+		btnAddemployee.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+				new AddEmployee().setVisible(true);
+			}
+		});
 		btnAddemployee.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnAddemployee.setBounds(143, 259, 110, 23);
 		contentPane.add(btnAddemployee);

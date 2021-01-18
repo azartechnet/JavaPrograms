@@ -5,3 +5,15 @@ select * from adminlogin
 select adminname,pass from adminlogin
 
 insert into adminlogin values('admin','admin@123')
+
+//To create a addproduct table
+
+create table addproduct(pid integer,pname varchar(60),pprice integer)
+
+select * from addproduct
+
+//To Create a UserRegister table
+
+create table userreg(uname varchar(60),pass varchar(60),email varchar(70),gender varchar(80))
+
+select * from userreg
