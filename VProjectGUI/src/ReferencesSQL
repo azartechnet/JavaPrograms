@@ -1,0 +1,7 @@
+//Create admin page
+
+create table adminpage(adminname varchar(100),adminpass varchar(100))
+
+select * from adminpage
+
+insert into adminpage values('admin','admin')
