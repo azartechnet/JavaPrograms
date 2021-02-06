@@ -7,6 +7,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class HomePage extends JFrame {
 
@@ -45,6 +47,12 @@ public class HomePage extends JFrame {
 		contentPane.add(lblHrmappingSystem);
 		
 		JButton btnAdminlogin = new JButton("AdminLogin");
+		btnAdminlogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new AdminLogin().setVisible(true);
+			}
+		});
 		btnAdminlogin.setFont(new Font("Tahoma", Font.BOLD, 11));
 		btnAdminlogin.setBounds(161, 93, 105, 23);
 		contentPane.add(btnAdminlogin);
