@@ -5,8 +5,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class Register extends JFrame {
 
@@ -74,6 +80,31 @@ public class Register extends JFrame {
 		textField_2.setColumns(10);
 		
 		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				try
+				{
+					String uname=textField.getText();
+					String pass=textField_1.getText();
+					
+					String gender=textField_2.getText();
+					
+					String str1="insert into userreg values('"+uname+"','"+pass+"','"+gender+"')";
+					
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/vjava","sa","");
+					Statement stmt=conn.createStatement();
+					stmt.executeUpdate(str1);
+					JOptionPane.showMessageDialog(btnRegister, "UserInserted..");
+					
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnRegister.setBounds(89, 270, 89, 23);
 		contentPane.add(btnRegister);
 		

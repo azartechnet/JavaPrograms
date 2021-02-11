@@ -10,3 +10,8 @@ insert into adminpage values('admin','admin')
 create table addproduct(pid integer,pname varchar(100),price integer)
 
 select * from addproduct
+
+//Creating UserReg Table
+create table userreg(uname varchar(100),pass varchar(100),gender varchar(100))
+
+select * from userreg

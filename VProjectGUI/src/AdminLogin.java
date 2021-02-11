@@ -118,6 +118,13 @@ public class AdminLogin extends JFrame {
 		panel.add(btnLogin);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				textField.setText("");
+				textField_1.setText("");
+			}
+		});
 		btnReset.setBounds(226, 202, 89, 23);
 		panel.add(btnReset);
 	}
