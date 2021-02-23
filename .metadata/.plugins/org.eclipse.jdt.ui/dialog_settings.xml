@@ -67,6 +67,11 @@
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
 	</section>
+	<section name="JavaSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="11" key="INCLUDE_MASK"/>
+	</section>
 	<section name="completion_proposal_size">
 		<item value="252" key="size.y"/>
 		<item value="366" key="size.x"/>
