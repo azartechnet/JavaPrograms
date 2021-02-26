@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="dgljunittestsiteprogram.ReverseNumber"/>
 <fullyQualifiedTypeName name="dgljunittestsiteprogram.Factorial"/>
 <fullyQualifiedTypeName name="ss"/>
-<fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="LoginPage"/>
 <fullyQualifiedTypeName name="AdminPage"/>
 <fullyQualifiedTypeName name="AdminHomePaage"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="Sample"/>
 <fullyQualifiedTypeName name="MainClass"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.DataInputStream"/>
 </qualifiedTypeNameHistroy>
